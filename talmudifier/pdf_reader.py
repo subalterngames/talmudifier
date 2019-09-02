@@ -16,14 +16,20 @@ class PDFReader:
 
         :param filename: The name of the file.
         """
+
         path = join(output_directory, filename + ".pdf")
 
-        assert exists(path)
+        assert exists(path), f"{path} does not exist."
+
         # Extract the number of lines
         with open(path, "rb") as f:
             pdf = PdfFileReader(f)
             extracted_text = pdf.getPage(pdf.getNumPages() - 1).extractText()
+
         lines = extracted_text.split("\n")
+        assert len(lines) >= 4, "Not enough lines. Did you include the lineno package?"
+
         lineno = lines[-3]
-        assert lineno.isdigit(), (lines, lineno)
+
+        assert lineno.isdigit(), f"Expected a line number but got: {lineno}. Did you include the lineno package?"
         return int(lineno)

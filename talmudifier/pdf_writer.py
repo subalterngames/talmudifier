@@ -54,4 +54,6 @@ class PDFWriter:
             call('latex -output-format=pdf -output-directory ' +
                  output_directory + ' -job-name=' + filename + " " + doc + " -quiet")
 
+        assert Path(output_directory).joinpath(filename).exists(), f"Failed to create: {filename}"
+
         return doc_raw
