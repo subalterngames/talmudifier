@@ -42,6 +42,11 @@ class PDFWriter:
         # Replace line breaks with spaces.
         doc = doc_raw.replace("\n", " ")
 
+        # Verify that all curly braces are balanced.
+        num_start = len([c for c in doc if c == "{"])
+        num_end = len([c for c in doc if c == "}"])
+        assert num_start == num_end, f"Unbalanced curly braces!\n\n{doc_raw}"
+
         # Generate the PDF.
         if platform == "linux":
             call(
