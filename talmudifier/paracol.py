@@ -93,9 +93,9 @@ class Paracol:
         else:
             raise Exception(f"No column named: {column}")
 
-    def get_num_rows(self, column: str, start_index=0, end_index=-1) -> int:
+    def _write_column_by_name(self, column: str, start_index=0, end_index=-1) -> None:
         """
-        Returns the number of rows a given column will be in this paracol environment.
+        Generate a column's text and write the column.
 
         :param column: The name of the column.
         :param start_index: The start index of the words.
@@ -109,5 +109,106 @@ class Paracol:
         tex = self.header + switch + "\n" + col.get_tex(True, start_index=start_index, end_index=end_index)
 
         PDFWriter().write(tex, "temp")
+
+    def _write_column(self, column: Box, column_name: str, start_index=0, end_index=-1) -> None:
+        """
+        Generate a column's text and write the column.
+
+        :param column: The column box.
+        :param column_name: The name of the column.
+        :param start_index: The start index of the words.
+        :param end_index: The end index of the words. If this is -1, it is the end of the list.
+        """
+
+        assert column is not None, f"Column {column_name} is None."
+        switch = self._get_switch_to_from_left(column_name)
+
+        # Get the LaTeX string.
+        tex = self.header + switch + "\n" + column.get_tex(True, start_index=start_index, end_index=end_index)
+
+        PDFWriter().write(tex, "temp")
+
+    def get_num_rows_by_name(self, column: str, start_index=0, end_index=-1) -> int:
+        """
+        Returns the number of rows a given column will be in this paracol environment.
+
+        :param column: The name of the column.
+        :param start_index: The start index of the words.
+        :param end_index: The end index of the words. If this is -1, it is the end of the list.
+        """
+
+        # Write the column.
+        self._write_column_by_name(column, start_index=start_index, end_index=end_index)
+
         return PDFReader.get_num_rows("temp")
+
+    def get_num_rows(self, column: Box, column_name: str, start_index=0, end_index=-1) -> int:
+        """
+        Returns the number of rows a given column will be in this paracol environment.
+
+        :param column: The column.
+        :param column_name: The name of the column.
+        :param start_index: The start index of the words.
+        :param end_index: The end index of the words. If this is -1, it is the end of the list.
+        """
+
+        self._write_column(column, column_name, start_index=start_index, end_index=end_index)
+        return PDFReader.get_num_rows("temp")
+
+    def get_squared_column(self, column: str, start_index=0, end_index=-1) -> (Box, str):
+        num_rows = self.get_num_rows_by_name(column, start_index=start_index, end_index=end_index)
+
+        col = self._get_column(column)
+
+        e = end_index - 1 if end_index > 0 else len(col(column).words) - 1
+        if e <= 0:
+            raise Exception("End index is 0")
+        n = self.get_num_rows_by_name(column, start_index=start_index, end_index=e)
+
+        # Subtract words until there's 1 less row.
+        while n == num_rows:
+            e -= 1
+            if e <= 0:
+                raise Exception("End index is 0")
+            n = self.get_num_rows_by_name(column, start_index=start_index, end_index=e)
+
+        # Try to split the last word.
+        pairs = col.words[end_index + 1]
+
+        good_pair = None
+
+        for pair in pairs:
+            # Get the slice of words.
+            words = col.words[start_index: e]
+            # Add the word fragment.
+            words.append(pair[0])
+            # Create a new column.
+            new_col = Box(words)
+            n = self.get_num_rows(new_col, column)
+            # We have the correct number of rows again!
+            if n == num_rows:
+                good_pair = pair
+                break
+        if good_pair is not None:
+            # Get the list of good words.
+            words = col.words[start_index: e]
+            # Append the hyphenated fragment.
+            words.append(good_pair[0])
+            c = Box(words)
+            tex = c.get_tex(True)
+
+            # Get a box of the last row.
+            words = col.words[e:]
+            words.insert(0, good_pair[1])
+            # Append the last row.
+            tex += r"\makebox[\linewidth][s]{" + Box(words).get_tex(True) + "}"
+            # TODO return the box too somehow?
+
+
+
+
+
+
+
+
 

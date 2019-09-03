@@ -5,6 +5,7 @@ from typing import List
 class Box:
     def __init__(self, words: List[Word]):
         self._words = List[Word]()
+        self.add_words(words)
 
     def add_word(self, word: Word, index=-1) -> None:
         """
@@ -76,7 +77,7 @@ class Box:
                     states[j] = False
                     tex += "}"
                 # Add the margin note, if any.
-                tex += word.get_margin_note()
+                tex += word + word.get_margin_note() + " "
 
         # Close the braces in the box.
         if close_braces:
