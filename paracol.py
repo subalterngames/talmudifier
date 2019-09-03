@@ -155,7 +155,7 @@ class Paracol:
         self._write_column(column, column_name, start_index=start_index, end_index=end_index)
         return PDFReader.get_num_rows("temp")
 
-    def get_squared_column(self, column: str, start_index=0, end_index=-1) -> (Box, str):
+    def get_column_by_length(self, column: str, start_index=0, end_index=-1) -> (Box, str):
         num_rows = self.get_num_rows_by_name(column, start_index=start_index, end_index=end_index)
 
         col = self._get_column(column)
