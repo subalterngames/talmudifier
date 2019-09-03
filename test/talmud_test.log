@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7050 64-bit) (preloaded format=xelatex 2019.9.3)  3 SEP 2019 14:50
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7050 64-bit) (preloaded format=xelatex 2019.9.3)  3 SEP 2019 15:18
 entering extended mode
 **./talmud_test.tex
 (talmud_test.tex
@@ -773,7 +773,16 @@ LaTeX Font Info:    No file TUppl.fd. on input line 50.
 LaTeX Font Warning: Font shape `TU/ppl/bx/n' undefined
 (Font)              using `TU/lmr/m/n' instead on input line 50.
 
-
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 78.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 78.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 78.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 78.
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/wasysym\uwasy.fd"
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)
 Underfull \hbox (badness 10000) in paragraph at lines 78--79
 []\TU/Cormorant-Regular.ttf(0)/m/n/10.95 Nam feugiat, justo sit amet
  []
@@ -809,29 +818,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--79
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--79
-\TU/Cormorant-Regular.ttf(0)/m/it/10.95 dapibus in elementum ultricies,
- []
-
-
-Underfull \hbox (badness 1946) in paragraph at lines 78--79
-\TU/Cormorant-Regular.ttf(0)/m/it/10.95 pulvinar nec mi: \TU/IMFeENrm29P.ttf(0)
-/bx/n/10.95 In ut neque
+Underfull \hbox (badness 2384) in paragraph at lines 78--79
+\TU/Cormorant-Regular.ttf(0)/m/it/10.95 a ipsum imperdiet, ut porta erat
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 78--79
-\TU/IMFeENrm29P.ttf(0)/bx/n/10.95 pellene magna elementum
- []
-
-
-Underfull \hbox (badness 2142) in paragraph at lines 78--79
-\TU/Cormorant-Regular.ttf(0)/m/it/10.95 porta erat lipsum vivamus tarina
+\TU/Cormorant-Regular.ttf(0)/m/it/10.95 sum: \TU/IMFeENrm29P.ttf(0)/bx/n/10.95 
+A cursus curfusceo-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 78--79
-\TU/IMFeENrm29P.ttf(0)/bx/n/10.95 fusceodio erat, elementum
+\TU/IMFeENrm29P.ttf(0)/bx/n/10.95 dio erat, elementum nec
  []
 
 
@@ -922,16 +921,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--82
 \TU/InknutAntiqua-Regular.ttf(0)/m/n/10.95 dignissim, non fau-
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 85.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 85.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 85.
-LaTeX Font Info:    Try loading font information for U+wasy on input line 85.
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/wasysym\uwasy.fd"
-File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
-)
 
 Package paracol Warning: \margninnote is emulated by \marginpar. on input line 
 85.
@@ -944,12 +933,6 @@ Underfull \hbox (badness 1852) in paragraph at lines 85--86
 
 Underfull \hbox (badness 2744) in paragraph at lines 85--86
 \TU/IMFeENrm29P.ttf(0)/m/n/10.95 maximus mauris feugiat vitae.
- []
-
-
-Underfull \hbox (badness 1248) in paragraph at lines 85--86
-$\OMS/cmsy/m/n/10.95 j$ \TU/IMFeENrm29P.ttf(0)/m/n/10.95 If \TU/IMFeENrm29P.ttf
-(0)/bx/n/10.95 naulla cursus malesuada
  []
 
 
