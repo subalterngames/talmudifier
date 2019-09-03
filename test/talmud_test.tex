@@ -1,0 +1,120 @@
+\documentclass[11pt,letterpaper,openany]{scrbook}
+\usepackage[letterpaper, bindingoffset=0.2in, left=1in,right=1in,top=.5in,bottom=.5in,footskip=.25in,marginparwidth=5em]{geometry}
+
+\usepackage{marginnote}
+\usepackage{cjhebrew}
+\usepackage{tabularx}
+\usepackage{sectsty}
+\usepackage{ragged2e}
+
+\usepackage{lineno}
+\setkomafont{disposition}{\bfseries\fontfamily{ppl}\selectfont}
+\setlength{\tabcolsep}{1em}
+\makeatletter\newcommand{\alephbet}[1]{\c@alephbet{#1}}\newcommand{\c@alephbet}[1]{\red{\ifcase\number\value{#1} \or \<'> \or \<b> \or \<g> \or \<d> \or \<h> \or \<w> \or \<z> \or \<.h> \or \<.t> \or \<y> \or \<k|> \or \<l> \or \<m|> \or \<n|> \or \<N> \or \<s> \or \<`> \or \<p|> \or \<P> \or\<.s> \or \<q> or \<r> \or \</s> \or \<t> \fi }}
+\renewcommand{\partname}{}
+\renewcommand\thepart{\alephbet{part}}
+\renewcommand\thechapter{\alephbet{chapter}}
+\allsectionsfont{\centering}
+\newlength{\threecol}
+\setlength{\threecol}{\dimexpr(\textwidth-4em)}
+\title{The Hammer of Lilith\\ \<hmp.s /sl lylyt>}
+\author{Seth Alter}\date{}
+\usepackage{etoolbox}\makeatletter\patchcmd{\@mn@margintest}{\@tempswafalse}{\@tempswatrue}{}{}\patchcmd{\@mn@margintest}{\@tempswafalse}{\@tempswatrue}{}{}\reversemarginpar\makeatother
+\usepackage{xcolor}
+\definecolor{hcolor}{HTML}{D3230C}
+\newcommand{\red}[1]{\textcolor{hcolor}{#1}}
+\usepackage{lipsum}
+\usepackage{paracol}
+\usepackage{libertine}
+\usepackage{CormorantGaramond}
+\usepackage{wasysym}
+
+\setlength\parindent{0pt}
+\setlength{\columnsep}{1.25em}
+
+
+\newenvironment{palatino}{\fontfamily{ppl}\selectfont}{\par}
+
+\usepackage[T1]{fontenc}
+
+\DeclareRobustCommand{\bskfamily}{%
+  \fontencoding{OT1}%
+  \fontfamily{bsk}%
+  \selectfont}
+\DeclareTextFontCommand\textbsk{\bskfamily}
+
+
+\begin{document}
+
+\chapter*{\red{Lorem Ipsum}}
+
+\begin{sloppypar}
+
+\begin{paracol}{2}
+
+\red{\<'>} Proin finibus lectus a ipsum imperdiet, porta mauris interdum? In tellus elit, tincidunt vel scelerisque at, gravida non augue. Aenean maximus cursus ipsum. Nullam egestas a nisi at felis mattis, aliquamai.
+
+\switchcolumn
+
+\bskfamily{\red{\CIRCLE} If  \textbf{Vestibulum quis ex ac felis sodales auctor quis non orci:} Donec condimentum mi efficitur urna rutrum ullamcorper. Phasellus vel magna mi. Intege-}
+
+\end{paracol}
+
+\begin{paracol}{3}
+
+\makebox[\linewidth][s]{rutrum tortor est, nec maximus}
+
+\switchcolumn[2]
+
+\bskfamily{\makebox[\linewidth][s]{quam, non condimentum,}}
+
+\end{paracol}
+
+\begin{paracol}{3}
+
+Nam feugiat, justo sit amet viverra ullamcorper, dolor velit pulvinar orci, eu luctus ex nunc vitae diam. Ut et ullamcorper nulla. Nulla facilisi. Integer lacinia nunc ac nunc elementum ultricies. Suspendisse nisl sapien, pretium non metus non, sollicitudin tempor dui. Morbi imperdiet, justo non faucibus volutpat, erat augue aliquet ipsum, pulvinar tellus ipsum quis augue. Nulla feugiat, metus sed tristique fringilla, ipsum magna faucibus sem, at tristique ex erat vitae mauris. \textit{If fusce magna erat, dapibus in elementum ultricies, pulvinar nec mi:} {\bskfamily{\bfseries In ut neque pellene magna elementum dignissim in ac nulla.}} \textit{If proin finibus lectus a ipsum imperdiet, ut porta erat lipsum vivamus tarina ni-}
+\switchcolumn
+
+\begin{palatino}
+	\large In rhoncus risus sit amet risus volutpat finibusiami. \red{\<'>} Curabitur id lorem eget ex mollis euismod. Mauris feugiat nisi quam, eget varius ligula suscipit at. Sed ultricies arcu at sapien malesuada, a aliquam ante porta. \red{\<b>}  Nulla lacinia sit amet ligula sed placerat. Etiam a nunc id nisl lobortis commodo sed nec leo. \red{\CIRCLE} Quisque finibus orci et tortor euismod, et tincidunt nisi commodo. Duis consectetur finibus risus sed mollis. Fusce imperdiet ex quis dui dignissim, non faucibus enim blandit. \red{\LEFTcircle} \makebox[\linewidth][s]{Integer efficitur fringilla.}
+\end{palatino}
+
+\switchcolumn
+
+\bskfamily{mauris rutrum tortor est, nec maximus mauris feugiat vitae. $\mid$ \marginnote{\footnotesize{\textit{Ipsum 1:14}}}If \textbf{Naulla cursus malesuada quam, non condimentum leo:} Donec interdum interdum iaculis. Nulla eleifend lectus id nisi egestas, a cursus lorem cursus. Nunc pharetra eros dolor, ornare commodo magna sollicitudin sed. Vivamus leo tellus, rutrum sit amet metus sit amet, consectetur consectetur. \red{\LEFTcircle} If \textbf{Etiam nec justo att entum ultricies:} Suspendisse nisl sapien, pretium non amee imperdiet ex quis dui dignissim, non faucibus enim blandit. Integer efficitur fringilla libero non tristique. $\mid$ If \textbf{Fusce arcu odio}}
+
+\end{paracol}
+
+\begin{paracol}{3}
+
+\makebox[\linewidth][s]{\textit{si egestas sum:} {\bskfamily{\bfseries A cursus cur-}}}
+
+\switchcolumn[2]
+
+\bskfamily{\makebox[\linewidth][s]{\textbf{euismod:} Mauris feugisfe-}}
+
+\end{paracol}
+
+
+\begin{paracol}{2}
+
+{\bskfamily{\bfseries odio erat, elementum nec semper eu, gravida eu orci.}} \red{\<b>} Mauris finibus egestas venenatis? Sed nulla metus, sagittis vitae leo et, placerat facilisis orci. Vestibulum quis ex ac felis sodales auct-
+
+\switchcolumn
+
+\bskfamily{elementum ultricies arat. Suspendisse nisl sapien, pretium non metus non, sollicitudin tempor dui. Morbi imperdiet, justo non faucibus volutpat, erat augue aliquet ipsum, eu.}
+
+\end{paracol}
+
+\begin{paracol}{2}
+
+\makebox[\linewidth][s]{nunc iaculis facilisis erat in gravida. Proin efficitur.}
+
+\end{paracol}
+
+Pellentesque nec sapien quis nunc venenatis euismod id vel arcu. Nullam tincidunt a nibh nec scelerisque. Sed consectetur orci vel eros lacinia, eu venenatis velit rhoncus. Donec odio erat, elementum nec semper eu, gravida eu orci. Mauris finibus egestas venenatis. Sed nulla metus, sagittis vitae leo et, placerat facilisis orci. Vestibulum quis ex ac felis sodales auctor quis non orci. Donec condimentum mi efficitur urna rutrum ullamcorper. Phasellus vel magna mi. Integer malesuada euismod leo, eu accumsan urna congue quis. Donec dui diam, interdum quis iaculis non,\marginnote{\footnotesize\textit{Lorem 3:3- 14:5}}iaculis id mauris. Donec in risus iaculis, dignissim mi non, lacinia sem. Duis vitae congue justo. elementum ultricies. Suspendisse nisl sapien, pretium non metus non, sollicitudin tempor dui. Morbi imperdiet, justo non faucibus volutpat, erat augue aliquet ipsum, eu pulvinar tellus ipsum quis augue. Nulla feugiat, metus sed tristique fringilla, ipsum magna faucibus sem, at tristique ex erat vitae mauris. Fusce magna erat, dapibus in elementum ultricies, pulvinar nec mi. In ut neque pellentesque magna elementum dignissim in ac nulla. \textit{If proin finibus lectus a ipsum imperdiet, ut porta mauris interdum:} {\bskfamily{\bfseries In tellus elit, tincidunt vel scelerisque at, gravida non augue.}} \textit{If orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus efficitur vestibulum nibh, vel porta massa phrlacinia sit amet plarat:} {\bskfamily{\bfseries Aenean maximus cursus ipsumullam egestas a nisi sit amet sagittis teers.}}
+
+\end{sloppypar}
+
+
+\end{document}
