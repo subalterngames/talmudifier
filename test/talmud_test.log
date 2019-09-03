@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7050 64-bit) (preloaded format=xelatex 2019.9.3)  3 SEP 2019 15:18
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7050 64-bit) (preloaded format=xelatex 2019.9.3)  3 SEP 2019 15:46
 entering extended mode
 **./talmud_test.tex
 (talmud_test.tex
@@ -1038,11 +1038,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 17658 strings out of 427669
- 373635 string characters out of 3144750
+ 17660 strings out of 427669
+ 373738 string characters out of 3144750
  682553 words of memory out of 3000000
- 21593 multiletter control sequences out of 15000+200000
- 538988 words of font info for 72 fonts, out of 3000000 for 9000
+ 21594 multiletter control sequences out of 15000+200000
+ 538996 words of font info for 73 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  42i,9n,66p,9222b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
 
