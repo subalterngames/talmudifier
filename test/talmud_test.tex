@@ -2,39 +2,26 @@
 \usepackage[letterpaper, bindingoffset=0.2in, left=1in,right=1in,top=.5in,bottom=.5in,footskip=.25in,marginparwidth=5em]{geometry}
 
 \usepackage{marginnote}
-\usepackage{cjhebrew}
-\usepackage{tabularx}
 \usepackage{sectsty}
 \usepackage{ragged2e}
 
 \usepackage{lineno}
-\setkomafont{disposition}{\bfseries\fontfamily{ppl}\selectfont}
 \setlength{\tabcolsep}{1em}
-\makeatletter\newcommand{\alephbet}[1]{\c@alephbet{#1}}\newcommand{\c@alephbet}[1]{\red{\ifcase\number\value{#1} \or \<'> \or \<b> \or \<g> \or \<d> \or \<h> \or \<w> \or \<z> \or \<.h> \or \<.t> \or \<y> \or \<k|> \or \<l> \or \<m|> \or \<n|> \or \<N> \or \<s> \or \<`> \or \<p|> \or \<P> \or\<.s> \or \<q> or \<r> \or \</s> \or \<t> \fi }}
-\renewcommand{\partname}{}
-\renewcommand\thepart{\alephbet{part}}
-\renewcommand\thechapter{\alephbet{chapter}}
+
 \allsectionsfont{\centering}
-\newlength{\threecol}
-\setlength{\threecol}{\dimexpr(\textwidth-4em)}
-\title{The Hammer of Lilith\\ \<hmp.s /sl lylyt>}
-\author{Seth Alter}\date{}
 \usepackage{etoolbox}\makeatletter\patchcmd{\@mn@margintest}{\@tempswafalse}{\@tempswatrue}{}{}\patchcmd{\@mn@margintest}{\@tempswafalse}{\@tempswatrue}{}{}\reversemarginpar\makeatother
 \usepackage{xcolor}
 \definecolor{hcolor}{HTML}{D3230C}
 \newcommand{\red}[1]{\textcolor{hcolor}{#1}}
 \usepackage{lipsum}
 \usepackage{paracol}
-\usepackage{wasysym}
 
 \setlength\parindent{0pt}
 \setlength{\columnsep}{1.25em}
 
-\usepackage[T1]{fontenc}
 \usepackage{fontspec}
 
 \setlength{\parfillskip}{0pt}
-\setlength{\emergencystretch}{.1\textwidth}
 
 \newfontfamily\rightfont[Path=fell/, ItalicFont=IMFeENit29P.ttf, BoldFont=IMFeENsc29P.ttf]{IMFeENrm29P.ttf}
 
