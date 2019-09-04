@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7140 64-bit) (preloaded format=xelatex 2019.9.4)  4 SEP 2019 09:03
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7140 64-bit) (preloaded format=xelatex 2019.9.4)  4 SEP 2019 09:19
 entering extended mode
 **./talmud_test.tex
 (talmud_test.tex
@@ -511,26 +511,26 @@ LaTeX Info: Redefining \em on input line 4096.
 LaTeX Info: Redefining \emph on input line 4121.
 ))
 
-Package fontspec Info: Font family 'IMFeENrm29P.ttf(0)' created for font
-(fontspec)             'IMFeENrm29P.ttf' with options
-(fontspec)             [Path=fell/,ItalicFont=IMFeENit29P.ttf,BoldFont=IMFeENsc
-29P.ttf].
+Package fontspec Info: Font family 'AveriaLibre-Light.ttf(0)' created for font
+(fontspec)             'AveriaLibre-Light.ttf' with options
+(fontspec)             [Path=averia/,ItalicFont=AveriaLibre-RegularItalic.ttf,B
+oldFont=AveriaLibre-Bold.ttf,BoldItalicFont=AveriaLibre-BoldItalic.ttf].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[fell/IMFeENrm29P.ttf]/OT:script=latn;language=DFLT;
-"
+(fontspec)             <->"[averia/AveriaLibre-Light.ttf]/OT"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (bx/n) with NFSS spec.:
-(fontspec)             <->"[fell/IMFeENsc29P.ttf]/OT:script=latn;language=DFLT;
-"
+(fontspec)             <->"[averia/AveriaLibre-Bold.ttf]/OT"
 (fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
 (fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->"[fell/IMFeENit29P.ttf]/OT:script=latn;language=DFLT;
-"
+(fontspec)             <->"[averia/AveriaLibre-RegularItalic.ttf]/OT"
 (fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.: 
+(fontspec)             - 'bold italic' (bx/it) with NFSS spec.:
+(fontspec)             <->"[averia/AveriaLibre-BoldItalic.ttf]/OT"
+(fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
 
 Package fontspec Info: Font family 'Cormorant-Regular.ttf(0)' created for font
@@ -568,21 +568,26 @@ pt=latn;language=DFLT;"
 =latn;language=DFLT;"
 
 
-Package fontspec Info: Font family 'InknutAntiqua-Regular.ttf(0)' created for
-(fontspec)             font 'InknutAntiqua-Regular.ttf' with options
-(fontspec)             [Path=inknut/,BoldFont=InknutAntiqua-Bold.ttf].
+Package fontspec Info: Font family 'IMFeENrm29P.ttf(0)' created for font
+(fontspec)             'IMFeENrm29P.ttf' with options
+(fontspec)             [Path=fell/,ItalicFont=IMFeENit29P.ttf,BoldFont=IMFeENsc
+29P.ttf,SizeFeatures={Size=14}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[inknut/InknutAntiqua-Regular.ttf]/OT:script=latn;la
-nguage=DFLT;"
+(fontspec)             <14>"[fell/IMFeENrm29P.ttf]/OT:script=latn;language=DFLT
+;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (bx/n) with NFSS spec.:
-(fontspec)             <->"[inknut/InknutAntiqua-Bold.ttf]/OT:script=latn;langu
-age=DFLT;"
+(fontspec)             <->"[fell/IMFeENsc29P.ttf]/OT:script=latn;language=DFLT;
+"
 (fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[fell/IMFeENit29P.ttf]/OT:script=latn;language=DFLT;
+"
+(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.: 
 
 
 Package fontspec Info: Font family 'FrankRuehlCLM-Medium.ttf(0)' created for
@@ -613,20 +618,20 @@ pt=DFLT;language=DFLT;"
  (talmud_test.aux)
 \openout1 = `talmud_test.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -663,326 +668,336 @@ LaTeX Font Info:    ... okay on input line 35.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 35.
+LaTeX Info: Redefining \selectfont on input line 38.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 35.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 35.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 35.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 35.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 35.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 35.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 35.
-LaTeX Font Info:    Redeclaring math accent \check on input line 35.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 35.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 35.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 35.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 35.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 35.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 35.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 35.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 35.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 35.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 35.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 35.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 35.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 35.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 35.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 35.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 35.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 35.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 38.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 38.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 38.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 38.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 38.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 38.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 38.
+LaTeX Font Info:    Redeclaring math accent \check on input line 38.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 38.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 38.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 38.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 38.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 38.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 35.
+(Font)              `operators' in the math version `normal' on input line 38.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 35.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 38.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 35.
+(Font)              `operators' in the math version `bold' on input line 38.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 35.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 38.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 35.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 35.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 35.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 35.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 35.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 38.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 35.
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 35.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 35.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 38.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 35.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 65.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 65.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 65.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 38.
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+Underfull \hbox (badness 1810) in paragraph at lines 51--52
+[] \TU/GveretLevinAlefAlefAlef-Regular.otf(0)/m/n/10.95 א[] \TU/AveriaLibre-Lig
+ht.ttf(0)/m/n/10.95 If \TU/AveriaLibre-Light.ttf(0)/bx/n/10.95 vestibulum quis 
+ex ac felis sodales
+ []
+
+
+Underfull \hbox (badness 3514) in paragraph at lines 51--52
+\TU/AveriaLibre-Light.ttf(0)/bx/n/10.95 auctor quis non orci: \TU/AveriaLibre-L
+ight.ttf(0)/m/n/10.95 Donec condimen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
+\TU/AveriaLibre-Light.ttf(0)/m/n/10.95 tum mi efficitur urna rutrum ullamcor-
+ []
+
+
+Underfull \hbox (badness 3679) in paragraph at lines 51--52
+\TU/AveriaLibre-Light.ttf(0)/m/n/10.95 per. Phasellus vel magna mi. Integer
+ []
+
+
+Underfull \hbox (badness 5147) in paragraph at lines 51--52
+\TU/AveriaLibre-Light.ttf(0)/m/n/10.95 mallus efrentum entia expecto patronum,
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 68.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 68.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 68.
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 []\TU/Cormorant-Regular.ttf(0)/m/n/10.95 Nam feugiat, justo sit amet
  []
 
 
-Underfull \hbox (badness 1472) in paragraph at lines 65--66
+Underfull \hbox (badness 1472) in paragraph at lines 68--69
 \TU/Cormorant-Regular.ttf(0)/m/n/10.95 viverra ullamcorper, dolor velit
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 65--66
+Underfull \hbox (badness 2318) in paragraph at lines 68--69
 \TU/Cormorant-Regular.ttf(0)/m/n/10.95 nulla. Nulla facilisi. Integer
  []
 
 
-Underfull \hbox (badness 5036) in paragraph at lines 65--66
+Underfull \hbox (badness 5036) in paragraph at lines 68--69
 \TU/Cormorant-Regular.ttf(0)/m/n/10.95 lacinia nunc ac nunc elemen-
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 65--66
+Underfull \hbox (badness 1077) in paragraph at lines 68--69
 \TU/Cormorant-Regular.ttf(0)/m/n/10.95 tum ultricies. Suspendisse nisl
  []
 
 
-Underfull \hbox (badness 7504) in paragraph at lines 65--66
+Underfull \hbox (badness 7504) in paragraph at lines 68--69
 \TU/Cormorant-Regular.ttf(0)/m/n/10.95 imperdiet, justo non faucibus
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 \TU/Cormorant-Regular.ttf(0)/m/n/10.95 volutpat, erat augue aliquet
  []
 
 
-Underfull \hbox (badness 2384) in paragraph at lines 65--66
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+\TU/Cormorant-Regular.ttf(0)/m/n/10.95 ipsum, pulvinar tellus ipsum
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+\TU/Cormorant-Regular.ttf(0)/m/n/10.95 sed tristique fringilla, ipsum
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
+\TU/AveriaLibre-Light.ttf(0)/bx/n/10.95 neque pellene magna el-
+ []
+
+
+Underfull \hbox (badness 6300) in paragraph at lines 68--69
+\TU/AveriaLibre-Light.ttf(0)/bx/n/10.95 ementum dignissim in ac
+ []
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 68--69
+\TU/AveriaLibre-Light.ttf(0)/bx/n/10.95 nulla. [] \TU/Cormorant-Regular.ttf(0)/
+m/it/10.95 If proin finibus lectus
+ []
+
+
+Underfull \hbox (badness 2384) in paragraph at lines 68--69
 \TU/Cormorant-Regular.ttf(0)/m/it/10.95 a ipsum imperdiet, ut porta erat
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-\TU/Cormorant-Regular.ttf(0)/m/it/10.95 sum: \TU/IMFeENrm29P.ttf(0)/bx/n/10.95 
-A cursus curfusceo-
+Underfull \hbox (badness 6188) in paragraph at lines 68--69
+\TU/AveriaLibre-Light.ttf(0)/bx/n/10.95 eu, gravida eu orci. []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-\TU/IMFeENrm29P.ttf(0)/bx/n/10.95 dio erat, elementum nec
+LaTeX Font Warning: Font shape `TU/IMFeENrm29P.ttf(0)/m/n' in size <10.95> not 
+available
+(Font)              size <14> substituted on input line 71.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+\TU/IMFeENrm29P.ttf(0)/m/n/14 risus volutpat finibusi-
  []
 
 
-Overfull \hbox (6.8692pt too wide) detected at line 68
-\TU/InknutAntiqua-Regular.ttf(0)/m/n/10.95 Integer efficitur fringilla.
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+\TU/IMFeENrm29P.ttf(0)/m/n/14 lacinia sit amet ligula
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-[]\TU/InknutAntiqua-Regular.ttf(0)/m/n/10.95 In rhoncus risus sit
+Underfull \hbox (badness 2951) in paragraph at lines 71--72
+\TU/IMFeENrm29P.ttf(0)/m/n/14 sed placerat. Etiam a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-\TU/InknutAntiqua-Regular.ttf(0)/m/n/10.95 amet risus volutpat
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+\TU/IMFeENrm29P.ttf(0)/m/n/14 nunc id nisl lobortis
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-\TU/InknutAntiqua-Regular.ttf(0)/m/n/10.95 finibusiami. [] \TU/FrankRuehlCLM-Me
-dium.ttf(0)/m/n/10.95 א[] \TU/InknutAntiqua-Regular.ttf(0)/m/n/10.95 Cur-
+Underfull \hbox (badness 5970) in paragraph at lines 71--72
+\TU/GveretLevinAlefAlefAlef-Regular.otf(0)/m/n/10.95 א[] \TU/IMFeENrm29P.ttf(0)
+/m/n/14 Quisque finibus orci
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-\TU/InknutAntiqua-Regular.ttf(0)/m/n/10.95 varius ligula suscipit
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+\TU/IMFeENrm29P.ttf(0)/m/n/14 et tortor euismod, et
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 68--69
-\TU/InknutAntiqua-Regular.ttf(0)/m/n/10.95 at. Sed ultricies arcu
+Underfull \hbox (badness 1033) in paragraph at lines 71--72
+\TU/IMFeENrm29P.ttf(0)/m/n/14 risus sed mollis. Fusce
  []
 
 
-Underfull \hbox (badness 3525) in paragraph at lines 68--69
-\TU/InknutAntiqua-Regular.ttf(0)/m/n/10.95 Nulla lacinia sit amet
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+\TU/IMFeENrm29P.ttf(0)/m/n/14 imperdiet ex quis dui
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-\TU/InknutAntiqua-Regular.ttf(0)/m/n/10.95 ligula sed placerat.
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+\TU/IMFeENrm29P.ttf(0)/m/n/14 dignissim, non fau-
  []
 
 
-Underfull \hbox (badness 5245) in paragraph at lines 68--69
-\TU/InknutAntiqua-Regular.ttf(0)/m/n/10.95 Etiam a nunc id nisl
- []
-
-
-Underfull \hbox (badness 2478) in paragraph at lines 68--69
-\TU/InknutAntiqua-Regular.ttf(0)/m/n/10.95 lobortis commodo sed
- []
-
-
-Underfull \hbox (badness 7433) in paragraph at lines 68--69
-\TU/InknutAntiqua-Regular.ttf(0)/m/n/10.95 nec leo. [] \TU/GveretLevinAlefAlefA
-lef-Regular.otf(0)/m/n/10.95 א[] \TU/InknutAntiqua-Regular.ttf(0)/m/n/10.95 Qui
-sque
- []
-
-
-Underfull \hbox (badness 7925) in paragraph at lines 68--69
-\TU/InknutAntiqua-Regular.ttf(0)/m/n/10.95 finibus orci et tortor
- []
-
-
-Underfull \hbox (badness 5161) in paragraph at lines 68--69
-\TU/InknutAntiqua-Regular.ttf(0)/m/n/10.95 euismod, et tincidunt
- []
-
-
-Underfull \hbox (badness 5064) in paragraph at lines 68--69
-\TU/InknutAntiqua-Regular.ttf(0)/m/n/10.95 nisi commodo. Duis
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-\TU/InknutAntiqua-Regular.ttf(0)/m/n/10.95 consectetur finibus
- []
-
-
-Underfull \hbox (badness 2762) in paragraph at lines 68--69
-\TU/InknutAntiqua-Regular.ttf(0)/m/n/10.95 imperdiet ex quis dui
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
-\TU/InknutAntiqua-Regular.ttf(0)/m/n/10.95 dignissim, non fau-
+Underfull \hbox (badness 3078) in paragraph at lines 71--72
+\TU/IMFeENrm29P.ttf(0)/m/n/14 cibus enim blandit. [] \TU/GveretLevinAlefAlefAle
+f-Regular.otf(0)/m/n/10.95 ב[]
  []
 
 
 Package paracol Warning: \margninnote is emulated by \marginpar. on input line 
-72.
+75.
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 72--73
-[]\TU/IMFeENrm29P.ttf(0)/m/n/10.95 mauris rutrum tortor est, nec
+Underfull \hbox (badness 1655) in paragraph at lines 75--76
+\TU/AveriaLibre-Light.ttf(0)/m/n/10.95 maximus mauris feugiat vi-
  []
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 72--73
-\TU/IMFeENrm29P.ttf(0)/m/n/10.95 maximus mauris feugiat vitae.
+Underfull \hbox (badness 5756) in paragraph at lines 75--76
+\TU/AveriaLibre-Light.ttf(0)/m/n/10.95 tae. [] If \TU/AveriaLibre-Light.ttf(0)/
+bx/n/10.95 naulla cursus
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
-\TU/IMFeENrm29P.ttf(0)/m/n/10.95 Donec interdum interdum
+Underfull \hbox (badness 1990) in paragraph at lines 75--76
+\TU/AveriaLibre-Light.ttf(0)/bx/n/10.95 mentum leo: \TU/AveriaLibre-Light.ttf(0
+)/m/n/10.95 Donec inter-
  []
 
 
-Underfull \hbox (badness 2065) in paragraph at lines 72--73
-\TU/IMFeENrm29P.ttf(0)/m/n/10.95 iaculis. Nulla eleifend lectus
+Underfull \hbox (badness 1748) in paragraph at lines 75--76
+\TU/AveriaLibre-Light.ttf(0)/m/n/10.95 pharetra eros dolor, ornare
  []
 
 
-Underfull \hbox (badness 5231) in paragraph at lines 72--73
-\TU/IMFeENrm29P.ttf(0)/m/n/10.95 cursus. Nunc pharetra eros
+Underfull \hbox (badness 6125) in paragraph at lines 75--76
+\TU/AveriaLibre-Light.ttf(0)/m/n/10.95 sed. Vivamus leo tellus,
  []
 
 
-Underfull \hbox (badness 1881) in paragraph at lines 72--73
-\TU/IMFeENrm29P.ttf(0)/m/n/10.95 sollicitudin sed. Vivamus leo
+Underfull \hbox (badness 3579) in paragraph at lines 75--76
+\TU/AveriaLibre-Light.ttf(0)/m/n/10.95 rutrum sit amet metus sit
  []
 
 
-Underfull \hbox (badness 7832) in paragraph at lines 72--73
-\TU/GveretLevinAlefAlefAlef-Regular.otf(0)/m/n/10.95 ב[] \TU/IMFeENrm29P.ttf(0)
-/m/n/10.95 If \TU/IMFeENrm29P.ttf(0)/bx/n/10.95 Etiam nec justo att
+Underfull \hbox (badness 1067) in paragraph at lines 75--76
+\TU/AveriaLibre-Light.ttf(0)/m/n/10.95 amet, consectetur consecte-
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 72--73
-\TU/IMFeENrm29P.ttf(0)/bx/n/10.95 entum ultricies: \TU/IMFeENrm29P.ttf(0)/m/n/1
-0.95 Suspendisse
+Underfull \hbox (badness 1077) in paragraph at lines 75--76
+\TU/AveriaLibre-Light.ttf(0)/m/n/10.95 tur. [] \TU/GveretLevinAlefAlefAlef-Regu
+lar.otf(0)/m/n/10.95 ב[] \TU/AveriaLibre-Light.ttf(0)/m/n/10.95 If \TU/AveriaLi
+bre-Light.ttf(0)/bx/n/10.95 Etiam nec justo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
-\TU/IMFeENrm29P.ttf(0)/m/n/10.95 non faucibus enim blandit.
+Underfull \hbox (badness 4156) in paragraph at lines 75--76
+\TU/AveriaLibre-Light.ttf(0)/bx/n/10.95 att entum ultricies: \TU/AveriaLibre-Li
+ght.ttf(0)/m/n/10.95 Sus-
  []
 
 
-Underfull \hbox (badness 1270) in paragraph at lines 72--73
-\TU/IMFeENrm29P.ttf(0)/m/n/10.95 lementum ultricies arat. Sus-
+Underfull \hbox (badness 1400) in paragraph at lines 75--76
+\TU/AveriaLibre-Light.ttf(0)/m/n/10.95 dui dignissim, non faucibus
  []
 
 
-Underfull \hbox (badness 5460) in paragraph at lines 72--73
-\TU/IMFeENrm29P.ttf(0)/m/n/10.95 pendisse nisl sapien, pretium
+Underfull \hbox (badness 1681) in paragraph at lines 75--76
+\TU/AveriaLibre-Light.ttf(0)/m/n/10.95 non metus non, sollicitudin
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
-\TU/IMFeENrm29P.ttf(0)/m/n/10.95 non metus non, sollicitudin
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
-\TU/IMFeENrm29P.ttf(0)/m/n/10.95 justo non faucibus volutpat,
- []
-
-
-Underfull \hbox (badness 2277) in paragraph at lines 79--80
+Underfull \hbox (badness 2277) in paragraph at lines 82--83
 [][] \TU/FrankRuehlCLM-Medium.ttf(0)/m/n/10.95 ב[] \TU/Cormorant-Regular.ttf(0)
 /m/n/10.95 Mauris finibus egestas venenatis? Sed nulla
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
 \TU/Cormorant-Regular.ttf(0)/m/n/10.95 metus, sagittis vitae leo et, placerat f
 acilisis
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 79--80
+Underfull \hbox (badness 1648) in paragraph at lines 82--83
 \TU/Cormorant-Regular.ttf(0)/m/n/10.95 orci. Vestibulum quis ex ac felis sodale
 s auct-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-[]\TU/IMFeENrm29P.ttf(0)/m/n/10.95 erat augue aliquet ipsum, eu. Nunc iac-
+Underfull \hbox (badness 1688) in paragraph at lines 86--87
+[]\TU/AveriaLibre-Light.ttf(0)/m/n/10.95 erat augue aliquet ipsum, eu. Nunc iac
+-
  []
 
-
-Underfull \hbox (badness 4416) in paragraph at lines 83--84
-\TU/IMFeENrm29P.ttf(0)/m/n/10.95 ulis facilisis erat in gravida. Proin efficitu
-r.
- []
-
-Package marginnote Info: Margin note 1.1 is on absolute page 1 on input line 88
+Package marginnote Info: Margin note 1.1 is on absolute page 1 on input line 91
 .
-Package marginnote Info: xpos seems to be 304.70131pt on input line 88.
+Package marginnote Info: xpos seems to be 294.44524pt on input line 91.
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--88
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
 []
  []
 
 [1
 
 
-] (talmud_test.aux) ) 
+] (talmud_test.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 3.05pt have occurred.
+
+ ) 
 Here is how much of TeX's memory you used:
- 17306 strings out of 427669
- 369487 string characters out of 3143938
- 678349 words of memory out of 3000000
- 21268 multiletter control sequences out of 15000+200000
+ 17319 strings out of 427669
+ 369780 string characters out of 3143938
+ 678488 words of memory out of 3000000
+ 21277 multiletter control sequences out of 15000+200000
  535373 words of font info for 70 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  42i,9n,66p,9222b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
