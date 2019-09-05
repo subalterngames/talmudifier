@@ -9,10 +9,10 @@
 \setlength{\tabcolsep}{1em}
 
 \allsectionsfont{\centering}
-\usepackage{etoolbox}\makeatletter\patchcmd{\@mn@margintest}{\@tempswafalse}{\@tempswatrue}{}{}\patchcmd{\@mn@margintest}{\@tempswafalse}{\@tempswatrue}{}{}\reversemarginpar\makeatother
+
 \usepackage{xcolor}
 \definecolor{hcolor}{HTML}{D3230C}
-\newcommand{\red}[1]{\textcolor{hcolor}{#1}}
+\newcommand{\red}[1]{{\LARGE\textcolor{hcolor}{#1}}}
 \usepackage{lipsum}
 \usepackage{paracol}
 
@@ -23,16 +23,16 @@
 
 \setlength{\parfillskip}{0pt}
 
-\newfontfamily\rightfont[Path=fell/, ItalicFont=IMFeENit29P.ttf, BoldFont=IMFeENsc29P.ttf]{IMFeENrm29P.ttf}
-%\newfontfamily\rightfont[Path=averia/, ItalicFont=AveriaLibre-RegularItalic.ttf, BoldFont=AveriaLibre-Bold.ttf, BoldItalicFont=AveriaLibre-BoldItalic.ttf]{AveriaLibre-Light.ttf}
+\newfontfamily\rightfont[Path=averia/, ItalicFont=AveriaLibre-RegularItalic.ttf, BoldFont=AveriaLibre-Bold.ttf, BoldItalicFont=AveriaLibre-BoldItalic.ttf, Ligatures=TeX]{AveriaLibre-Light.ttf}
 
-\newfontfamily\leftfont[Path=cormorantgaramond/,BoldFont=Cormorant-Bold.ttf,BoldItalicFont=Cormorant-BoldItalic.ttf,ItalicFont=Cormorant-Italic.ttf,SmallCapsFont=CormorantSC-Medium.ttf]{Cormorant-Regular.ttf}
+\newfontfamily\leftfont[Path=fell_french_canon/, Ligatures=TeX, ItalicFont=IMFeFCit29C.otf]{IMFeFCrm29C.otf}
 
-% \newfontfamily\centerfont[Path=inknut/,BoldFont=InknutAntiqua-Bold.ttf]{InknutAntiqua-Light.ttf}
-\newfontfamily\centerfont[Path=fell/, ItalicFont=IMFeENit29P.ttf, BoldFont=IMFeENsc29P.ttf]{IMFeENrm29P.ttf}
+\newfontfamily\centerfont[Path=fell/, ItalicFont=IMFeENit29P.ttf, BoldFont=IMFeENsc29P.ttf, Ligatures=TeX]{IMFeENrm29P.ttf}
 
 \newfontfamily\leftcitationfont[Path=frankruehl/]{FrankRuehlCLM-Medium.ttf}
 \newfontfamily\rightcitationfont[Path=gveret/]{GveretLevinAlefAlefAlef-Regular.otf}
+
+\newfontfamily\flowerfont[Path=fell_flowers/]{IMFeFlow2.otf}
 
 \begin{document}
 
@@ -43,52 +43,54 @@
 \begin{paracol}{2}
 
 \begin{leftcolumn}
-\leftcitationfont{\red{א}}\leftfont{ Proin finibus lectus a ipsum imperdiet, porta mauris interdum? In tellus elit, tincidunt vel scelerisque at, gravida non augue. Aenean maximus cursus ipsum. Nullam egestas a nisi at felis mattis, aliquamai}
+\fontsize{11}{13}\leftcitationfont{\red{א}} \leftfont{What is the left column? \underline{R. Seth:} This is the redaction of the words of the rabbis and sages, who interpret the center text. \underline{R. Alter}: The rabbis never agree on}
 \end{leftcolumn}
 
 \begin{rightcolumn}
-\rightcitationfont{\red{א}} \rightfont{If  \textbf{vestibulum quis ex ac felis sodales auctor quis non orci:} Donec condimentum mi efficitur urna rutrum ullamcorper. Phasellus vel magna mi. Integer mallus efrentum entia expecto patronum,}
+\fontsize{11}{13}\rightcitationfont{\red{א}} \rightfont{If \textbf{The center column is primary}:  This column is an interpretation of the center column based on previous interpretations you made having read the left column of rabbinical}
 \end{rightcolumn}
 
 \end{paracol}
 
 \begin{paracol}{3}
 
-\leftfont{rutrum tortor est, nec maximus}
+\fontsize{11}{13}\leftfont{anything. I think that the left}
 
 \switchcolumn[2]
 
-\rightfont{quam, non areo condimentum,}
+\fontsize{11}{13}\rightfont{commentary. In this manner,}
 
 \end{paracol}
 
 \begin{paracol}{3}
 
-\leftfont{Nam feugiat, justo sit amet viverra ullamcorper, dolor velit pulvinar orci, eu luctus ex nunc vitae diam. Ut et ullamcorper nulla. Nulla facilisi. Integer lacinia nunc ac nunc elementum ultricies. Suspendisse nisl sapien, pretium non metus non, sollicitudin tempor dui. Morbi imperdiet, justo non faucibus volutpat, erat augue aliquet ipsum, pulvinar tellus ipsum quis augue. Nulla feugiat, metus sed tristique fringilla, ipsum magna faucibus sem, at tristique ex erat vitae mauris. \big\{ \textit{If fusce magna erat, dapibus in elementum ultricies, pulvinar nec mi:}} {\rightfont{\bfseries In ut neque pellene magna elementum dignissim in ac nulla.}} \big\| \textit{If proin finibus lectus a ipsum imperdiet, ut porta erat lipsum vivamus tarina nisi egestas sum:} \rightfont{\textbf{A cursus curfusceodio erat, elementum nec semper eu, gravida eu orci.}} \big\}
+\fontsize{11}{13}\leftfont{column is the ``oral tradition", given to us in parallel with the primary text. So there! When you see the following special symbol, it's time to make a decision. \flowerfont 1 \leftfont \textit{Inscribe:}} \rightfont{\textbf{The center column is primary.}} \leftfont{\textit{or }} \rightfont{\textbf{The left column is the oral center column.}} \leftcitationfont{\red{ב}} \leftfont{\underline{R. Alter}: And another thing! Sometimes we have a lot to argue about, and we end up citing verses, as it is written: ``Blah blah blah thus saith Asherah our queen."\marginnote{\noindent\justifying \tiny Lorem 1:23} \underline{R. Seth}: I'm just going to fill up a lot of space now by citing another text: ``Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus enim semper tincidunt varius. Nam et mi lacus. Sed commodo leo consectetur, imperdiet neque eget, aliquet felis. Etiam elit nulla, malesuada vitae dolor eget, tincidunt pharetra tellus a.}
 \switchcolumn
 
-\fontsize{13}{16}\centerfont{In rhoncus risus sit amet risus volutpat finibusiami.} \leftcitationfont{\red{א}} \centerfont{Curabitur id lorem eget ex mollis euismod. Mauris feugiat nisi quam, eget varius ligula suscipit at. Sed ultricies arcu at sapien malesuada, a aliquam ante porta.} \leftcitationfont{\red{ב}} \centerfont{Nulla lacinia sit amet ligula sed placerat. Etiam a nunc id nisl lobortis commodo sed nec leo.} \rightcitationfont{\red{א}} \centerfont{Quisque finibus orci et tortor euismod, et tincidunt nisi commodo. Duis consectetur finibus risus sed mollis. Fusce imperdiet ex quis dui dignissim, non faucibus enim blandit.} \rightcitationfont{\red{ב}} \makebox[\linewidth][s]{\centerfont{Integer efficitur fringilla.}}\fontsize{11}{13}
+\fontsize{13}{16}\centerfont{This is the center column of text. It is a slightly bigger font, and contains the ``primary story". Occasionally, sentences end with citation notes.} \leftcitationfont{\red{א}} \centerfont{Citations that are block Hebrew letters direct the reader to the left column.} \leftcitationfont{\red{ב}} \centerfont{Citations that are cursive Hebrew characters direct the reader to the right column.} \rightcitationfont{\red{א}} \centerfont{In the markdown, this is handled by adding a L or R to the citation character, e.g.} \leftcitationfont{אR} \rightcitationfont{\red{ב}} \centerfont{This column has the largest font. Some words, such as \textbf{Asherah}, are always rendered in smallcaps.}
 
 \switchcolumn
 
-\rightfont{mauris rutrum tortor est, nec maximus mauris feugiat vitae. \big\| \marginnote{\footnotesize{\textit{Ipsum 1:14}}}If \textbf{naulla cursus malesuada quam, non condimentum leo:} Donec interdum interdum iaculis. Nulla eleifend lectus id nisi egestas, a cursus lorem cursus. Nunc pharetra eros dolor, ornare commodo magna sollicitudin sed. Vivamus leo tellus, rutrum sit amet metus sit amet, consectetur consectetur.} \rightcitationfont{\red{ב}} \rightfont{If \textbf{Etiam nec justo att entum ultricies:} Suspendisse nisl sapien, pretium non amee imperdiet ex quis dui dignissim, non faucibus enim blandit. Integer efficitur fringilla libero non tristique. \big\| If \textbf{fusce arcu odio euismod:} Mauris feugisfe lementum ultricies arat. Suspendisse nisl sapien, pretium non metus non, sollicitudin tempor dui. Morbi imperdiet, justo non faucibus volutpat,}
+\fontsize{11}{13}\rightfont{you can participate in the rabbinical discourse. Or perhaps you're actually providing a third layer, rather than adding to the second? Either way, this is where the narrative ``branches". Only it doesn't really branch because, of course,  you aren't affecting the center column at all. Rather, this column tends to answer questions of ``why something happened" or ``in what manner did something happen", and those answers are branched. \big\| If \textbf{The left column is the oral center column}: You're not really \textit{any} steps removed from the center column, because without a reader, the center column is just ink on a page. The implications of your previous thoughts are inextricably linked to how you have, are, and will read the center text.}
 
 \end{paracol}
 
 \begin{paracol}{2}
 
 \begin{leftcolumn}
-\leftcitationfont{\red{ב}} \leftfont{Mauris finibus egestas venenatis? Sed nulla metus, sagittis vitae leo et, placerat facilisis orci. Vestibulum quis ex ac felis sodales auct-}
+\leftfont{Nunc eget convallis nunc, in faucibus ante. Sed dictum varius neque commodo hendrerit. Sed maximus ligula nunc, et tristique sapien faucibus et. Donec dictum turpis ac odio rhoncus consequat. Pellentesque metus nisi, sodales ut vestibulum vitae, convallis eget purus. Nulla lectus lacus, dapibus at molestie mattis, placerat non purus. Sed ac pharetra neque. Sed accumsan libero non sollicitudin faucibus. Integer a urna tortor. Proin quis volutpat turpis. Cras consectetur quam mauris, vitae feugiat ipsum sollicitudin at. Duis non imperdiet diam. Suspendisse laoreet venenatis metus sed porta. Nullam vel leo turpis. Vivamus id lacinia turpis, lacinia mattis libero. Proin fermentum,}
 \end{leftcolumn}
 
 \begin{rightcolumn}
-\rightfont{erat augue aliquet ipsum, eu. Nunc iaculis facilisis erat in gravida. Proin efficitur.}
+\rightfont{And so on and so forth.} \rightcitationfont{\red{ב}} \rightfont{If \textbf{R. Seth helped me understand}: Typically, the right column won't offer answers based on inscriptions you make on the same page. Rather, the bolded conditionals tend to be things you wrote down on \textit{previous} pages, such that previous readings inspire later readings. But since this is the only page in this test, that is of course impossible! So instead we'll work with what we got. \big\| If \textbf{That last proof-text was gibberish}: Sure, but in order to test the layout, I need more words, so here's a few more: Praesent vitae mi mi. Sed viverra nibh turpis, non vulputate tellus tincidunt nec.}
 \end{rightcolumn}
 
 \end{paracol}
 
-\leftfont{Pellentesque nec sapien quis nunc venenatis euismod id vel arcu. Nullam tincidunt a nibh nec scelerisque. Sed consectetur orci vel eros lacinia, eu venenatis velit rhoncus. Donec odio erat, elementum nec semper eu, gravida eu orci. Mauris finibus egestas venenatis. Sed nulla metus, sagittis vitae leo et, placerat facilisis orci. Vestibulum quis ex ac felis sodales auctor quis non orci. Donec condimentum mi efficitur urna rutrum ullamcorper. Phasellus vel magna mi. Integer malesuada euismod leo, eu accumsan urna congue quis. Donec dui diam, interdum quis iaculis non,\marginnote{\footnotesize\textit{Lorem 3:3- 14:5}}iaculis id mauris. Donec in risus iaculis, dignissim mi non, lacinia sem. Duis vitae congue justo. elementum ultricies. Suspendisse nisl sapien, pretium non metus non, sollicitudin tempor dui. Morbi imperdiet, justo non faucibus volutpat, erat augue aliquet ipsum, eu pulvinar tellus ipsum quis augue. Nulla feugiat, metus sed tristique fringilla, ipsum magna faucibus sem, at tristique ex erat vitae mauris. Fusce magna erat, dapibus in elementum ultricies, pulvinar nec mi. In ut neque pellentesque magna elementum dignissim in ac nulla. \big\{ \textit{If proin finibus lectus a ipsum imperdiet, ut porta mauris interdum:}} {\rightfont{\bfseries In tellus elit, tincidunt vel scelerisque at, gravida non augue.}} \big\| \textit{If orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus efficitur vestibulum nibh, vel porta massa phrlacinia sit amet plarat:} {\rightfont{\bfseries Aenean maximus cursus ipsumullam egestas a nisi sit amet sagittis teers.}} \big\}
-
+\begin{paracol}{1}
+\leftfont{quam a rhoncus ornare, leo turpis facilisis leo, sit amet consectetur purus nulla non leo. Ut volutpat, nunc eu viverra dictum, sapien quam porta tellus, vel viverra diam erat at mi. Maecenas pellentesque mattis nibh in consequat. Donec mollis, ex a ullamcorper consectetur, diam leo aliquet leo, eu interdum tortor velit in magna."\marginnote{\noindent\justifying \tiny Ipsum 69:420} Does that clarify anything for you? \flowerfont 1 \leftfont \textit{Inscribe:}}
+\rightfont{\textbf{R. Seth helped me understand.}} \leftfont{\textit{or }} \rightfont{\textbf{That last proof-text was gibberish.}}
+\end{paracol}
 
 \end{sloppypar}
 
