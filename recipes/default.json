@@ -75,6 +75,7 @@
   "misc_definitions":
   [
     "\\newcommand{\\redLarge}[1]{{\\Large\\textcolor{hcolor}{#1}}}",
-    "\\newcommand{\\red}[1]{{\\normalsize\\textcolor{hcolor}{#1}}}"
+    "\\newcommand{\\red}[1]{{\\normalsize\\textcolor{hcolor}{#1}}}",
+    "\\newfontfamily\\flowerfont[Path=fell_flowers/]{IMFeFlow2.otf}"
   ]
 }
