@@ -12,7 +12,9 @@
 
 \usepackage{xcolor}
 \definecolor{hcolor}{HTML}{D3230C}
-\newcommand{\red}[1]{{\LARGE\textcolor{hcolor}{#1}}}
+\newcommand{\chfont}[1]{\centerfont{\huge\textcolor{hcolor}{#1}}}
+\newcommand{\redLarge}[1]{{\Large\textcolor{hcolor}{#1}}}
+\newcommand{\red}[1]{{\normalsize\textcolor{hcolor}{#1}}}
 \usepackage{lipsum}
 \usepackage{paracol}
 
@@ -25,25 +27,25 @@
 
 \newfontfamily\rightfont[Path=averia/, ItalicFont=AveriaLibre-RegularItalic.ttf, BoldFont=AveriaLibre-Bold.ttf, BoldItalicFont=AveriaLibre-BoldItalic.ttf, Ligatures=TeX]{AveriaLibre-Light.ttf}
 
-\newfontfamily\leftfont[Path=fell_french_canon/, Ligatures=TeX, ItalicFont=IMFeFCit29C.otf]{IMFeFCrm29C.otf}
+\newfontfamily\leftfont[Path=fell_french_canon/, Ligatures=TeX, ItalicFont=IMFeFCit29C.otf, BoldFont=AveriaLibre-Bold.ttf]{IMFeFCrm29C.otf}
 
 \newfontfamily\centerfont[Path=fell/, ItalicFont=IMFeENit29P.ttf, BoldFont=IMFeENsc29P.ttf, Ligatures=TeX]{IMFeENrm29P.ttf}
 
 \newfontfamily\leftcitationfont[Path=frankruehl/]{FrankRuehlCLM-Medium.ttf}
-\newfontfamily\rightcitationfont[Path=gveret/]{GveretLevinAlefAlefAlef-Regular.otf}
+\newfontfamily\rightcitationfont[Path=rashi/]{Mekorot-Rashi.ttf}
 
 \newfontfamily\flowerfont[Path=fell_flowers/]{IMFeFlow2.otf}
 
 \begin{document}
 
-\chapter*{\red{\centerfont{Lorem Ipsum}}}
+\chapter*{\chfont{Lorem Ipsum}}
 
 \begin{sloppypar}
 
 \begin{paracol}{2}
 
 \begin{leftcolumn}
-\fontsize{11}{13}\leftcitationfont{\red{א}} \leftfont{What is the left column? \underline{R. Seth:} This is the redaction of the words of the rabbis and sages, who interpret the center text. \underline{R. Alter}: The rabbis never agree on}
+\fontsize{11}{13}\leftcitationfont\redLarge{א} \leftfont{What is the left column? \underline{R. Seth:} This is the redaction of the words of the rabbis and sages, who interpret the center text. \underline{R. Alter}: The rabbis never agree on}
 \end{leftcolumn}
 
 \begin{rightcolumn}
@@ -64,10 +66,10 @@
 
 \begin{paracol}{3}
 
-\fontsize{11}{13}\leftfont{column is the ``oral tradition", given to us in parallel with the primary text. So there! When you see the following special symbol, it's time to make a decision. \flowerfont 1 \leftfont \textit{Inscribe:}} \rightfont{\textbf{The center column is primary.}} \leftfont{\textit{or }} \rightfont{\textbf{The left column is the oral center column.}} \leftcitationfont{\red{ב}} \leftfont{\underline{R. Alter}: And another thing! Sometimes we have a lot to argue about, and we end up citing verses, as it is written: ``Blah blah blah thus saith Asherah our queen."\marginnote{\noindent\justifying \tiny Lorem 1:23} \underline{R. Seth}: I'm just going to fill up a lot of space now by citing another text: ``Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus enim semper tincidunt varius. Nam et mi lacus. Sed commodo leo consectetur, imperdiet neque eget, aliquet felis. Etiam elit nulla, malesuada vitae dolor eget, tincidunt pharetra tellus a.}
+\fontsize{11}{13}\leftfont{column is the ``oral tradition", given to us in parallel with the primary text. So there! When you see the following special symbol, it's time to make a decision. \flowerfont 1 \leftfont \textit{Inscribe:}} \rightfont{\textbf{The center column is primary.}} \leftfont{\textit{or }} \rightfont{\textbf{The left column is the oral center column.}} \leftcitationfont{\redLarge{ב}} \leftfont{\underline{R. Alter}: And another thing! Sometimes we have a lot to argue about, and we end up citing verses, as it is written: ``Blah blah blah thus saith Asherah our queen."\marginnote{\noindent\justifying \tiny Lorem 1:23} \underline{R. Seth}: I'm just going to fill up a lot of space now by citing another text: ``Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus enim semper tincidunt varius. Nam et mi lacus. Sed commodo leo consectetur, imperdiet neque eget, aliquet felis. Etiam elit nulla, malesuada vitae dolor eget, tincidunt pharetra tellus a.}
 \switchcolumn
 
-\fontsize{13}{16}\centerfont{This is the center column of text. It is a slightly bigger font, and contains the ``primary story". Occasionally, sentences end with citation notes.} \leftcitationfont{\red{א}} \centerfont{Citations that are block Hebrew letters direct the reader to the left column.} \leftcitationfont{\red{ב}} \centerfont{Citations that are cursive Hebrew characters direct the reader to the right column.} \rightcitationfont{\red{א}} \centerfont{In the markdown, this is handled by adding a L or R to the citation character, e.g.} \leftcitationfont{אR} \rightcitationfont{\red{ב}} \centerfont{This column has the largest font. Some words, such as \textbf{Asherah}, are always rendered in smallcaps.}
+\fontsize{13}{16}\centerfont{This is the center column of text. It is a slightly bigger font, and contains the ``primary story". Occasionally, sentences end with citation notes.} \leftcitationfont{\redLarge{א}} \centerfont{Citations that are block Hebrew letters direct the reader to the left column.} \leftcitationfont{\redLarge{ב}} \centerfont{Citations that are cursive Hebrew characters direct the reader to the right column.} \rightcitationfont{\red{א}} \centerfont{In the markdown, this is handled by adding a L or R to the citation character, e.g.} \leftcitationfont{אR} \rightcitationfont{\red{ב}} \centerfont{This column has the largest font. Some words, such as \textbf{Asherah}, are always rendered in smallcaps.}
 
 \switchcolumn
 
@@ -89,7 +91,7 @@
 
 \begin{paracol}{1}
 \leftfont{quam a rhoncus ornare, leo turpis facilisis leo, sit amet consectetur purus nulla non leo. Ut volutpat, nunc eu viverra dictum, sapien quam porta tellus, vel viverra diam erat at mi. Maecenas pellentesque mattis nibh in consequat. Donec mollis, ex a ullamcorper consectetur, diam leo aliquet leo, eu interdum tortor velit in magna."\marginnote{\noindent\justifying \tiny Ipsum 69:420} Does that clarify anything for you? \flowerfont 1 \leftfont \textit{Inscribe:}}
-\rightfont{\textbf{R. Seth helped me understand.}} \leftfont{\textit{or }} \rightfont{\textbf{That last proof-text was gibberish.}}
+\textbf{R. Seth helped me understand.} \leftfont{\textit{or }} \textbf{That last proof-text was gibberish.}
 \end{paracol}
 
 \end{sloppypar}

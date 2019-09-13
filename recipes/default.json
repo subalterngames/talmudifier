@@ -1,0 +1,80 @@
+{
+  "fonts":
+  {
+    "left":
+    {
+      "path": "fell_french_canon",
+      "ligatures": "TeX",
+      "regular_font": "IMFeFCrm29C.otf",
+      "italic_font": "IMFeFCit29C.otf",
+      "bold_font": "AveriaLibre-Bold.ttf",
+      "size": 11,
+      "skip": 13,
+      "substitutions":
+      {
+        "`=(.*)`": "\\marginnote{\\noindent\\justifying \\tiny \\1}",
+        "->": "\\flowerfont 1 \\leftfont"
+      }
+    },
+    "center":
+    {
+      "path": "fell",
+      "ligatures": "TeX",
+      "regular_font": "IMFeENrm29P.ttf",
+      "italic_font": "IMFeENit29P.ttf",
+      "bold_font": "IMFeENsc29P.ttf",
+      "size": 13,
+      "skip": 16,
+      "always_bold":
+      [
+        "Asherah"
+      ]
+    },
+    "right":
+    {
+      "path": "averia",
+      "regular_font": "AveriaLibre-Light.ttf",
+      "italic_font": "AveriaLibre-RegularItalic.ttf",
+      "bold_font": "AveriaLibre-Bold.ttf",
+      "bold_italic_font": "AveriaLibre-BoldItalic.ttf",
+      "size": 11,
+      "skip": 13,
+      "substitutions":
+      {
+        "|": "\\big\\|"
+      }
+    }
+  },
+  "citation_fonts":
+  {
+    "left":
+    {
+      "path": "frankruehl",
+      "font": "FrankRuehlCLM-Medium.ttf",
+      "command": "\\redLarge",
+      "pattern": " `L(.*)` "
+    },
+    "right":
+    {
+      "path": "rashi/",
+      "font": "Mekorot-Rashi.ttf",
+      "command": "\\red",
+      "pattern": " `R(.*)` "
+    }
+  },
+  "chapter":
+  {
+    "definition": "\\newcommand{\\chfont}[1]{\\centerfont{\\huge\\textcolor{hcolor}{#1}}}",
+    "command": "\\chfont",
+    "numbering": false
+  },
+  "colors":
+  {
+    "hcolor": "D3230C"
+  },
+  "misc_definitions":
+  [
+    "\\newcommand{\\redLarge}[1]{{\\Large\\textcolor{hcolor}{#1}}}",
+    "\\newcommand{\\red}[1]{{\\normalsize\\textcolor{hcolor}{#1}}}"
+  ]
+}
