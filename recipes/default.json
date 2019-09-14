@@ -14,6 +14,14 @@
       {
         "`=(.*)`": "\\marginnote{\\noindent\\justifying \\tiny \\1}",
         "->": "\\flowerfont 1 \\leftfont"
+      },
+      "citation":
+      {
+        "path": "frankruehl",
+        "font": "FrankRuehlCLM-Medium.ttf",
+        "command": "\\leftcitation",
+        "font_command":  "\\leftcitationfont",
+        "pattern": "`L(.*)`"
       }
     },
     "center":
@@ -42,24 +50,15 @@
       "substitutions":
       {
         "|": "\\big\\|"
+      },
+      "citation":
+      {
+        "path": "rashi/",
+        "font": "Mekorot-Rashi.ttf",
+        "command": "\\rightcitation",
+        "font_command":  "\\rightcitationfont",
+        "pattern": "`R(.*)`"
       }
-    }
-  },
-  "citation_fonts":
-  {
-    "left":
-    {
-      "path": "frankruehl",
-      "font": "FrankRuehlCLM-Medium.ttf",
-      "command": "\\redLarge",
-      "pattern": " `L(.*)` "
-    },
-    "right":
-    {
-      "path": "rashi/",
-      "font": "Mekorot-Rashi.ttf",
-      "command": "\\red",
-      "pattern": " `R(.*)` "
     }
   },
   "chapter":
@@ -74,8 +73,8 @@
   },
   "misc_definitions":
   [
-    "\\newcommand{\\redLarge}[1]{{\\Large\\textcolor{hcolor}{#1}}}",
-    "\\newcommand{\\red}[1]{{\\normalsize\\textcolor{hcolor}{#1}}}",
+    "\\newcommand{\\leftcitation}[1]{\leftcitationfont{\\Large\\textcolor{hcolor}{#1}}}",
+    "\\newcommand{\\rightcitation}[1]{\\rightcitationfont{\\normalsize\\textcolor{hcolor}{#1}}}",
     "\\newfontfamily\\flowerfont[Path=fell_flowers/]{IMFeFlow2.otf}"
   ]
 }

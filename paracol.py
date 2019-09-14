@@ -1,4 +1,4 @@
-from box import Box
+from column import Column
 
 
 class Paracol:
@@ -75,17 +75,17 @@ class Paracol:
             raise Exception(f"Bad column name: {target}")
 
     @staticmethod
-    def get_column(left: bool, center: bool, right: bool, target: str, box: Box) -> str:
+    def get_column(left: bool, center: bool, right: bool, target: str, column: Column) -> str:
         """
-        Returns the text of a box formatted in a paracol environment at a target column.
+        Returns the text of a column formatted in a paracol environment at a target column.
 
         :param left: If true, a left column exists.
         :param center: If true, a center column exists.
         :param right: If true, a right column exists.
         :param target: The name of the target column: left, center, or right.
-        :param box: The box of words.
+        :param column: The column of words.
         """
 
         return Paracol.get_paracol_header(left, center, right) + "\n" + \
                Paracol.get_switch_from_left(left, center, right, target) + "\n" + \
-               box.get_tex(True) + "\n" + Paracol.END
+               column.get_tex(True) + "\n" + Paracol.END

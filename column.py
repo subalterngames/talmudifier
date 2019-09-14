@@ -2,14 +2,14 @@ from word import Word
 from typing import List
 
 
-class Box:
-    def __init__(self, words: List[Word]):
+class Column:
+    def __init__(self, words: List[Word], citation: Citation):
         self._words = List[Word]()
         self.add_words(words)
 
     def add_word(self, word: Word, index=-1) -> None:
         """
-        Add a word to the box.
+        Add a word to the column.
 
         :param word: The new word.
         :param index: If this is -1, add the word to the end of the list. Otherwise, add the word at this index.
@@ -79,7 +79,7 @@ class Box:
                 # Add the margin note, if any.
                 tex += word + word.get_margin_note() + " "
 
-        # Close the braces in the box.
+        # Close the braces in the column.
         if close_braces:
             num_braces = 0
             for c in tex:
