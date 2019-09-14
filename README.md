@@ -1,4 +1,14 @@
-## Fonts
+# Recipes
+
+A recipe is a JSON file that defines the fonts and other styling rules for your page. It is functionally the same as just writing your own TeX preamble, but probably a lot more user-friendly.
+
+By default, `talmudifier.py` uses: `recipes/default.json`.
+
+All custom recipes should be saved to the `recipes/` directly as `.json` files.
+
+## `fonts`
+
+Definitions for the font per column.
 
 ```json
 "fonts":
@@ -25,7 +35,7 @@ _Key = The name of the font (left, center, right). Don't change these._
 | `substitutions`    | dictionary | Per word in this column, replace every key in the dictionary with the value. | ❌         |
 | `citation`         | dictionary | The recipe for citations _pointing to_ this column. See below. | ❌         |
 
-#### Citation
+#### `citation`
 
 Citations are letters or words that direct the reader from column to column.
 
@@ -37,3 +47,23 @@ Citations are letters or words that direct the reader from column to column.
 | `font_command` | string            | The command used to name the font family. You probably don't want to change this from `default.json`'s values. | ✔         |
 | `pattern`      | string<br>(regex) | `talmudifier.py` will replace anything in the input string with this regex pattern with a properly-formatted citation letter. | ✔         |
 
+## `chapter`
+
+Define the chapter header style.
+
+| Field        | Type    | Description                                                  | Required? |
+| ------------ | ------- | ------------------------------------------------------------ | --------- |
+| `definition` | string  | The TeX definition of the command used to define the font. Sorry this is a bit of a mess. The parameter after `\newcommand` must match `\command` (see `default.json`). | ✔         |
+| `command`    | string  | The command used when creating a chapter.                    | ✔         |
+| `numbering`  | boolean | If true, chapter headers will start with numbers.            | ✔         |
+
+## `colors`
+
+Define colors for the preamble. The key is the name of the color, and the value is the HTML hex code. This can be left empty if you don't need any extra colors.
+
+## `misc_definitions`
+
+Anything else you'd like to include in the preamble. `default.json` includes the following:
+
+- Definitions for left and right citation font commands; note how they include a color found in `colors`.
+- Definition for `\flowerfont`, referred to in `recipe["fonts"]["left"]["substitutions"]`.
