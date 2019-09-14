@@ -1,95 +1,102 @@
 from word import Word
-from typing import List
+from typing import List, Optional
+from style import Style
 
 
 class Column:
-    def __init__(self, words: List[Word], citation: Citation):
-        self._words = List[Word]()
-        self.add_words(words)
+    """
+    A column is a list of words and a font rule.
+    From this, a valid block of TeX text can be generated.
+    """
 
-    def add_word(self, word: Word, index=-1) -> None:
+    def __init__(self, words: List[Word], font: str, font_size: str):
         """
-        Add a word to the column.
-
-        :param word: The new word.
-        :param index: If this is -1, add the word to the end of the list. Otherwise, add the word at this index.
-        """
-
-        if word is None:
-            return
-
-        # Add the word at the end of the list.
-        if index == -1:
-            self._words.append(word)
-        # Add the word at the specified index.
-        else:
-            assert index < len(self._words), f"Invalid word index: {index}. Number of words: {len(self._words)}."
-            self._words.insert(index, word)
-
-    def add_words(self, words: List[Word]) -> None:
-        """
-        Add a list of words to the end of the existing list of words.
-
-        :param words: The new list of words.
+        :param words: The list of words in the column.
+        :param citation: The citation object used to generate citations.
+        :param font: The command used to start the font.
+        :param font_size: The font size command.
         """
 
-        if len(words) == 0:
-            return
+        self.words = words
+        self.font = font
+        self.font_size = font_size
 
-        # Filter out null words.
-        words = [w for w in words if w is not None]
-
-        # Append the new words.
-        self._words.extend(words)
-
-    def get_num_words(self) -> int:
-        """
-        Returns the number of words.
-        """
-
-        return len(self._words)
-
-    def get_tex(self, close_braces: bool, start_index=0, end_index=-1) -> str:
+    def get_tex(self, close_braces: bool, extra_word: Optional[Word], start_index=0, end_index=-1) -> str:
         """
         Generate a LaTeX string from the words.
 
         :param close_braces: If true, make sure that all curly braces are closed.
+        :param extra_word: An optional extra word, e.g. a hyphenated fragment.
         :param start_index: The start index.
         :param end_index: The end index. If this is -1, it is ignored.
         """
 
-        tex = ""
+        # Add an extra word, e.g. a hyphenated fragment.
+        words = self.words[:]
+        if extra_word is not None:
+            words.append(extra_word)
 
-        states = [False, False, False, False, False]
+        # Start the text with the font size and the font command.
+        tex = self.font_size + self.font + " "
 
+        style = Style(False, False, False)
+
+        # Get the slice of words.
         if end_index == -1:
-            end_index = len(self._words)
+            end_index = len(words)
 
-        for i in range(start_index, end_index):
-            word = self._words[i]
-            for (style, j, word_style, tex_cmd) in zip(states[:], range(len(states)),
-                                                       [word.bold, word.italic, word.underline, word.smallcaps, word.citation],
-                                                       [r"\textbf{", r"\textit{", r"\underline{", r"\textsc{", r"\red{"]):
-                if word_style and not style:
-                    states[j] = True
-                    tex += tex_cmd
-                elif not word_style and style:
-                    states[j] = False
-                    tex += "}"
-                # Add the margin note, if any.
-                tex += word + word.get_margin_note() + " "
+        for word in words[start_index: end_index]:
+            # Add a citation word.
+            if word.is_citation:
+                # Close all braces.
+                tex = Column._close_braces(tex)
+                tex += " " + word.word + " " + self.font + " "
+                continue
 
-        # Close the braces in the column.
-        if close_braces:
-            num_braces = 0
-            for c in tex:
-                if c == "{":
-                    num_braces += 1
-                elif c == "}":
-                    num_braces -= 1
-            for i in range(num_braces):
+            # Set bold style.
+            if word.style.bold and not style.bold:
+                tex += r"\textbf{"
+                style.bold = True
+            elif not word.style.bold and style.bold:
                 tex += "}"
-            return tex
-        # Return the string as-is.
-        else:
-            return tex
+                style.bold = False
+            # Set italic style.
+            if word.style.italic and not style.italic:
+                tex += r"\textit{"
+                style.italic = True
+            elif not word.style.italic and style.italic:
+                tex += "}"
+                style.italic = False
+            # Set underline style.
+            if word.style.underline and not style.underline:
+                tex += r"\underline{"
+                style.underline = True
+            elif not word.style.underline and style.underline:
+                tex += "}"
+                style.underline = False
+
+            # Append the word.
+            tex += word.word + " "
+
+        if close_braces:
+            tex = Column._close_braces(tex)
+
+        return tex
+
+    @staticmethod
+    def _close_braces(tex: str) -> str:
+        """
+        Add a } for every {.
+
+        :param tex: The TeX string.
+        """
+
+        num_braces = 0
+        for c in tex:
+            if c == "{":
+                num_braces += 1
+            elif c == "}":
+                num_braces -= 1
+        for i in range(num_braces):
+            tex += "}"
+        return tex

@@ -1,4 +1,7 @@
 from hyphen import Hyphenator
+from typing import Dict, Optional
+from style import Style
+from citation import Citation
 
 
 class Word:
@@ -8,27 +11,39 @@ class Word:
 
     H = Hyphenator('en_US')
 
-    def __init__(self, word: str, bold: bool, italic: bool, underline: bool, smallcaps: bool, citation: bool,
-                 margin_note=None):
+    def __init__(self, word: str,
+                 style: Style,
+                 substitutions: Dict[str, str],
+                 citation: Optional[Citation],
+                 get_pairs=True):
         """
         :param word: The actual word, stripped of any markdown styling.
-        :param bold: If true, this word is bolded.
-        :param italic: If true, this word is italicized.
-        :param underline: If true, this word is underlined.
-        :param smallcaps: If true, this word is in smallcaps.
-        :param citation: If true, this word is a citation.
-        :param margin_note: The margin note, if any.
+        :param style: The font style for this word.
+        :param substitutions: A list of keys to replace for values to make a valid TeX string.
+        :param get_pairs: If true, get pairs of hyphenated fragments.
         """
 
         self.word = word
-        self.bold = bold
-        self.italic = italic
-        self.underline = underline
-        self.smallcaps = smallcaps
-        self.citation = citation
-        self.margin_note = margin_note
+        self.pairs = []
 
-    def get_hyphenated_pairs(self) -> list:
+        # Try to make this word a citation. If it is a citation, stop right here (citations are never hyphenated).
+        self.word, self.is_citation = citation.apply_citation_to(self.word)
+        if self.is_citation:
+            self.style = Style(False, False, False)
+            return
+        else:
+            self.style = style
+
+        # Get the pairs.
+        if get_pairs:
+            self.pairs = self._get_hyphenated_pairs(substitutions)
+
+        # Do the substitutions.
+        if substitutions is not None:
+            for key in substitutions:
+                self.word = self.word.replace(key, substitutions[key])
+
+    def _get_hyphenated_pairs(self, substitutions: Dict[str, str]) -> list:
         """
         Get all possible hyphenated pairs of this word (e.g. Cal- ifornia).
         """
@@ -44,20 +59,10 @@ class Word:
 
             # Add pairs of Word objects.
             for p in [p0, p1]:
-                # Add the margin note only to the first fragment.
-                margin_note = self.margin_note if p == p0 else None
-                w = Word(p, self.bold, self.italic, self.underline, self.smallcaps, self.citation, margin_note)
+                w = Word(p, self.style, substitutions if p == p0 else None,
+                         None,
+                         get_pairs=False)
 
                 h.append(w)
             pairs.append(h)
         return pairs
-
-    def get_margin_note(self) -> str:
-        """
-        Returns the margin note text.
-        """
-
-        if self.margin_note:
-            return r"\marginnote{\justifying \tiny " + self.margin_note + "}"
-        else:
-            return ""
