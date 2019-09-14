@@ -2,7 +2,7 @@ from subprocess import call
 from pathlib import Path
 from sys import platform
 from os import devnull
-from talmudifier.util import output_directory
+from util import output_directory
 
 
 class PDFWriter:

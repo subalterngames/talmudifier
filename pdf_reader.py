@@ -1,4 +1,4 @@
-from talmudifier.util import output_directory
+from util import output_directory
 from os.path import join, exists
 from PyPDF2 import PdfFileReader
 
