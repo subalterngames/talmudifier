@@ -21,20 +21,14 @@ class Column:
         self.font = font
         self.font_size = font_size
 
-    def get_tex(self, close_braces: bool, extra_word: Optional[Word], start_index=0, end_index=-1) -> str:
+    def get_tex(self, close_braces: bool, start_index=0, end_index=-1) -> str:
         """
         Generate a LaTeX string from the words.
 
         :param close_braces: If true, make sure that all curly braces are closed.
-        :param extra_word: An optional extra word, e.g. a hyphenated fragment.
         :param start_index: The start index.
         :param end_index: The end index. If this is -1, it is ignored.
         """
-
-        # Add an extra word, e.g. a hyphenated fragment.
-        words = self.words[:]
-        if extra_word is not None:
-            words.append(extra_word)
 
         # Start the text with the font size and the font command.
         tex = self.font_size + self.font + " "
@@ -43,9 +37,9 @@ class Column:
 
         # Get the slice of words.
         if end_index == -1:
-            end_index = len(words)
+            end_index = len(self.words)
 
-        for word in words[start_index: end_index]:
+        for word in self.words[start_index: end_index]:
             # Add a citation word.
             if word.is_citation:
                 # Close all braces.
