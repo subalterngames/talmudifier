@@ -47,6 +47,45 @@ Citations are letters or words that direct the reader from column to column.
 | `font_command` | string            | The command used to name the font family. You probably don't want to change this from `default.json`'s values. | ✔         |
 | `pattern`      | string<br>(regex) | `talmudifier.py` will replace anything in the input string with this regex pattern with a properly-formatted citation letter. | ✔         |
 
+## `character_counts`
+
+These are the average number of characters in a column across many trials, given different column configurations (e.g. left and right only), a target column (e.g. left), and a target number of rows (e.g. 1).
+
+`talmudifier.py` will use these numbers to fill columns with a "best guess" number of words before adding and subtracting words to reach a given row number target (e.g. if there are only left and right columns and you want 1 row on the left, `talmudifier.py` will first try to fill the row with 47 characters).
+
+You can calculate these values yourself by running `row_length_calculator.py`.
+
+```json
+  "character_counts":
+  {
+    "LR":
+    {
+      "left":
+      {
+        "1": 47
+      }
+    }
+  }
+```
+
+| Key      | Description                                                  |
+| -------- | ------------------------------------------------------------ |
+| `"LR"`   | The columns in this table. Can be `"LCR"`, `"LR"`, etc.      |
+| `"left"` | The target column within the table. Can be `"left"`, `"center"`, or `"right"`. |
+| `"1"`    | The target number of rows. Must be an integer.<br>Value=The average number of characters across many trials. |
+
+#### `row_length_calculator.py`
+
+Use this script to calculate the average number of characters per row given a recipe, a list of tables, and a target column.
+
+| Argument    | Type    | Description                                                  | Default        |
+| ----------- | ------- | ------------------------------------------------------------ | -------------- |
+| `--columns` | string  | The columns in the table. Can be `LCR`, `LR`, etc.           | `LR`           |
+| `--target`  | string  | The target column. Can be `"left"`, `"center"`, or `"right"`. |                |
+| `--rows`    | integer | The number of rows.                                          | `1`            |
+| `--trials`  | integer | The number of trials to run and then average.                | `100`          |
+| `--recipe`  | string  | Filename of the recipe file in the `recipes/` directory.     | `default.json` |
+
 ## `chapter`
 
 Define the chapter header style.

@@ -66,7 +66,7 @@ class Paracol:
                 if center:
                     return r"\switchcolumn[2]"
                 else:
-                    return r"\switccolumn"
+                    return r"\switchcolumn"
             elif center:
                 return r"\switchcolumn"
             else:

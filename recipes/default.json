@@ -57,6 +57,16 @@
       }
     }
   },
+  "character_counts":
+  {
+    "LR":
+    {
+      "left":
+      {
+        "1": 47
+      }
+    }
+  },
   "chapter":
   {
     "definition": "\\newcommand{\\chfont}[1]{\\centerfont{\\huge\\textcolor{hcolor}{#1}}}",
