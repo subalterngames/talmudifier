@@ -7,6 +7,7 @@ from tqdm import tqdm
 from paracol import Paracol
 from argparse import ArgumentParser
 from json import load
+from pathlib import Path
 
 
 class RowLengthCalculator:
@@ -40,7 +41,8 @@ class RowLengthCalculator:
         tex = r"\internallinenumbers \begin{linenumbers}" + line + " " + word.word + r"\end{linenumbers} \resetlinenumber[1]"
         tex = self.paracol + tex + "\n\n\\end{paracol}"
         self.writer.write(tex, "line_count")
-        return PDFReader.get_num_rows("/home/seth/talmudifier/Output/line_count.pdf")
+        output_path = str(Path("Output/line_count.pdf").resolve())
+        return PDFReader.get_num_rows(output_path)
 
     def _get_num_characters_in_trial(self, josephus: list, style: Style) -> int:
         """

@@ -52,8 +52,12 @@ class PDFWriter:
                  "-jobname", filename, doc],
                 stdout=open(devnull, "wb"))
         else:
-            call('latex -output-format=pdf -output-directory ' +
-                 output_directory + ' -job-name=' + filename + " " + doc + " -quiet")
+            call(['xelatex.exe',
+                  '-output-directory',
+                  str(Path(output_directory).resolve()),
+                  '-job-name=' + filename,
+                  doc],
+                 stdout=open(devnull, "wb"))
 
         assert Path(output_directory).joinpath(filename + ".pdf").exists(), f"Failed to create: {filename}"
 
