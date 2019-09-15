@@ -12,9 +12,7 @@
 
 \usepackage{xcolor}
 \definecolor{hcolor}{HTML}{D3230C}
-\newcommand{\chfont}[1]{\centerfont{\huge\textcolor{hcolor}{#1}}}
-\newcommand{\redLarge}[1]{{\Large\textcolor{hcolor}{#1}}}
-\newcommand{\red}[1]{{\normalsize\textcolor{hcolor}{#1}}}
+\newcommand{\red}[1]{{\LARGE\textcolor{hcolor}{#1}}}
 \usepackage{lipsum}
 \usepackage{paracol}
 
@@ -23,18 +21,24 @@
 
 \usepackage{fontspec}
 
-\usepackage{lineno}
-
 \setlength{\parfillskip}{0pt}
+
+\usepackage{lineno}
 
 \newfontfamily\rightfont[Path=averia/, ItalicFont=AveriaLibre-RegularItalic.ttf, BoldFont=AveriaLibre-Bold.ttf, BoldItalicFont=AveriaLibre-BoldItalic.ttf, Ligatures=TeX]{AveriaLibre-Light.ttf}
 
-\newfontfamily\leftfont[Path=fell_french_canon/, Ligatures=TeX, ItalicFont=IMFeFCit29C.otf, BoldFont=AveriaLibre-Bold.ttf]{IMFeFCrm29C.otf}
+\newfontfamily\leftfont[Path=fell_french_canon/, Ligatures=TeX, ItalicFont=IMFeFCit29C.otf]{IMFeFCrm29C.otf}
 
 \newfontfamily\centerfont[Path=fell/, ItalicFont=IMFeENit29P.ttf, BoldFont=IMFeENsc29P.ttf, Ligatures=TeX]{IMFeENrm29P.ttf}
 
 \newfontfamily\leftcitationfont[Path=frankruehl/]{FrankRuehlCLM-Medium.ttf}
-\newfontfamily\rightcitationfont[Path=rashi/]{Mekorot-Rashi.ttf}
+\newfontfamily\rightcitationfont[Path=gveret/]{GveretLevinAlefAlefAlef-Regular.otf}
 
 \newfontfamily\flowerfont[Path=fell_flowers/]{IMFeFlow2.otf}
-
+\begin{document}\begin{sloppypar}
+		
+		\begin{paracol}{2}
+			
+			\leftfont \internallinenumbers \begin{linenumbers} quill-driver\end{linenumbers} \resetlinenumber[1]
+			
+\end{paracol}\end{sloppypar}\end{document}\end{sloppypar}\end{document}

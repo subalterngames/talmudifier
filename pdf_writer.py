@@ -12,18 +12,14 @@ class PDFWriter:
 
     END_DOCUMENT = r"\end{sloppypar}\end{document}"
 
-    def __init__(self, preamble_filename="header.txt", font_commands=None):
+    def __init__(self, preamble_filename="header.txt"):
         """
         :param preamble_filename: The name of the file containing the preamble text.
-        :param font_commands: Additional font commands. May be none.
         """
 
         preamble_path = Path(preamble_filename)
         assert preamble_path.exists(), f"Preamble file not found: {preamble_path}"
         self.preamble = Path(preamble_filename).read_text()
-
-        for font_command in font_commands:
-            self.preamble += font_command + "\n"
 
         # Begin the document.
         self.preamble += r"\begin{document}\begin{sloppypar}" + "\n\n"
@@ -39,6 +35,7 @@ class PDFWriter:
 
         # Combine the preamble, the new text, and the end command(s).
         doc_raw = self.preamble + text + PDFWriter.END_DOCUMENT
+
         # Replace line breaks with spaces.
         doc = doc_raw.replace("\n", " ")
 
@@ -50,15 +47,14 @@ class PDFWriter:
         # Generate the PDF.
         if platform == "linux":
             call(
-                ["pdflatex",
-                 "-output-format", "pdf",
-                 "-output-directory", output_directory,
+                ["xelatex",
+                 "-output-directory", str(Path(output_directory).resolve()),
                  "-jobname", filename, doc],
                 stdout=open(devnull, "wb"))
         else:
             call('latex -output-format=pdf -output-directory ' +
                  output_directory + ' -job-name=' + filename + " " + doc + " -quiet")
 
-        assert Path(output_directory).joinpath(filename).exists(), f"Failed to create: {filename}"
+        assert Path(output_directory).joinpath(filename + ".pdf").exists(), f"Failed to create: {filename}"
 
         return doc_raw

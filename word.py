@@ -13,7 +13,7 @@ class Word:
 
     def __init__(self, word: str,
                  style: Style,
-                 substitutions: Dict[str, str],
+                 substitutions: Optional[Dict[str, str]],
                  citation: Optional[Citation],
                  get_pairs=True):
         """
@@ -27,7 +27,11 @@ class Word:
         self.pairs = []
 
         # Try to make this word a citation. If it is a citation, stop right here (citations are never hyphenated).
-        self.word, self.is_citation = citation.apply_citation_to(self.word)
+        if citation is not None:
+            self.word, self.is_citation = citation.apply_citation_to(self.word)
+        else:
+            self.is_citation = False
+
         if self.is_citation:
             self.style = Style(False, False, False)
             return
@@ -48,7 +52,11 @@ class Word:
         Get all possible hyphenated pairs of this word (e.g. Cal- ifornia).
         """
 
-        pairs_text = self.H.pairs(self.word)
+        try:
+            pairs_text = self.H.pairs(self.word)
+        except IndexError:
+            return []
+
         pairs = []
 
         for pair in pairs_text:
