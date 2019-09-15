@@ -51,7 +51,7 @@ Citations are letters or words that direct the reader from column to column.
 
 These are the average number of characters in a column across many trials, given different column configurations (e.g. left and right only), a target column (e.g. left), and a target number of rows (e.g. 1).
 
-`talmudifier.py` will use these numbers to fill columns with a "best guess" number of words before adding and subtracting words to reach a given row number target (e.g. if there are only left and right columns and you want 1 row on the left, `talmudifier.py` will first try to fill the row with 47 characters).
+`talmudifier.py` will use these numbers to fill columns with a "best guess" number of words before adding and subtracting words to reach a given row number target (e.g. if there are only left and right columns and you want 1 row on the left, `talmudifier.py` will first try to fill the row with 47 characters). If there is no key present, `talmudifier.py` will first look for the `"1"` key and multiply the value by the number of rows (e.g. 47 * 4). If there are no keys at all, `talmudifier.py` will just add a word at a time to the column (which is much slower).
 
 You can calculate these values yourself by running `row_length_calculator.py`.
 
