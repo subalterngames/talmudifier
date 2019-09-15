@@ -63,6 +63,10 @@ class RowLengthCalculator:
         while not done:
             word = Word(random_words.pop(), style, None, None)
 
+            # Filter out invalid words.
+            while not Word.is_valid(word.word):
+                word = Word(random_words.pop(), style, None, None)
+
             num_lines = self._get_num_rows(line, word)
 
             # We went over the end. Try to get a hyphenated fragment.

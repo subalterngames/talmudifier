@@ -75,7 +75,7 @@ class Paracol:
             raise Exception(f"Bad column name: {target}")
 
     @staticmethod
-    def get_column(left: bool, center: bool, right: bool, target: str, column: Column) -> str:
+    def get_column(left: bool, center: bool, right: bool, target: str, tex: str) -> str:
         """
         Returns the text of a column formatted in a paracol environment at a target column.
 
@@ -83,9 +83,9 @@ class Paracol:
         :param center: If true, a center column exists.
         :param right: If true, a right column exists.
         :param target: The name of the target column: left, center, or right.
-        :param column: The column of words.
+        :param tex: A valid LaTeX string.
         """
 
         return Paracol.get_paracol_header(left, center, right) + "\n" + \
                Paracol.get_switch_from_left(left, center, right, target) + "\n" + \
-               column.get_tex(True) + "\n" + Paracol.END
+               tex + "\n" + Paracol.END

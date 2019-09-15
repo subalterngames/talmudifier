@@ -74,3 +74,14 @@ class Word:
                 h.append(w)
             pairs.append(h)
         return pairs
+
+    @staticmethod
+    def is_valid(word: str) -> bool:
+        """
+        Returns true if the word is valid. Invalid words include characters that are illegal in TeX.
+        There might not be a way to make this list exhaustive! We shall see...
+
+        :param word: The word string.
+        """
+
+        return word not in ["}", "{", "[", "]", "\\", "|", "*", "**", "***"]

@@ -59,7 +59,22 @@
   },
   "character_counts":
   {
-    "LR":
+    "one_third":
+    {
+      "left":
+      {
+        "1": 29
+      },
+      "center":
+      {
+        "1": 24
+      },
+      "right":
+      {
+        "1": 27
+      }
+    },
+    "half":
     {
       "left":
       {
@@ -72,15 +87,19 @@
         "4": 174
       }
     },
-    "LCR":
+    "two_thirds":
     {
       "left":
       {
-        "1": 29
+
       },
       "center":
       {
-        "1": 24
+
+      },
+      "right":
+      {
+
       }
     }
   },
