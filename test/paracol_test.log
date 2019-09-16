@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7050 64-bit) (preloaded format=xelatex 2019.9.3)  16 SEP 2019 15:32
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7050 64-bit) (preloaded format=xelatex 2019.9.3)  16 SEP 2019 16:24
 entering extended mode
 **./paracol_test.tex
 (paracol_test.tex
@@ -500,6 +500,7 @@ LaTeX Info: Redefining \upshape on input line 4066.
 LaTeX Info: Redefining \em on input line 4096.
 LaTeX Info: Redefining \emph on input line 4121.
 ))
+\height=\dimen156
 
 Package fontspec Info: Font family 'AveriaLibre-Light.ttf(0)' created for font
 (fontspec)             'AveriaLibre-Light.ttf' with options
@@ -610,20 +611,20 @@ Package fontspec Info: Font family 'IMFeFlow2.otf(0)' created for font
  (paracol_test.aux)
 \openout1 = `paracol_test.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -660,173 +661,118 @@ LaTeX Font Info:    ... okay on input line 38.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 38.
+LaTeX Info: Redefining \selectfont on input line 47.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 38.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 38.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 38.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 38.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 38.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 38.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 38.
-LaTeX Font Info:    Redeclaring math accent \check on input line 38.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 38.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 38.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 38.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 38.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 47.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 47.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 47.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 47.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 47.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 47.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 47.
+LaTeX Font Info:    Redeclaring math accent \check on input line 47.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 47.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 47.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 47.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 47.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 47.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 38.
+(Font)              `operators' in the math version `normal' on input line 47.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 38.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 47.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 38.
+(Font)              `operators' in the math version `bold' on input line 47.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 38.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 47.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 38.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 47.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 38.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 47.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 38.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 47.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 38.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 47.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 38.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 47.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 38.
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 47.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 38.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 47.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 38.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 47.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 38.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 47.
 
-Underfull \hbox (badness 2980) in paragraph at lines 53--54
-[]\TU/IMFeFCrm29C.otf(0)/m/n/11 it to make a type specimen
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+[]|\TU/IMFeFCrm29C.otf(0)/m/n/11 Lorem Ipsum is simply dummy text
  []
 
 
-Underfull \hbox (badness 7362) in paragraph at lines 53--54
-\TU/IMFeFCrm29C.otf(0)/m/n/11 five centuries, but also the
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+\TU/IMFeFCrm29C.otf(0)/m/n/11 of the printing and typesetting indus-
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 53--54
-\TU/IMFeFCrm29C.otf(0)/m/n/11 leap into electronic typeset-
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+\TU/IMFeFCrm29C.otf(0)/m/n/11 try. Lorem Ipsum has been the indus-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-\TU/IMFeFCrm29C.otf(0)/m/n/11 ting, remaining essentially
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+\TU/IMFeFCrm29C.otf(0)/m/n/11 try’s standard dummy text ever since |
  []
 
 
-Underfull \hbox (badness 6252) in paragraph at lines 53--54
-\TU/IMFeFCrm29C.otf(0)/m/n/11 Lorem Ipsum passages, and
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+[]\TU/IMFeFCrm29C.otf(0)/m/n/11 Lorem Ipsum is simply dummy text
  []
 
 
-Underfull \hbox (badness 5592) in paragraph at lines 53--54
-\TU/IMFeFCrm29C.otf(0)/m/n/11 more recently with desktop
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+\TU/IMFeFCrm29C.otf(0)/m/n/11 of the printing and typesetting indus-
  []
 
 
-Underfull \hbox (badness 7981) in paragraph at lines 53--54
-\TU/IMFeFCrm29C.otf(0)/m/n/11 publishing software like Al-
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+\TU/IMFeFCrm29C.otf(0)/m/n/11 try. Lorem Ipsum has been the indus-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-\TU/IMFeFCrm29C.otf(0)/m/n/11 dus PageMaker including
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+\TU/IMFeFCrm29C.otf(0)/m/n/11 try’s standard dummy text ever since 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-\TU/IMFeFCrm29C.otf(0)/m/n/11 versions of Lorem Ipsum.
- []
-
-
-Underfull \hbox (badness 5446) in paragraph at lines 57--58
-\TU/IMFeENrm29P.ttf(0)/m/n/13 ation in some form, by
- []
-
-
-Underfull \hbox (badness 1472) in paragraph at lines 57--58
-\TU/IMFeENrm29P.ttf(0)/m/n/13 injected humour, or ran-
- []
-
-
-Underfull \hbox (badness 3000) in paragraph at lines 57--58
-\TU/IMFeENrm29P.ttf(0)/m/n/13 there isn’t anything em-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 57--58
-\TU/IMFeENrm29P.ttf(0)/m/n/13 barrassing hidden in the
- []
-
-
-Underfull \hbox (badness 2426) in paragraph at lines 57--58
-\TU/IMFeENrm29P.ttf(0)/m/n/13 middle of text. All the
- []
-
-
-Underfull \hbox (badness 1874) in paragraph at lines 61--62
-\TU/AveriaLibre-Light.ttf(0)/m/n/11 condimentum rhoncus com-
- []
-
-
-Underfull \hbox (badness 5741) in paragraph at lines 61--62
-\TU/AveriaLibre-Light.ttf(0)/m/n/11 tus eget efficitur fringilla.
- []
-
-
-Underfull \hbox (badness 3058) in paragraph at lines 61--62
-\TU/AveriaLibre-Light.ttf(0)/m/n/11 Nulla magna risus, congue
- []
-
-
-Underfull \hbox (badness 6592) in paragraph at lines 61--62
-\TU/AveriaLibre-Light.ttf(0)/m/n/11 et eros nec, ultrices mo-
- []
-
-
-Underfull \hbox (badness 2401) in paragraph at lines 61--62
-\TU/AveriaLibre-Light.ttf(0)/m/n/11 elementum a, accumsan ut
- []
-
-
-Underfull \hbox (badness 3148) in paragraph at lines 61--62
-\TU/AveriaLibre-Light.ttf(0)/m/n/11 dignissim consequat magna
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+[]\TU/IMFeFCrm29C.otf(0)/m/n/11 $HEIGHT=52.42pt
  []
 
 [1
 
 ] (paracol_test.aux) ) 
 Here is how much of TeX's memory you used:
- 16948 strings out of 427669
- 364269 string characters out of 3144750
- 659894 words of memory out of 3000000
- 20935 multiletter control sequences out of 15000+200000
- 532546 words of font info for 50 fonts, out of 3000000 for 9000
+ 16897 strings out of 427669
+ 363140 string characters out of 3144750
+ 655923 words of memory out of 3000000
+ 20887 multiletter control sequences out of 15000+200000
+ 532530 words of font info for 48 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  42i,8n,78p,9223b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
 
