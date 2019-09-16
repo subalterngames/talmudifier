@@ -14,7 +14,7 @@ class PDFWriter:
 
     def __init__(self, preamble: str):
         """
-        :param preamble_filename: The name of the file containing the preamble text.
+        :param preamble: The preamble text.
         """
 
         # Begin the document.

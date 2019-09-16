@@ -21,4 +21,12 @@
 
 \usepackage{lineno}
 
+\newdimen\height
+
+\newcommand{\boxheight}[1]{%
+ \setbox0=\vbox{\strut#1\strut}%
+ \height=\ht0 \advance\height by \dp0
+ #1%
+}
+
 \setlength{\parfillskip}{0pt}
