@@ -42,7 +42,7 @@ class RowMaker:
 
         done = False
         while not done:
-            num_rows = self._get_num_rows(col_temp.get_tex(True))
+            num_rows = self.get_num_rows(col_temp.get_tex(True))
 
             # Try to overflow the column.
             if num_rows <= target_num_rows:
@@ -62,7 +62,7 @@ class RowMaker:
                 last_word = col_temp.words[-1]
                 col_temp.words.pop()
 
-                num_rows = self._get_num_rows(col_temp.get_tex(True))
+                num_rows = self.get_num_rows(col_temp.get_tex(True))
 
                 # If removing the last word gave us the target number of rows, try adding hyphenated fragments.
                 if num_rows == target_num_rows:
@@ -73,7 +73,7 @@ class RowMaker:
                         col_temp_temp = Column(words, column.font, column.font_size)
 
                         # The hyphenated fragment fits! Add it and return the truncated column.
-                        if self._get_num_rows(col_temp_temp.get_tex(True)) == target_num_rows:
+                        if self.get_num_rows(col_temp_temp.get_tex(True)) == target_num_rows:
                             words = column.words[len(col_temp.words):]
 
                             # Insert the second half of the word pair to the words list and add it to a new column.
@@ -82,7 +82,7 @@ class RowMaker:
                     # No hyphenated pair worked. Return what we've got.
                     return col_temp.get_tex(True), Column(column.words[len(col_temp.words):], column.font, column.font_size)
 
-    def _get_num_rows(self, tex: str) -> int:
+    def get_num_rows(self, tex: str) -> int:
         """
         Returns the number of rows the TeX string fills in the paracol environment.
 
