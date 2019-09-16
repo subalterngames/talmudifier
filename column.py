@@ -1,5 +1,5 @@
 from word import Word
-from typing import List, Optional
+from typing import List
 from style import Style
 
 

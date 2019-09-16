@@ -10,10 +10,10 @@ class RowMaker:
     Create a target number of rows from a column in a paracol environment.
     """
 
-    def __init__(self, left: bool, center: bool, right: bool, target: str):
+    def __init__(self, left: bool, center: bool, right: bool, target: str, writer: PDFWriter):
         self.paracol = Paracol.get_paracol_header(left, center, right)
         self.switch = Paracol.get_switch_from_left(left, center, right, target)
-        self.writer = PDFWriter()
+        self.writer = writer
 
     def get_text_of_length(self, column: Column, target_num_rows: int, expected_length: int) -> (str, Column):
         """
@@ -35,12 +35,13 @@ class RowMaker:
             next_word_index += 1
 
             # Check if we have exceeded the target length.
-            row_length_estimate = sum([len(w) for w in col_temp.words])
+            row_length_estimate = sum([len(w.word) for w in col_temp.words])
             filled = row_length_estimate > expected_length
 
         next_word_index = len(col_temp.words)
-        num_rows = 0
-        while num_rows != target_num_rows:
+
+        done = False
+        while not done:
             num_rows = self._get_num_rows(col_temp.get_tex(True))
 
             # Try to overflow the column.
@@ -79,7 +80,7 @@ class RowMaker:
                             words.insert(0, pair[1])
                             return col_temp_temp.get_tex(True), Column(words, column.font, column.font_size)
                     # No hyphenated pair worked. Return what we've got.
-                    return col_temp.get_tex(True), Column(column[len(col_temp.words):], column.font, column.font_size)
+                    return col_temp.get_tex(True), Column(column.words[len(col_temp.words):], column.font, column.font_size)
 
     def _get_num_rows(self, tex: str) -> int:
         """

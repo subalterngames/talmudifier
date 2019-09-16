@@ -12,17 +12,13 @@ class PDFWriter:
 
     END_DOCUMENT = r"\end{sloppypar}\end{document}"
 
-    def __init__(self, preamble_filename="header.txt"):
+    def __init__(self, preamble: str):
         """
         :param preamble_filename: The name of the file containing the preamble text.
         """
 
-        preamble_path = Path(preamble_filename)
-        assert preamble_path.exists(), f"Preamble file not found: {preamble_path}"
-        self.preamble = Path(preamble_filename).read_text()
-
         # Begin the document.
-        self.preamble += r"\begin{document}\begin{sloppypar}" + "\n\n"
+        self.preamble = preamble + r"\begin{document}\begin{sloppypar}" + "\n\n"
 
     def write(self, text: str, filename: str) -> str:
         """

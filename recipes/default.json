@@ -37,6 +37,7 @@
     "right":
     {
       "path": "averia",
+      "ligatures": "TeX",
       "regular_font": "AveriaLibre-Light.ttf",
       "italic_font": "AveriaLibre-RegularItalic.ttf",
       "bold_font": "AveriaLibre-Bold.ttf",

@@ -28,7 +28,8 @@ class RowLengthCalculator:
         switch = Paracol.get_switch_from_left("L" in columns, "C" in columns, "R" in columns, target)
         self.paracol += "\n\n" + switch
         self.paracol += "\n\n" + font_size + font
-        self.writer = PDFWriter()
+
+        self.writer = PDFWriter(Path("header.txt").read_text())
         self.num_rows = num_rows
 
     def _get_num_rows(self, line: str, word: Word) -> int:
