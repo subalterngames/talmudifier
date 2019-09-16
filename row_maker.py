@@ -90,7 +90,7 @@ class RowMaker:
         """
 
         tex = r"\internallinenumbers \begin{linenumbers}" + tex + r"\end{linenumbers} \resetlinenumber[1]"
-        tex = self.paracol + tex + "\n\n\\end{paracol}"
+        tex = self.paracol + self.switch + " " + tex + "\n\n\\end{paracol}"
         self.writer.write(tex, "line_count")
         output_path = str(Path("Output/line_count.pdf").resolve())
         return PDFReader.get_num_rows(output_path)

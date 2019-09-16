@@ -27,18 +27,39 @@
 
 \newfontfamily\rightfont[Path=averia/, ItalicFont=AveriaLibre-RegularItalic.ttf, BoldFont=AveriaLibre-Bold.ttf, BoldItalicFont=AveriaLibre-BoldItalic.ttf, Ligatures=TeX]{AveriaLibre-Light.ttf}
 
-\newfontfamily\leftfont[Path=fell_french_canon/, Ligatures=TeX, ItalicFont=IMFeFCit29C.otf]{IMFeFCrm29C.otf}
+\newfontfamily\leftfont[Path=fell_french_canon/, Ligatures=TeX, ItalicFont=IMFeFCit29C.otf, BoldFont=AveriaLibre-Bold.ttf]{IMFeFCrm29C.otf}
 
 \newfontfamily\centerfont[Path=fell/, ItalicFont=IMFeENit29P.ttf, BoldFont=IMFeENsc29P.ttf, Ligatures=TeX]{IMFeENrm29P.ttf}
 
 \newfontfamily\leftcitationfont[Path=frankruehl/]{FrankRuehlCLM-Medium.ttf}
-\newfontfamily\rightcitationfont[Path=gveret/]{GveretLevinAlefAlefAlef-Regular.otf}
+\newfontfamily\rightcitationfont[Path=rashi/]{Mekorot-Rashi.ttf}
 
 \newfontfamily\flowerfont[Path=fell_flowers/]{IMFeFlow2.otf}
 \begin{document}\begin{sloppypar}
 		
-		\begin{paracol}{2}
+\begin{paracol}{2}
+
+\fontsize{11}{13}\leftfont Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took \switchcolumn\fontsize{11}{13}\rightfont Fusce ac lacus faucibus, gravida metus ut, ullamcorper nulla. Duis orci quam, hendrerit volutpat est eu, aliquet blandit augue. Fusce semper lorem vitae consectetur pretium. Duis 
+
+\end{paracol}
+
+
+\begin{paracol}{3}
+
+\fontsize{11}{13}\leftfont a galley of type and scrambled \switchcolumn[2]\fontsize{11}{13}\rightfont id suscipit est. Etiam lorem 
+
+\end{paracol}
+
+\begin{paracol}{3}\fontsize{11}{13}\leftfont it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+
+\switchcolumn
+
+\fontsize{13}{16}\centerfont There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the 
+
+\switchcolumn
+
+\fontsize{11}{13}\rightfont enim, fringilla vel nunc eget, hendrerit sodales neque. Sed condimentum rhoncus commodo. Aenean imperdiet lectus eget efficitur fringilla. Nulla magna risus, congue et eros nec, ultrices molestie metus. Praesent ultrices mauris purus, nec commodo orci posuere ut. Donec augue sem, tincidunt sit amet elementum a, accumsan ut quam. Duis luctus diam leo, et convallis justo congue ac. Curabitur at tellus nisi. Cras dignissim consequat magna sed vulputate. Donec at enim sed sem dictum fermentum. 
+
+\end{paracol}
 			
-			\leftfont \internallinenumbers \begin{linenumbers} quill-driver\end{linenumbers} \resetlinenumber[1]
-			
-\end{paracol}\end{sloppypar}\end{document}\end{sloppypar}\end{document}
+\end{sloppypar}\end{document}

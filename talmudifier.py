@@ -16,6 +16,7 @@ from citation import Citation
 from word import Word
 from style import Style
 from row_maker import RowMaker
+from paracol import Paracol
 
 
 class Talmudifier:
@@ -243,7 +244,86 @@ class Talmudifier:
         rowmaker = RowMaker(True, True, True, column_name, self.writer)
         return rowmaker.get_text_of_length(column, 1, self._get_expected_length(column_name, "one_third", 1))
 
-    def run(self):
+    def _get_column_width(self, target: str) -> str:
+        if len(self.left.words) > 0:
+            if len(self.center.words) > 0:
+                if len(self.right.words) > 0:
+                    return "one_third"
+                else:
+                    if target == "left":
+                        return "one_third"
+                    else:
+                        return "two_thirds"
+            elif len(self.right.words) > 0:
+                return "half"
+            else:
+                return ""
+        elif len(self.center.words) > 0:
+            if len(self.right.words) > 0:
+                if target == "center":
+                    return "two_thirds"
+                else:
+                    return "one_third"
+            else:
+                return ""
+        else:
+            return ""
+
+    def _get_column_name(self, col: Column) -> str:
+        """
+        Returns the name of the column.
+
+        :param col: The column.
+        """
+
+        if col == self.left:
+            return "left"
+        elif col == self.center:
+            return "center"
+        elif col == self.right:
+            return "right"
+        else:
+            raise Exception("Couldn't match column.")
+
+    def _get_columns_with_words(self) -> List[Column]:
+        """
+        Returns a list of columns that have words.
+        """
+
+        return [c for c in [self.left, self.center, self.right] if len(c.words) > 0]
+
+    def _get_shortest(self) -> (Column, str, int, bool):
+        """
+        Returns which of my columns is the shortest, its name, the number of lines, and whether any has any lines.
+        """
+
+        # Check if any columns have any words.
+        cols = self._get_columns_with_words()
+        if len(cols) == 0:
+            return None, "", 0, False
+        elif len(cols) == 1:
+            return cols[0], "", -1, True
+
+        min_col = None
+        min_lines = 10000000
+        min_column_name = ""
+
+        for col in cols:
+            column_name = self._get_column_name(col)
+
+            # Create the row maker.
+            rowmaker = RowMaker(self.left in cols, self.center in cols, self.right in cols, column_name, self.writer)
+
+            # Get the number of lines.
+            num_lines = rowmaker.get_num_rows(col.get_tex(True))
+            if num_lines < min_lines:
+                min_col = col
+                min_lines = num_lines
+                min_column_name = column_name
+
+        return min_col, min_column_name, min_lines, False
+
+    def get_tex(self) -> str:
         tex = ""
 
         # Get four row on the left and on the right.
@@ -260,8 +340,70 @@ class Talmudifier:
         # Add the paracol environment.
         tex += "\n\\begin{paracol}{3}\n\n" + left_tex + "\\switchcolumn[2]" + right_tex + "\n\n\\end{paracol}\n\n"
         
-        print(tex)
+        done = False
+        while not done:
+            shortest_col, shortest_col_name, num_lines, done = self._get_shortest()
 
-Talmudifier("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+            if done:
+                continue
+
+            # Just fill the page with the last column's words.
+            if num_lines == -1:
+                tex += "\n\n\\begin{paracol}{1}\n\n" + shortest_col.get_tex(True) + "\n\n\\end{paracol}\n\n"
+                done = True
+                continue
+
+            # Start building the table.
+            table = {shortest_col_name: shortest_col.get_tex(True)}
+
+            assert self.left == shortest_col or self.center == shortest_col or self.right == shortest_col
+
+            paracol = Paracol.get_paracol_header(len(self.left.words) > 0, len(self.center.words) > 0, len(self.right.words) > 0)
+
+            # Fill the other columns, if possible.
+            cols = self._get_columns_with_words()
+            for i in range(len(cols)):
+                if cols[i] == shortest_col:
+                    continue
+                col_name = self._get_column_name(cols[i])
+
+                # Build the column.
+                rm = RowMaker(self.left in cols, self.center in cols, self.right in cols, col_name, self.writer)
+                col_tex, col = rm.get_text_of_length(cols[i], num_lines + 1,
+                                                     self._get_expected_length(col_name, self._get_column_width(col_name), num_lines + 1))
+
+                # Update the table.
+                table.update({col_name: col_tex})
+
+                # Update my columns.
+                if col_name == "left":
+                    self.left = col
+                elif col_name == "center":
+                    self.center = col
+                elif col_name == "right":
+                    self.right = col
+                else:
+                    raise Exception()
+
+            # Empty the shortest column.
+            shortest_col.words = []
+
+            # Build the paracol.
+            for col_key in table:
+                paracol += table[col_key]
+                if col_key != "right":
+                    paracol += "\n\n\\switchcolumn\n\n"
+
+            # End the paracol.
+            paracol += "\n\n\\end{paracol}\n\n"
+
+            # Add the paracol.
+            tex += paracol
+
+        return tex
+
+
+q = Talmudifier("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
             "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
-            "Fusce ac lacus faucibus, gravida metus ut, ullamcorper nulla. Duis orci quam, hendrerit volutpat est eu, aliquet blandit augue. Fusce semper lorem vitae consectetur pretium. Duis id suscipit est. Etiam lorem enim, fringilla vel nunc eget, hendrerit sodales neque. Sed condimentum rhoncus commodo. Aenean imperdiet lectus eget efficitur fringilla. Nulla magna risus, congue et eros nec, ultrices molestie metus. Praesent ultrices mauris purus, nec commodo orci posuere ut. Donec augue sem, tincidunt sit amet elementum a, accumsan ut quam. Duis luctus diam leo, et convallis justo congue ac. Curabitur at tellus nisi. Cras dignissim consequat magna sed vulputate. Donec at enim sed sem dictum fermentum.").run()
+            "Fusce ac lacus faucibus, gravida metus ut, ullamcorper nulla. Duis orci quam, hendrerit volutpat est eu, aliquet blandit augue. Fusce semper lorem vitae consectetur pretium. Duis id suscipit est. Etiam lorem enim, fringilla vel nunc eget, hendrerit sodales neque. Sed condimentum rhoncus commodo. Aenean imperdiet lectus eget efficitur fringilla. Nulla magna risus, congue et eros nec, ultrices molestie metus. Praesent ultrices mauris purus, nec commodo orci posuere ut. Donec augue sem, tincidunt sit amet elementum a, accumsan ut quam. Duis luctus diam leo, et convallis justo congue ac. Curabitur at tellus nisi. Cras dignissim consequat magna sed vulputate. Donec at enim sed sem dictum fermentum.").get_tex()
+print(q)
