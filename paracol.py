@@ -1,12 +1,9 @@
-from column import Column
-
-
 class Paracol:
     """
     A LaTeX paracol environment, composed of boxes.
     """
 
-    TWO_THIRDS = str(2.0 / 3)
+    TWO_THIRDS = "0.675"
     ONE_THIRD = str(1.0 / 3)
     END = "\n\n\\end{paracol}"
 
@@ -32,7 +29,7 @@ class Paracol:
                 return r"\begin{paracol}{1}"
         elif right:
             if center:
-                return r"\columnratio{" + Paracol.ONE_THIRD + "}\n" + r"\begin{paracol}{2}"
+                return r"\columnratio{" + Paracol.TWO_THIRDS + "}\n" + r"\begin{paracol}{2}"
             else:
                 return r"\begin{paracol}{1}"
         elif center:

@@ -24,12 +24,15 @@ class RowMaker:
         :param expected_length: The expected length of characters. Used as a baseline for row-making.
         """
 
-        col_temp = Column([], column.font, column.font_size)
+        col_temp = Column([], column.font, column.font_size, column.font_skip)
 
         # Try to fill the temporary column with the target number of characters.
         filled = False if expected_length > 0 else True
         next_word_index = 0
         while not filled:
+            if next_word_index > len(column.words):
+                filled = True
+                continue
             # Get the next word.
             col_temp.words.append(column.words[next_word_index])
             next_word_index += 1
@@ -48,7 +51,7 @@ class RowMaker:
             if num_rows <= target_num_rows:
                 # If there no more words to add, return what we've got.
                 if next_word_index >= len(column.words):
-                    return col_temp.get_tex(True), Column([], column.font, column.font_size)
+                    return col_temp.get_tex(True), Column([], column.font, column.font_size, column.font_skip)
 
                 # Append a new word.
                 col_temp.words.append(column.words[next_word_index])
@@ -70,7 +73,7 @@ class RowMaker:
                         # Create a temporary column that includes the first half of the pair.
                         words = col_temp.words[:]
                         words.append(pair[0])
-                        col_temp_temp = Column(words, column.font, column.font_size)
+                        col_temp_temp = Column(words, column.font, column.font_size, column.font_skip)
 
                         # The hyphenated fragment fits! Add it and return the truncated column.
                         if self.get_num_rows(col_temp_temp.get_tex(True)) == target_num_rows:
@@ -78,9 +81,9 @@ class RowMaker:
 
                             # Insert the second half of the word pair to the words list and add it to a new column.
                             words.insert(0, pair[1])
-                            return col_temp_temp.get_tex(True), Column(words, column.font, column.font_size)
+                            return col_temp_temp.get_tex(True), Column(words, column.font, column.font_size, column.font_skip)
                     # No hyphenated pair worked. Return what we've got.
-                    return col_temp.get_tex(True), Column(column.words[len(col_temp.words):], column.font, column.font_size)
+                    return col_temp.get_tex(True), Column(column.words[len(col_temp.words):], column.font, column.font_size, column.font_skip)
 
     def get_num_rows(self, tex: str) -> int:
         """

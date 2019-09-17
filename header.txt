@@ -4,29 +4,15 @@
 \usepackage{marginnote}
 \usepackage{sectsty}
 \usepackage{ragged2e}
-
 \usepackage{lineno}
-\setlength{\tabcolsep}{1em}
+\usepackage{xcolor}
+\usepackage{paracol}
+\usepackage{fontspec}
 
 \allsectionsfont{\centering}
 
-\usepackage{xcolor}
-\usepackage{lipsum}
-\usepackage{paracol}
-
 \setlength\parindent{0pt}
 \setlength{\columnsep}{1.25em}
-
-\usepackage{fontspec}
-
-\usepackage{lineno}
-
-\newdimen\height
-
-\newcommand{\boxheight}[1]{%
- \setbox0=\vbox{\strut#1\strut}%
- \height=\ht0 \advance\height by \dp0
- #1%
-}
-
 \setlength{\parfillskip}{0pt}
+\setlength{\tabcolsep}{1em}
+

@@ -1,11 +1,5 @@
 from pathlib import Path
-import re
 from typing import List
-from sys import platform
-from os import devnull
-from os.path import join, exists
-import math
-import io
 from json import load
 from column import Column
 from util import to_camelcase
@@ -136,9 +130,11 @@ class Talmudifier:
 
         # Get the font-size command.
         if "skip" not in font_data or "size" not in font_data:
-            font_size = ""
+            font_size = -1
+            font_skip = -1
         else:
-            font_size = "\\fontsize{" + str(font_data["size"]) + "}{" + str(font_data["skip"]) + "}"
+            font_size = font_data["size"]
+            font_skip = font_data["skip"]
 
         # Get the citation.
         if "citation" in font_data:
@@ -194,7 +190,7 @@ class Talmudifier:
             if "</u>" in w:
                 style.underline = False
 
-        return Column(words, "\\" + column_name + "font", font_size)
+        return Column(words, "\\" + column_name + "font", font_size, font_skip)
 
     def _get_expected_length(self, column_name: str, width: str, num_rows: int) -> int:
         """
@@ -316,12 +312,16 @@ class Talmudifier:
 
             # Get the number of lines.
             num_lines = rowmaker.get_num_rows(col.get_tex(True))
+
+            # Get the number of lines relative to the left column's font size.
+            num_lines = round((col.font_size / self.left.font_size) * num_lines)
+
             if num_lines < min_lines:
                 min_col = col
                 min_lines = num_lines
                 min_column_name = column_name
 
-        return min_col, min_column_name, min_lines, False
+        return min_col, min_column_name, min_lines, True
 
     def get_tex(self) -> str:
         tex = ""
@@ -342,8 +342,8 @@ class Talmudifier:
         
         done = False
         while not done:
-            shortest_col, shortest_col_name, num_lines, done = self._get_shortest()
-
+            shortest_col, shortest_col_name, num_lines, any_lines = self._get_shortest()
+            done = not any_lines
             if done:
                 continue
 
@@ -362,15 +362,26 @@ class Talmudifier:
 
             # Fill the other columns, if possible.
             cols = self._get_columns_with_words()
+            has_left = self.left in cols
+            has_center = self.center in cols
+            has_right = self.right in cols
+
             for i in range(len(cols)):
                 if cols[i] == shortest_col:
                     continue
                 col_name = self._get_column_name(cols[i])
 
                 # Build the column.
-                rm = RowMaker(self.left in cols, self.center in cols, self.right in cols, col_name, self.writer)
-                col_tex, col = rm.get_text_of_length(cols[i], num_lines + 1,
-                                                     self._get_expected_length(col_name, self._get_column_width(col_name), num_lines + 1))
+                rm = RowMaker(has_left, has_center, has_right, col_name, self.writer)
+
+                # Set the target number of lines based on the font size relative to the left column.
+                target_num_lines = round((self.left.font_size / cols[i].font_size) * (num_lines + 1))
+
+                col_tex, col = rm.get_text_of_length(cols[i],
+                                                     target_num_lines,
+                                                     self._get_expected_length(col_name,
+                                                                               self._get_column_width(col_name),
+                                                                               target_num_lines))
 
                 # Update the table.
                 table.update({col_name: col_tex})
@@ -389,7 +400,9 @@ class Talmudifier:
             shortest_col.words = []
 
             # Build the paracol.
-            for col_key in table:
+            for col_key in ["left", "center", "right"]:
+                if col_key not in table:
+                    continue
                 paracol += table[col_key]
                 if col_key != "right":
                     paracol += "\n\n\\switchcolumn\n\n"

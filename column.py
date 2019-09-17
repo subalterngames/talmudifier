@@ -9,17 +9,23 @@ class Column:
     From this, a valid block of TeX text can be generated.
     """
 
-    def __init__(self, words: List[Word], font: str, font_size: str):
+    def __init__(self, words: List[Word], font: str, font_size: int, font_skip: int):
         """
         :param words: The list of words in the column.
-        :param citation: The citation object used to generate citations.
         :param font: The command used to start the font.
-        :param font_size: The font size command.
+        :param font_size: The font size.
+        :param font_skip: The font skip size.
         """
 
         self.words = words
         self.font = font
         self.font_size = font_size
+        self.font_skip = font_skip
+
+        if self.font_size > 0 and self.font_skip > 0:
+            self.font_command = "\\fontsize{" + str(font_size) + "}{" + str(font_skip) + "}"
+        else:
+            self.font_command = ""
 
     def get_tex(self, close_braces: bool, start_index=0, end_index=-1) -> str:
         """
@@ -31,7 +37,7 @@ class Column:
         """
 
         # Start the text with the font size and the font command.
-        tex = self.font_size + self.font + " "
+        tex = self.font_command + self.font + " "
 
         style = Style(False, False, False)
 
