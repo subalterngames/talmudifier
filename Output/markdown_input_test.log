@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7050 64-bit) (preloaded format=xelatex 2019.9.3)  17 SEP 2019 12:39
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7050 64-bit) (preloaded format=xelatex 2019.9.3)  17 SEP 2019 15:54
 entering extended mode
 **\documentclass[11pt,letterpaper,openany]{scrbook} \usepackage[letterpaper, bi
 ndingoffset=0.2in, left=1in,right=1in,top=.5in,bottom=.5in,footskip=.25in,margi
@@ -39,47 +39,47 @@ rah our queen."\marginnote{\noindent\justifying \tiny Lorem 1:23} \underline{R.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus enim se
 mper tincidunt varius. Nam et mi lacus. Sed commodo leo consectetur, imperdiet 
 neque eget, aliquet felis. Etiam elit nulla, malesuada vitae dolor eget, tincid
-unt pharetra tellus a. Nunc eget convallis nunc, in  \switchcolumn  \fontsize{1
-3}{15}\centerfont This is the center column of text. It is a slightly bigger fo
-nt, and contains the ``primary story". Occasionally, sentences end with citatio
-n notes. \leftcitationfont{\leftcitation א} \centerfont  Citations that are blo
-ck Hebrew letters direct the reader to the left column. \leftcitationfont{\left
-citation ב} \centerfont  Citations that are Rashi Hebrew characters direct the 
-reader to the right column. \rightcitationfont{\rightcitation א} \centerfont In
- the markdown, this is handled by adding a L or R to the citation character, e.
-g. R-aleph. \rightcitationfont{\rightcitation ב} \centerfont  This column has t
-he largest font. Some words, such as \textbf{Asherah} are always rendered in sm
-allcaps.  \switchcolumn  \fontsize{11}{13}\rightfont manner, you can participat
-e in the rabbinical discourse. Or perhaps you're actually providing a third lay
-er, rather than adding to the second? Either way, this is where the narrative `
-`branches". Only it doesn't really branch because, of course,  you aren't affec
-ting the center column at all. Rather, this column tends to answer questions of
- ``why something happened" or ``in what manner did something happen", and those
- answers are branched. \big\| If \textbf{The left column is the oral center col
-umn:} You're not really \textit{any} steps  removed from the center column, bec
-ause without a reader, the center column is just ink on a page. The implication
-s of your previous thoughts are inextricably linked to how you have, are,  \end
-{paracol}  \begin{paracol}{2}\fontsize{11}{13}\leftfont faucibus ante. Sed dict
-um varius neque commodo hendrerit. Sed maximus ligula nunc, et tristique sapien
- faucibus et. Donec dictum turpis ac odio rhoncus consequat. Pellentesque metus
- nisi, sodales ut vestibulum vitae, convallis eget purus. Nulla lectus lacus, d
-apibus at molestie mattis, placerat non purus. Sed ac pharetra neque. Sed accum
-san libero non sollicitudin faucibus. Integer a urna tortor. Proin quis volutpa
-t turpis. Cras consectetur quam mauris, vitae feugiat ipsum sollicitudin at. Du
-is non imperdiet diam. Suspendisse laoreet venenatis metus sed porta. Nullam ve
-l leo turpis. Vivamus id lacinia turpis, lacinia mattis libero. Proin fermentum
-, quam a rhoncus ornare, leo turpis facilisis leo, sit amet consectetur purus n
-ulla non  \switchcolumn  \fontsize{11}{13}\rightfont and will read the center t
-ext. And so on and so forth.  \rightcitation{ב} \rightfont If \textbf{R. Seth h
-elped me understand:} Typically, the right column won't offer answers based on 
-inscriptions you make on the same page. Rather, the bolded conditionals tend to
- be things you wrote down on \textit{previous} pages, such that previous readin
-gs inspire later readings. But since this is the only page in this test, that i
-s of course impossible! So instead we'll work with what we got. \big\| If \text
-bf{That last proof-text was gibberish:} Sure, but in order to test the layout, 
-I need more words, so here's a few more: Praesent vitae mi mi. Sed viverra nibh
- turpis, non vulputate tellus tincidunt nec.  \end{paracol}    \begin{paracol}{
-1}  \fontsize{11}{13}\leftfont leo. Ut volutpat, nunc eu viverra dictum, sapien
+unt pharetra tellus  \switchcolumn  \fontsize{13}{15}\centerfont This is the ce
+nter column of text. It is a slightly bigger font, and contains the ``primary s
+tory". Occasionally, sentences end with citation notes. \leftcitationfont{\left
+citation א} \centerfont  Citations that are block Hebrew letters direct the rea
+der to the left column. \leftcitationfont{\leftcitation ב} \centerfont  Citatio
+ns that are Rashi Hebrew characters direct the reader to the right column. \rig
+htcitationfont{\rightcitation א} \centerfont In the markdown, this is handled b
+y adding a L or R to the citation character, e.g. R-aleph. \rightcitationfont{\
+rightcitation ב} \centerfont  This column has the largest font. Some words, suc
+h as \textbf{Asherah} are always rendered in smallcaps.  \switchcolumn  \fontsi
+ze{11}{13}\rightfont manner, you can participate in the rabbinical discourse. O
+r perhaps you're actually providing a third layer, rather than adding to the se
+cond? Either way, this is where the narrative ``branches". Only it doesn't real
+ly branch because, of course,  you aren't affecting the center column at all. R
+ather, this column tends to answer questions of ``why something happened" or ``
+in what manner did something happen", and those answers are branched. \big\| If
+ \textbf{The left column is the oral center column:} You're not really \textit{
+any} steps  removed from the center column, because without a reader, the cente
+r column is just ink on a page. The implications of your previous thoughts are 
+inextricably  \end{paracol}  \begin{paracol}{2}\fontsize{11}{13}\leftfont a. Nu
+nc eget convallis nunc, in faucibus ante. Sed dictum varius neque commodo hendr
+erit. Sed maximus ligula nunc, et tristique sapien faucibus et. Donec dictum tu
+rpis ac odio rhoncus consequat. Pellentesque metus nisi, sodales ut vestibulum 
+vitae, convallis eget purus. Nulla lectus lacus, dapibus at molestie mattis, pl
+acerat non purus. Sed ac pharetra neque. Sed accumsan libero non sollicitudin f
+aucibus. Integer a urna tortor. Proin quis volutpat turpis. Cras consectetur qu
+am mauris, vitae feugiat ipsum sollicitudin at. Duis non imperdiet diam. Suspen
+disse laoreet venenatis metus sed porta. Nullam vel leo turpis. Vivamus id laci
+nia turpis, lacinia mattis libero. Proin fermentum, quam a rhoncus ornare, leo 
+turpis facilisis leo, sit amet  \switchcolumn  \fontsize{11}{13}\rightfont link
+ed to how you have, are, and will read the center text. And so on and so forth.
+  \rightcitation{ב} \rightfont If \textbf{R. Seth helped me understand:} Typica
+lly, the right column won't offer answers based on inscriptions you make on the
+ same page. Rather, the bolded conditionals tend to be things you wrote down on
+ \textit{previous} pages, such that previous readings inspire later readings. B
+ut since this is the only page in this test, that is of course impossible! So i
+nstead we'll work with what we got. \big\| If \textbf{That last proof-text was 
+gibberish:} Sure, but in order to test the layout, I need more words, so here's
+ a few more: Praesent vitae mi mi. Sed viverra nibh turpis, non vulputate tellu
+s tincidunt nec.  \end{paracol}    \begin{paracol}{1}  \fontsize{11}{13}\leftfo
+nt consectetur purus nulla non leo. Ut volutpat, nunc eu viverra dictum, sapien
  quam porta tellus, vel viverra diam erat at mi. Maecenas pellentesque mattis n
 ibh in consequat. Donec mollis, ex a ullamcorper consectetur, diam leo aliquet 
 leo, eu interdum tortor velit in magna."\marginnote{\noindent\justifying \tiny 
@@ -884,18 +884,35 @@ Underfull \hbox (badness 3396) detected at line 0
  []
 
 
-Underfull \hbox (badness 1852) detected at line 0
-\TU/IMFeFCrm29C.otf(0)/m/n/11 modo hendrerit. Sed maximus ligula nunc,
+Underfull \hbox (badness 10000) detected at line 0
+[]\TU/IMFeFCrm29C.otf(0)/m/n/11 consectetur purus nulla non leo. Ut volutpat, n
+unc eu viverra dictum, sapien
  []
 
 
-Underfull \hbox (badness 1642) detected at line 0
-\TU/AveriaLibre-Light.ttf(0)/m/n/11 out, I need more words, so here’s a few
+Underfull \hbox (badness 10000) detected at line 0
+\TU/IMFeFCrm29C.otf(0)/m/n/11 quam porta tellus, vel viverra diam erat at mi. M
+aecenas pellentesque mattis nibh
  []
 
 
-Underfull \hbox (badness 1043) detected at line 0
-\TU/AveriaLibre-Light.ttf(0)/m/n/11 more: Praesent vitae mi mi. Sed viverra
+Underfull \hbox (badness 10000) detected at line 0
+\TU/IMFeFCrm29C.otf(0)/m/n/11 in consequat. Donec mollis, ex a ullamcorper cons
+ectetur, diam leo aliquet leo,
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 0
+\TU/IMFeFCrm29C.otf(0)/m/n/11 eu interdum tortor velit in magna.” Does that cla
+rify anything for you? \TU/IMFeFlow2.otf(0)/m/n/11 1 \TU/IMFeFCrm29C.otf(0)/m/i
+t/11 In-
+ []
+
+
+Underfull \hbox (badness 7203) detected at line 0
+\TU/IMFeFCrm29C.otf(0)/m/it/11 scribe: \TU/IMFeFCrm29C.otf(0)/bx/n/11 R. Seth h
+elped me understand. \TU/IMFeFCrm29C.otf(0)/m/it/11 or \TU/IMFeFCrm29C.otf(0)/b
+x/n/11 That last proof-text was gibberish.
  []
 
 [1

@@ -316,7 +316,7 @@ class Talmudifier:
             num_lines = rowmaker.get_num_rows(col.get_tex(True))
 
             # Get the number of lines relative to the left column's font size.
-            num_lines = round((col.font_size / self.left.font_size) * num_lines)
+            num_lines = int((col.font_size / self.left.font_size) * num_lines)
 
             if num_lines < min_lines:
                 min_col = col
@@ -377,7 +377,7 @@ class Talmudifier:
                 rm = RowMaker(has_left, has_center, has_right, col_name, self.writer)
 
                 # Set the target number of lines based on the font size relative to the left column.
-                target_num_lines = round((self.left.font_size / cols[i].font_size) * (num_lines + 1))
+                target_num_lines = int((self.left.font_size / cols[i].font_size) * num_lines + 1)
 
                 col_tex, col = rm.get_text_of_length(cols[i],
                                                      target_num_lines,

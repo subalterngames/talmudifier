@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7050 64-bit) (preloaded format=xelatex 2019.9.3)  17 SEP 2019 12:46
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7050 64-bit) (preloaded format=xelatex 2019.9.3)  17 SEP 2019 15:55
 entering extended mode
 **./paracol_test.tex
 (paracol_test.tex
@@ -759,19 +759,13 @@ Underfull \hbox (badness 2334) in paragraph at lines 61--62
  []
 
 
-Underfull \hbox (badness 4279) in paragraph at lines 61--62
-\TU/IMFeENrm29P.ttf(0)/m/n/13 casionally, sentences end
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+\TU/IMFeENrm29P.ttf(0)/m/n/13 bigger font, and con-
  []
 
 
-Underfull \hbox (badness 7397) in paragraph at lines 61--62
-\TU/IMFeENrm29P.ttf(0)/m/n/13 with citation notes. [] \TU/FrankRuehlCLM-Medium.
-ttf(0)/m/n/14.4 א[]
- []
-
-
-Underfull \hbox (badness 6708) in paragraph at lines 61--62
-\TU/IMFeENrm29P.ttf(0)/m/n/13 Citations that are block
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+\TU/IMFeENrm29P.ttf(0)/m/n/13 Occasionally, sentences
  []
 
 
@@ -780,19 +774,19 @@ Underfull \hbox (badness 2951) in paragraph at lines 61--62
  []
 
 
-Underfull \hbox (badness 7133) in paragraph at lines 61--62
-\TU/IMFeENrm29P.ttf(0)/m/n/13 a L or R to the cita-
+Underfull \hbox (badness 1215) in paragraph at lines 61--62
+\TU/IMFeENrm29P.ttf(0)/m/n/13 a L or R to the citation
  []
 
 
-Underfull \hbox (badness 3525) in paragraph at lines 61--62
-\TU/IMFeENrm29P.ttf(0)/m/n/13 tion character, e.g. R-
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+\TU/Mekorot-Rashi.ttf(0)/m/n/10.95 ב[] \TU/IMFeENrm29P.ttf(0)/m/n/13 This colum
+n has the
  []
 
 
-Underfull \hbox (badness 4001) in paragraph at lines 61--62
-\TU/IMFeENrm29P.ttf(0)/m/n/13 such as \TU/IMFeENrm29P.ttf(0)/bx/n/13 Asherah \T
-U/IMFeENrm29P.ttf(0)/m/n/13 are al-
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
+\TU/IMFeENrm29P.ttf(0)/m/n/13 rendered in smallcaps.
  []
 
 
@@ -816,18 +810,35 @@ Underfull \hbox (badness 3396) in paragraph at lines 65--66
  []
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 69--70
-\TU/IMFeFCrm29C.otf(0)/m/n/11 modo hendrerit. Sed maximus ligula nunc,
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+[]\TU/IMFeFCrm29C.otf(0)/m/n/11 consectetur purus nulla non leo. Ut volutpat, n
+unc eu viverra dictum, sapien
  []
 
 
-Underfull \hbox (badness 1642) in paragraph at lines 73--74
-\TU/AveriaLibre-Light.ttf(0)/m/n/11 out, I need more words, so here’s a few
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+\TU/IMFeFCrm29C.otf(0)/m/n/11 quam porta tellus, vel viverra diam erat at mi. M
+aecenas pellentesque mattis nibh
  []
 
 
-Underfull \hbox (badness 1043) in paragraph at lines 73--74
-\TU/AveriaLibre-Light.ttf(0)/m/n/11 more: Praesent vitae mi mi. Sed viverra
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+\TU/IMFeFCrm29C.otf(0)/m/n/11 in consequat. Donec mollis, ex a ullamcorper cons
+ectetur, diam leo aliquet leo,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+\TU/IMFeFCrm29C.otf(0)/m/n/11 eu interdum tortor velit in magna.” Does that cla
+rify anything for you? \TU/IMFeFlow2.otf(0)/m/n/11 1 \TU/IMFeFCrm29C.otf(0)/m/i
+t/11 In-
+ []
+
+
+Underfull \hbox (badness 7203) in paragraph at lines 81--82
+\TU/IMFeFCrm29C.otf(0)/m/it/11 scribe: \TU/IMFeFCrm29C.otf(0)/bx/n/11 R. Seth h
+elped me understand. \TU/IMFeFCrm29C.otf(0)/m/it/11 or \TU/IMFeFCrm29C.otf(0)/b
+x/n/11 That last proof-text was gibberish.
  []
 
 [1
