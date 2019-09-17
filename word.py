@@ -2,6 +2,7 @@ from hyphen import Hyphenator
 from typing import Dict, Optional
 from style import Style
 from citation import Citation
+import re
 
 
 class Word:
@@ -45,7 +46,12 @@ class Word:
         # Do the substitutions.
         if substitutions is not None:
             for key in substitutions:
-                self.word = self.word.replace(key, substitutions[key])
+                self.word = re.sub(key, substitutions[key], self.word).replace("&", " ")
+
+        if word.startswith('"'):
+            self.word = "``" + word[1:]
+        elif word. startswith("'"):
+            self.word = "`" + word[1:]
 
     def _get_hyphenated_pairs(self, substitutions: Dict[str, str]) -> list:
         """

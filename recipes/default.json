@@ -12,8 +12,8 @@
       "skip": 13,
       "substitutions":
       {
-        "`=(.*)`": "\\marginnote{\\noindent\\justifying \\tiny \\1}",
-        "->": "\\flowerfont 1 \\leftfont"
+        "`=(.*)`": "\\\\marginnote{\\\\noindent\\\\justifying \\\\tiny \\1}",
+        "->": "\\\\flowerfont 1 \\\\leftfont"
       },
       "citation":
       {
@@ -32,7 +32,12 @@
       "italic_font": "IMFeENit29P.ttf",
       "bold_font": "IMFeENsc29P.ttf",
       "size": 13,
-      "skip": 15
+      "skip": 15,
+      "substitutions":
+      {
+        "`L(.*)`": "\\\\leftcitationfont{\\\\leftcitation \\1} \\\\centerfont ",
+        "`R(.*)`": "\\\\rightcitationfont{\\\\rightcitation \\1} \\\\centerfont "
+      }
     },
     "right":
     {
@@ -46,7 +51,7 @@
       "skip": 13,
       "substitutions":
       {
-        "|": "\\big\\|"
+        "\\|": "\\\\big\\\\|"
       },
       "citation":
       {

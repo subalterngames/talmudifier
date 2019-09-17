@@ -157,27 +157,29 @@ class Talmudifier:
             if w.startswith("**"):
                 style.bold = True
             elif w.endswith("**"):
-                style.bold = False
+                style.bold = True
 
             if w.startswith("_"):
                 style.italic = True
             elif w.endswith("_"):
-                style.italic = False
+                style.italic = True
 
             if w.startswith("_**") or w.startswith("**_"):
                 style.bold = True
                 style.italic = True
             elif w.endswith("_**") or w.endswith("**_"):
-                style.bold = False
-                style.italic = False
+                style.bold = True
+                style.italic = True
 
             if "<u>" in w:
                 style.underline = True
             elif "</u>" in w:
-                style.underline = False
+                style.underline = True
+
+            w_str = w.replace("*", "").replace("_", "").replace("<u>", "").replace("</u>", "")
 
             # Append the new word.
-            words.append(Word(w, Style(style.bold, style.italic, style.underline), substitutions, citation))
+            words.append(Word(w_str, Style(style.bold, style.italic, style.underline), substitutions, citation))
 
             # Check if this was one word, e.g. **this** and apply styles again.
             if w.endswith("**"):
@@ -414,9 +416,3 @@ class Talmudifier:
             tex += paracol
 
         return tex
-
-
-q = Talmudifier("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
-            "Fusce ac lacus faucibus, gravida metus ut, ullamcorper nulla. Duis orci quam, hendrerit volutpat est eu, aliquet blandit augue. Fusce semper lorem vitae consectetur pretium. Duis id suscipit est. Etiam lorem enim, fringilla vel nunc eget, hendrerit sodales neque. Sed condimentum rhoncus commodo. Aenean imperdiet lectus eget efficitur fringilla. Nulla magna risus, congue et eros nec, ultrices molestie metus. Praesent ultrices mauris purus, nec commodo orci posuere ut. Donec augue sem, tincidunt sit amet elementum a, accumsan ut quam. Duis luctus diam leo, et convallis justo congue ac. Curabitur at tellus nisi. Cras dignissim consequat magna sed vulputate. Donec at enim sed sem dictum fermentum.").get_tex()
-print(q)

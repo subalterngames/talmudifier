@@ -45,7 +45,7 @@ class Column:
         if end_index == -1:
             end_index = len(self.words)
 
-        for word in self.words[start_index: end_index]:
+        for word, w in zip(self.words[start_index: end_index], range(start_index, end_index)):
             # Add a citation word.
             if word.is_citation:
                 # Close all braces.
@@ -57,26 +57,32 @@ class Column:
             if word.style.bold and not style.bold:
                 tex += r"\textbf{"
                 style.bold = True
-            elif not word.style.bold and style.bold:
-                tex += "}"
-                style.bold = False
             # Set italic style.
             if word.style.italic and not style.italic:
                 tex += r"\textit{"
                 style.italic = True
-            elif not word.style.italic and style.italic:
-                tex += "}"
-                style.italic = False
             # Set underline style.
             if word.style.underline and not style.underline:
                 tex += r"\underline{"
                 style.underline = True
-            elif not word.style.underline and style.underline:
-                tex += "}"
-                style.underline = False
 
             # Append the word.
-            tex += word.word + " "
+            tex += word.word
+
+            # Try to close style braces.
+            if w < end_index - 1:
+                next_word = self.words[w + 1]
+                if style.bold and not next_word.style.bold:
+                    style.bold = False
+                    tex += "}"
+                if style.italic and not next_word.style.italic:
+                    style.italic = False
+                    tex += "}"
+                if style.underline and not next_word.style.underline:
+                    style.underline = False
+                    tex += "}"
+
+                tex += " "
 
         if close_braces:
             tex = Column._close_braces(tex)
