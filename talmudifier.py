@@ -416,3 +416,20 @@ class Talmudifier:
             tex += paracol
 
         return tex
+
+    def get_chapter(self, title: str) -> str:
+        """
+        Returns the chapter command.
+
+        :param title: The title of the chapter.
+        """
+
+        assert "chapter" in self.recipe, "Chapter not found in recipe."
+        assert "command" in self.recipe["chapter"], "Chapter command not found in recipe."
+        assert "numbering" in self.recipe["chapter"], "Chapter numbering not found in recipe."
+
+        chapter = "\\chapter"
+        if not self.recipe["chapter"]["numbering"]:
+            chapter += "*"
+        chapter += "{" + self.recipe["chapter"]["command"] + "{" + title + "}}"
+        return chapter

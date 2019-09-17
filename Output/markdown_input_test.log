@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7050 64-bit) (preloaded format=xelatex 2019.9.3)  17 SEP 2019 15:54
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7050 64-bit) (preloaded format=xelatex 2019.9.3)  17 SEP 2019 16:08
 entering extended mode
 **\documentclass[11pt,letterpaper,openany]{scrbook} \usepackage[letterpaper, bi
 ndingoffset=0.2in, left=1in,right=1in,top=.5in,bottom=.5in,footskip=.25in,margi
@@ -18,74 +18,75 @@ ly\rightcitationfont[Path=rashi/]{Mekorot-Rashi.ttf} \definecolor{hcolor}{HTML}
 command{\leftcitation}[1]{\leftcitationfont{\Large\textcolor{hcolor}{#1}}} \new
 command{\rightcitation}[1]{\rightcitationfont{\normalsize\textcolor{hcolor}{#1}
 }} \newfontfamily\flowerfont[Path=fell_flowers/]{IMFeFlow2.otf}\begin{document}
-\begin{sloppypar}   \begin{paracol}{2}  \fontsize{11}{13}\leftfont  \leftcitati
-on{א} \leftfont What is the left column? \underline{R. Seth:} This is the redac
-tion of the words of the rabbis and sages, who interpret the center text. \unde
-rline{R. Alter:} The rabbis never agree on anything. I think that the left\swit
-chcolumn\fontsize{11}{13}\rightfont  \rightcitation{א} \rightfont If \textbf{Th
-e center column is primary:}  This column is an interpretation of the center co
-lumn based on previous interpretations you made having read the left column of 
-rabbinical com-  \end{paracol}   \begin{paracol}{3}  \fontsize{11}{13}\leftfont
- column is the ``oral tradition",\switchcolumn[2]\fontsize{11}{13}\rightfont me
-ntary. commentary. In this  \end{paracol}  \begin{paracol}{3}\fontsize{11}{13}\
-leftfont given to us in parallel with the primary text. So there! When you see 
-the following special symbol, it's time to make a decision. \flowerfont 1 \left
-font \textit{Inscribe:} \textbf{The center column is primary.} \textit{or} \tex
-tbf{The left column is the oral center column.}  \leftcitation{ב} \leftfont \un
-derline{R. Alter:}  And another thing! Sometimes we have a lot to argue about, 
-and we end up citing verses, as it is written: ``Blah blah blah thus saith Ashe
-rah our queen."\marginnote{\noindent\justifying \tiny Lorem 1:23} \underline{R.
- Seth:} I'm just going to fill up a lot of space now by citing another text: ``
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus enim se
-mper tincidunt varius. Nam et mi lacus. Sed commodo leo consectetur, imperdiet 
-neque eget, aliquet felis. Etiam elit nulla, malesuada vitae dolor eget, tincid
-unt pharetra tellus  \switchcolumn  \fontsize{13}{15}\centerfont This is the ce
-nter column of text. It is a slightly bigger font, and contains the ``primary s
-tory". Occasionally, sentences end with citation notes. \leftcitationfont{\left
-citation א} \centerfont  Citations that are block Hebrew letters direct the rea
-der to the left column. \leftcitationfont{\leftcitation ב} \centerfont  Citatio
-ns that are Rashi Hebrew characters direct the reader to the right column. \rig
-htcitationfont{\rightcitation א} \centerfont In the markdown, this is handled b
-y adding a L or R to the citation character, e.g. R-aleph. \rightcitationfont{\
-rightcitation ב} \centerfont  This column has the largest font. Some words, suc
-h as \textbf{Asherah} are always rendered in smallcaps.  \switchcolumn  \fontsi
-ze{11}{13}\rightfont manner, you can participate in the rabbinical discourse. O
-r perhaps you're actually providing a third layer, rather than adding to the se
-cond? Either way, this is where the narrative ``branches". Only it doesn't real
-ly branch because, of course,  you aren't affecting the center column at all. R
-ather, this column tends to answer questions of ``why something happened" or ``
-in what manner did something happen", and those answers are branched. \big\| If
- \textbf{The left column is the oral center column:} You're not really \textit{
-any} steps  removed from the center column, because without a reader, the cente
-r column is just ink on a page. The implications of your previous thoughts are 
-inextricably  \end{paracol}  \begin{paracol}{2}\fontsize{11}{13}\leftfont a. Nu
-nc eget convallis nunc, in faucibus ante. Sed dictum varius neque commodo hendr
-erit. Sed maximus ligula nunc, et tristique sapien faucibus et. Donec dictum tu
-rpis ac odio rhoncus consequat. Pellentesque metus nisi, sodales ut vestibulum 
-vitae, convallis eget purus. Nulla lectus lacus, dapibus at molestie mattis, pl
-acerat non purus. Sed ac pharetra neque. Sed accumsan libero non sollicitudin f
-aucibus. Integer a urna tortor. Proin quis volutpat turpis. Cras consectetur qu
-am mauris, vitae feugiat ipsum sollicitudin at. Duis non imperdiet diam. Suspen
-disse laoreet venenatis metus sed porta. Nullam vel leo turpis. Vivamus id laci
-nia turpis, lacinia mattis libero. Proin fermentum, quam a rhoncus ornare, leo 
-turpis facilisis leo, sit amet  \switchcolumn  \fontsize{11}{13}\rightfont link
-ed to how you have, are, and will read the center text. And so on and so forth.
-  \rightcitation{ב} \rightfont If \textbf{R. Seth helped me understand:} Typica
-lly, the right column won't offer answers based on inscriptions you make on the
- same page. Rather, the bolded conditionals tend to be things you wrote down on
- \textit{previous} pages, such that previous readings inspire later readings. B
-ut since this is the only page in this test, that is of course impossible! So i
-nstead we'll work with what we got. \big\| If \textbf{That last proof-text was 
-gibberish:} Sure, but in order to test the layout, I need more words, so here's
- a few more: Praesent vitae mi mi. Sed viverra nibh turpis, non vulputate tellu
-s tincidunt nec.  \end{paracol}    \begin{paracol}{1}  \fontsize{11}{13}\leftfo
-nt consectetur purus nulla non leo. Ut volutpat, nunc eu viverra dictum, sapien
- quam porta tellus, vel viverra diam erat at mi. Maecenas pellentesque mattis n
-ibh in consequat. Donec mollis, ex a ullamcorper consectetur, diam leo aliquet 
-leo, eu interdum tortor velit in magna."\marginnote{\noindent\justifying \tiny 
-Ipsum 69:420} Does that clarify anything for you? \flowerfont 1 \leftfont \text
-it{Inscribe:} \textbf{R. Seth helped me understand.} \textit{or} \textbf{That l
-ast proof-text was gibberish.}  \end{paracol}  \end{sloppypar}\end{document}
+\begin{sloppypar}  \chapter*{\chfont{The Hammer of Lilith}}  \begin{paracol}{2}
+  \fontsize{11}{13}\leftfont \leftcitation{א} \leftfont What is the left column
+? \underline{R. Seth:} This is the redaction of the words of the rabbis and sag
+es, who interpret the center text. \underline{R. Alter:} The rabbis never agree
+ on anything. I think that the left\switchcolumn\fontsize{11}{13}\rightfont \ri
+ghtcitation{א} \rightfont If \textbf{The center column is primary:}  This colum
+n is an interpretation of the center column based on previous interpretations y
+ou made having read the left column of rabbinical com-  \end{paracol}   \begin{
+paracol}{3}  \fontsize{11}{13}\leftfont column is the ``oral tradition",\switch
+column[2]\fontsize{11}{13}\rightfont mentary. commentary. In this  \end{paracol
+}  \begin{paracol}{3}\fontsize{11}{13}\leftfont given to us in parallel with th
+e primary text. So there! When you see the following special symbol, it's time 
+to make a decision. \flowerfont 1 \leftfont \textit{Inscribe:} \textbf{The cent
+er column is primary.} \textit{or} \textbf{The left column is the oral center c
+olumn.} \leftcitation{ב} \leftfont \underline{R. Alter:}  And another thing! So
+metimes we have a lot to argue about, and we end up citing verses, as it is wri
+tten: ``Blah blah blah thus saith Asherah our queen."\marginnote{\noindent\just
+ifying \tiny Lorem 1:23} \underline{R. Seth:} I'm just going to fill up a lot o
+f space now by citing another text: ``Lorem ipsum dolor sit amet, consectetur a
+dipiscing elit. Fusce faucibus enim semper tincidunt varius. Nam et mi lacus. S
+ed commodo leo consectetur, imperdiet neque eget, aliquet felis. Etiam elit nul
+la, malesuada vitae dolor eget, tincidunt pharetra tellus  \switchcolumn  \font
+size{13}{15}\centerfont This is the center column of text. It is a slightly big
+ger font, and contains the ``primary story". Occasionally, sentences end with c
+itation notes. \leftcitationfont{\leftcitation א} \centerfont  Citations that a
+re block Hebrew letters direct the reader to the left column. \leftcitationfont
+{\leftcitation ב} \centerfont  Citations that are Rashi Hebrew characters direc
+t the reader to the right column. \rightcitationfont{\rightcitation א} \centerf
+ont In the markdown, this is handled by adding a L or R to the citation charact
+er, e.g. R-aleph. \rightcitationfont{\rightcitation ב} \centerfont  This column
+ has the largest font. Some words, such as \textbf{Asherah} are always rendered
+ in smallcaps.  \switchcolumn  \fontsize{11}{13}\rightfont manner, you can part
+icipate in the rabbinical discourse. Or perhaps you're actually providing a thi
+rd layer, rather than adding to the second? Either way, this is where the narra
+tive ``branches". Only it doesn't really branch because, of course,  you aren't
+ affecting the center column at all. Rather, this column tends to answer questi
+ons of ``why something happened" or ``in what manner did something happen", and
+ those answers are branched. \big\| If \textbf{The left column is the oral cent
+er column:} You're not really \textit{any} steps  removed from the center colum
+n, because without a reader, the center column is just ink on a page. The impli
+cations of your previous thoughts are inextricably  \end{paracol}  \begin{parac
+ol}{2}\fontsize{11}{13}\leftfont a. Nunc eget convallis nunc, in faucibus ante.
+ Sed dictum varius neque commodo hendrerit. Sed maximus ligula nunc, et tristiq
+ue sapien faucibus et. Donec dictum turpis ac odio rhoncus consequat. Pellentes
+que metus nisi, sodales ut vestibulum vitae, convallis eget purus. Nulla lectus
+ lacus, dapibus at molestie mattis, placerat non purus. Sed ac pharetra neque. 
+Sed accumsan libero non sollicitudin faucibus. Integer a urna tortor. Proin qui
+s volutpat turpis. Cras consectetur quam mauris, vitae feugiat ipsum sollicitud
+in at. Duis non imperdiet diam. Suspendisse laoreet venenatis metus sed porta. 
+Nullam vel leo turpis. Vivamus id lacinia turpis, lacinia mattis libero. Proin 
+fermentum, quam a rhoncus ornare, leo turpis facilisis leo, sit amet  \switchco
+lumn  \fontsize{11}{13}\rightfont linked to how you have, are, and will read th
+e center text. And so on and so forth. \rightcitation{ב} \rightfont If \textbf{
+R. Seth helped me understand:} Typically, the right column won't offer answers 
+based on inscriptions you make on the same page. Rather, the bolded conditional
+s tend to be things you wrote down on \textit{previous} pages, such that previo
+us readings inspire later readings. But since this is the only page in this tes
+t, that is of course impossible! So instead we'll work with what we got. \big\|
+ If \textbf{That last proof-text was gibberish:} Sure, but in order to test the
+ layout, I need more words, so here's a few more: Praesent vitae mi mi. Sed viv
+erra nibh turpis, non vulputate tellus tincidunt nec.  \end{paracol}    \begin{
+paracol}{1}  \fontsize{11}{13}\leftfont consectetur purus nulla non leo. Ut vol
+utpat, nunc eu viverra dictum, sapien quam porta tellus, vel viverra diam erat 
+at mi. Maecenas pellentesque mattis nibh in consequat. Donec mollis, ex a ullam
+corper consectetur, diam leo aliquet leo, eu interdum tortor velit in magna."\m
+arginnote{\noindent\justifying \tiny Ipsum 69:420} Does that clarify anything f
+or you? \flowerfont 1 \leftfont \textit{Inscribe:} \textbf{R. Seth helped me un
+derstand.} \textit{or} \textbf{That last proof-text was gibberish.}  \end{parac
+ol}  \end{sloppypar}\end{document}
 
 ("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrbo
 ok.cls"
@@ -917,6 +918,7 @@ x/n/11 That last proof-text was gibberish.
 
 [1
 
+
 ] (C:\Users\alters\talmudifier\Output\markdown_input_test.aux)
 
 LaTeX Font Warning: Size substitutions with differences
@@ -924,13 +926,13 @@ LaTeX Font Warning: Size substitutions with differences
 
  
 Here is how much of TeX's memory you used:
- 16847 strings out of 427669
- 361998 string characters out of 3144750
+ 16855 strings out of 427669
+ 362261 string characters out of 3144750
  575790 words of memory out of 3000000
- 20820 multiletter control sequences out of 15000+200000
- 534494 words of font info for 71 fonts, out of 3000000 for 9000
+ 20823 multiletter control sequences out of 15000+200000
+ 534518 words of font info for 74 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 46i,8n,78p,15863b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,7n,78p,15900b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on C:\Users\alters\talmudifier\Output\markdown_input_test.pdf (1
  page).

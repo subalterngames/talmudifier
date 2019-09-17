@@ -4,32 +4,18 @@
 \usepackage{marginnote}
 \usepackage{sectsty}
 \usepackage{ragged2e}
-
 \usepackage{lineno}
-\setlength{\tabcolsep}{1em}
+\usepackage{xcolor}
+\usepackage{paracol}
+\usepackage{fontspec}
 
 \allsectionsfont{\centering}
 
-\usepackage{xcolor}
-\usepackage{lipsum}
-\usepackage{paracol}
-
 \setlength\parindent{0pt}
 \setlength{\columnsep}{1.25em}
-
-\usepackage{fontspec}
-
-\usepackage{lineno}
-
-\newdimen\height
-
-\newcommand{\boxheight}[1]{%
- \setbox0=\vbox{\strut#1\strut}%
- \height=\ht0 \advance\height by \dp0
- #1%
-}
-
 \setlength{\parfillskip}{0pt}
+\setlength{\tabcolsep}{1em}
+
 
 \newfontfamily\leftfont[Path=fell_french_canon/, Ligatures=TeX, ItalicFont=IMFeFCit29C.otf, BoldFont=AveriaLibre-Bold.ttf]{IMFeFCrm29C.otf}
 \newfontfamily\leftcitationfont[Path=frankruehl/]{FrankRuehlCLM-Medium.ttf}
@@ -41,9 +27,12 @@
 \newcommand{\leftcitation}[1]{\leftcitationfont{\Large\textcolor{hcolor}{#1}}}
 \newcommand{\rightcitation}[1]{\rightcitationfont{\normalsize\textcolor{hcolor}{#1}}}
 \newfontfamily\flowerfont[Path=fell_flowers/]{IMFeFlow2.otf}\begin{document}\begin{sloppypar}
+
+\chapter*{\chfont{The Hammer of Lilith}}
+
 \begin{paracol}{2}
 
-\fontsize{11}{13}\leftfont  \leftcitation{א} \leftfont What is the left column? \underline{R. Seth:} This is the redaction of the words of the rabbis and sages, who interpret the center text. \underline{R. Alter:} The rabbis never agree on anything. I think that the left\switchcolumn\fontsize{11}{13}\rightfont  \rightcitation{א} \rightfont If \textbf{The center column is primary:}  This column is an interpretation of the center column based on previous interpretations you made having read the left column of rabbinical com-
+\fontsize{11}{13}\leftfont \leftcitation{א} \leftfont What is the left column? \underline{R. Seth:} This is the redaction of the words of the rabbis and sages, who interpret the center text. \underline{R. Alter:} The rabbis never agree on anything. I think that the left\switchcolumn\fontsize{11}{13}\rightfont \rightcitation{א} \rightfont If \textbf{The center column is primary:}  This column is an interpretation of the center column based on previous interpretations you made having read the left column of rabbinical com-
 
 \end{paracol}
 
@@ -54,7 +43,7 @@
 
 \end{paracol}
 
-\begin{paracol}{3}\fontsize{11}{13}\leftfont given to us in parallel with the primary text. So there! When you see the following special symbol, it's time to make a decision. \flowerfont 1 \leftfont \textit{Inscribe:} \textbf{The center column is primary.} \textit{or} \textbf{The left column is the oral center column.}  \leftcitation{ב} \leftfont \underline{R. Alter:}  And another thing! Sometimes we have a lot to argue about, and we end up citing verses, as it is written: ``Blah blah blah thus saith Asherah our queen."\marginnote{\noindent\justifying \tiny Lorem 1:23} \underline{R. Seth:} I'm just going to fill up a lot of space now by citing another text: ``Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus enim semper tincidunt varius. Nam et mi lacus. Sed commodo leo consectetur, imperdiet neque eget, aliquet felis. Etiam elit nulla, malesuada vitae dolor eget, tincidunt pharetra tellus
+\begin{paracol}{3}\fontsize{11}{13}\leftfont given to us in parallel with the primary text. So there! When you see the following special symbol, it's time to make a decision. \flowerfont 1 \leftfont \textit{Inscribe:} \textbf{The center column is primary.} \textit{or} \textbf{The left column is the oral center column.} \leftcitation{ב} \leftfont \underline{R. Alter:}  And another thing! Sometimes we have a lot to argue about, and we end up citing verses, as it is written: ``Blah blah blah thus saith Asherah our queen."\marginnote{\noindent\justifying \tiny Lorem 1:23} \underline{R. Seth:} I'm just going to fill up a lot of space now by citing another text: ``Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus enim semper tincidunt varius. Nam et mi lacus. Sed commodo leo consectetur, imperdiet neque eget, aliquet felis. Etiam elit nulla, malesuada vitae dolor eget, tincidunt pharetra tellus
 
 \switchcolumn
 
@@ -70,7 +59,7 @@
 
 \switchcolumn
 
-\fontsize{11}{13}\rightfont linked to how you have, are, and will read the center text. And so on and so forth.  \rightcitation{ב} \rightfont If \textbf{R. Seth helped me understand:} Typically, the right column won't offer answers based on inscriptions you make on the same page. Rather, the bolded conditionals tend to be things you wrote down on \textit{previous} pages, such that previous readings inspire later readings. But since this is the only page in this test, that is of course impossible! So instead we'll work with what we got. \big\| If \textbf{That last proof-text was gibberish:} Sure, but in order to test the layout, I need more words, so here's a few more: Praesent vitae mi mi. Sed viverra nibh turpis, non vulputate tellus tincidunt nec.
+\fontsize{11}{13}\rightfont linked to how you have, are, and will read the center text. And so on and so forth. \rightcitation{ב} \rightfont If \textbf{R. Seth helped me understand:} Typically, the right column won't offer answers based on inscriptions you make on the same page. Rather, the bolded conditionals tend to be things you wrote down on \textit{previous} pages, such that previous readings inspire later readings. But since this is the only page in this test, that is of course impossible! So instead we'll work with what we got. \big\| If \textbf{That last proof-text was gibberish:} Sure, but in order to test the layout, I need more words, so here's a few more: Praesent vitae mi mi. Sed viverra nibh turpis, non vulputate tellus tincidunt nec.
 
 \end{paracol}
 

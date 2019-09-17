@@ -50,7 +50,7 @@ class Column:
             if word.is_citation:
                 # Close all braces.
                 tex = Column._close_braces(tex)
-                tex += " " + word.word + " " + self.font + " "
+                tex += word.word + " " + self.font + " "
                 continue
 
             # Set bold style.

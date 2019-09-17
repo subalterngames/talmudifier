@@ -11,6 +11,6 @@ center = lines[6]
 right = lines[10]
 
 t = Talmudifier(left, center, right)
-tex = t.get_tex()
-print(tex)
-t.writer.write(tex, "markdown_input_test")
+tex = t.get_chapter("The Hammer of Lilith") + "\n"
+tex += t.get_tex()
+print(t.writer.write(tex, "markdown_input_test"))

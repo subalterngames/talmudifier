@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7050 64-bit) (preloaded format=xelatex 2019.9.3)  17 SEP 2019 15:55
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7050 64-bit) (preloaded format=xelatex 2019.9.3)  17 SEP 2019 16:09
 entering extended mode
 **./paracol_test.tex
 (paracol_test.tex
@@ -254,8 +254,39 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lipsum\lipsum.sty
-"
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/paracol\paracol.s
+ty"
+Package: paracol 2018/12/31 v1.35 
+\pcol@currcol=\count101
+\pcol@nextcol=\count102
+\pcol@ncol=\count103
+\pcol@ncolleft=\count104
+\pcol@page=\count105
+\pcol@basepage=\count106
+\pcol@toppage=\count107
+\pcol@footnotebase=\count108
+\pcol@nfootnotes=\count109
+\pcol@mcid=\count110
+\pcol@prevdepth=\dimen116
+\pcol@colht=\dimen117
+\pcol@textfloatsep=\dimen118
+\pcol@lrmargin=\dimen119
+\pagerim=\dimen120
+\pcol@topskip=\skip72
+\belowfootnoteskip=\skip73
+\pcol@topfnotes=\box30
+\pcol@prespan=\box31
+\pcol@rightpage=\box32
+\pcol@colorstack@saved=\box33
+\pcol@tempboxa=\box34
+\pcol@tempboxb=\box35
+\pcol@colorins=\insert199
+\pcol@everyvbox=\toks17
+)
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontspec\fontspec
+.sty"
+("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xparse
+\xparse.sty"
 ("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3.st
 y"
 Package: expl3 2019-07-25 L3 programming layer (loader) 
@@ -263,224 +294,185 @@ Package: expl3 2019-07-25 L3 programming layer (loader)
 ("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3-co
 de.tex"
 Package: expl3 2019-07-25 L3 programming layer (code)
-\c_max_int=\count101
-\l_tmpa_int=\count102
-\l_tmpb_int=\count103
-\g_tmpa_int=\count104
-\g_tmpb_int=\count105
-\g__kernel_prg_map_int=\count106
-\c__ior_term_ior=\count107
-\c_log_iow=\count108
-\l_iow_line_count_int=\count109
-\l__iow_line_target_int=\count110
-\l__iow_one_indent_int=\count111
-\l__iow_indent_int=\count112
-\c_zero_dim=\dimen116
-\c_max_dim=\dimen117
-\l_tmpa_dim=\dimen118
-\l_tmpb_dim=\dimen119
-\g_tmpa_dim=\dimen120
-\g_tmpb_dim=\dimen121
-\c_zero_skip=\skip72
-\c_max_skip=\skip73
-\l_tmpa_skip=\skip74
-\l_tmpb_skip=\skip75
-\g_tmpa_skip=\skip76
-\g_tmpb_skip=\skip77
+\c_max_int=\count111
+\l_tmpa_int=\count112
+\l_tmpb_int=\count113
+\g_tmpa_int=\count114
+\g_tmpb_int=\count115
+\g__kernel_prg_map_int=\count116
+\c__ior_term_ior=\count117
+\c_log_iow=\count118
+\l_iow_line_count_int=\count119
+\l__iow_line_target_int=\count120
+\l__iow_one_indent_int=\count121
+\l__iow_indent_int=\count122
+\c_zero_dim=\dimen121
+\c_max_dim=\dimen122
+\l_tmpa_dim=\dimen123
+\l_tmpb_dim=\dimen124
+\g_tmpa_dim=\dimen125
+\g_tmpb_dim=\dimen126
+\c_zero_skip=\skip74
+\c_max_skip=\skip75
+\l_tmpa_skip=\skip76
+\l_tmpb_skip=\skip77
+\g_tmpa_skip=\skip78
+\g_tmpb_skip=\skip79
 \c_zero_muskip=\muskip10
 \c_max_muskip=\muskip11
 \l_tmpa_muskip=\muskip12
 \l_tmpb_muskip=\muskip13
 \g_tmpa_muskip=\muskip14
 \g_tmpb_muskip=\muskip15
-\l_keys_choice_int=\count113
-\l__intarray_loop_int=\count114
-\c__intarray_sp_dim=\dimen122
-\g__intarray_font_int=\count115
-\c__fp_leading_shift_int=\count116
-\c__fp_middle_shift_int=\count117
-\c__fp_trailing_shift_int=\count118
-\c__fp_big_leading_shift_int=\count119
-\c__fp_big_middle_shift_int=\count120
-\c__fp_big_trailing_shift_int=\count121
-\c__fp_Bigg_leading_shift_int=\count122
-\c__fp_Bigg_middle_shift_int=\count123
-\c__fp_Bigg_trailing_shift_int=\count124
-\g__fp_array_int=\count125
-\l__fp_array_loop_int=\count126
-\l__sort_length_int=\count127
-\l__sort_min_int=\count128
-\l__sort_top_int=\count129
-\l__sort_max_int=\count130
-\l__sort_true_max_int=\count131
-\l__sort_block_int=\count132
-\l__sort_begin_int=\count133
-\l__sort_end_int=\count134
-\l__sort_A_int=\count135
-\l__sort_B_int=\count136
-\l__sort_C_int=\count137
-\l__str_internal_int=\count138
-\l__tl_analysis_normal_int=\count139
-\l__tl_analysis_index_int=\count140
-\l__tl_analysis_nesting_int=\count141
-\l__tl_analysis_type_int=\count142
-\l__regex_internal_a_int=\count143
-\l__regex_internal_b_int=\count144
-\l__regex_internal_c_int=\count145
-\l__regex_balance_int=\count146
-\l__regex_group_level_int=\count147
-\l__regex_mode_int=\count148
-\c__regex_cs_in_class_mode_int=\count149
-\c__regex_cs_mode_int=\count150
-\l__regex_catcodes_int=\count151
-\l__regex_default_catcodes_int=\count152
-\c__regex_catcode_L_int=\count153
-\c__regex_catcode_O_int=\count154
-\c__regex_catcode_A_int=\count155
-\c__regex_all_catcodes_int=\count156
-\l__regex_show_lines_int=\count157
-\l__regex_min_state_int=\count158
-\l__regex_max_state_int=\count159
-\l__regex_left_state_int=\count160
-\l__regex_right_state_int=\count161
-\l__regex_capturing_group_int=\count162
-\l__regex_min_pos_int=\count163
-\l__regex_max_pos_int=\count164
-\l__regex_curr_pos_int=\count165
-\l__regex_start_pos_int=\count166
-\l__regex_success_pos_int=\count167
-\l__regex_curr_char_int=\count168
-\l__regex_curr_catcode_int=\count169
-\l__regex_last_char_int=\count170
-\l__regex_case_changed_char_int=\count171
-\l__regex_curr_state_int=\count172
-\l__regex_step_int=\count173
-\l__regex_min_active_int=\count174
-\l__regex_max_active_int=\count175
-\l__regex_replacement_csnames_int=\count176
-\l__regex_match_count_int=\count177
-\l__regex_min_submatch_int=\count178
-\l__regex_submatch_int=\count179
-\l__regex_zeroth_submatch_int=\count180
-\g__regex_trace_regex_int=\count181
-\c_empty_box=\box30
-\l_tmpa_box=\box31
-\l_tmpb_box=\box32
-\g_tmpa_box=\box33
-\g_tmpb_box=\box34
-\l__box_top_dim=\dimen123
-\l__box_bottom_dim=\dimen124
-\l__box_left_dim=\dimen125
-\l__box_right_dim=\dimen126
-\l__box_top_new_dim=\dimen127
-\l__box_bottom_new_dim=\dimen128
-\l__box_left_new_dim=\dimen129
-\l__box_right_new_dim=\dimen130
-\l__box_internal_box=\box35
-\l__coffin_internal_box=\box36
-\l__coffin_internal_dim=\dimen131
-\l__coffin_offset_x_dim=\dimen132
-\l__coffin_offset_y_dim=\dimen133
-\l__coffin_x_dim=\dimen134
-\l__coffin_y_dim=\dimen135
-\l__coffin_x_prime_dim=\dimen136
-\l__coffin_y_prime_dim=\dimen137
-\c_empty_coffin=\box37
-\l__coffin_aligned_coffin=\box38
-\l__coffin_aligned_internal_coffin=\box39
-\l_tmpa_coffin=\box40
-\l_tmpb_coffin=\box41
-\g_tmpa_coffin=\box42
-\g_tmpb_coffin=\box43
-\l__coffin_bounding_shift_dim=\dimen138
-\l__coffin_left_corner_dim=\dimen139
-\l__coffin_right_corner_dim=\dimen140
-\l__coffin_bottom_corner_dim=\dimen141
-\l__coffin_top_corner_dim=\dimen142
-\l__coffin_scaled_total_height_dim=\dimen143
-\l__coffin_scaled_width_dim=\dimen144
-\c__coffin_empty_coffin=\box44
-\l__coffin_display_coffin=\box45
-\l__coffin_display_coord_coffin=\box46
-\l__coffin_display_pole_coffin=\box47
-\l__coffin_display_offset_dim=\dimen145
-\l__coffin_display_x_dim=\dimen146
-\l__coffin_display_y_dim=\dimen147
+\l_keys_choice_int=\count123
+\l__intarray_loop_int=\count124
+\c__intarray_sp_dim=\dimen127
+\g__intarray_font_int=\count125
+\c__fp_leading_shift_int=\count126
+\c__fp_middle_shift_int=\count127
+\c__fp_trailing_shift_int=\count128
+\c__fp_big_leading_shift_int=\count129
+\c__fp_big_middle_shift_int=\count130
+\c__fp_big_trailing_shift_int=\count131
+\c__fp_Bigg_leading_shift_int=\count132
+\c__fp_Bigg_middle_shift_int=\count133
+\c__fp_Bigg_trailing_shift_int=\count134
+\g__fp_array_int=\count135
+\l__fp_array_loop_int=\count136
+\l__sort_length_int=\count137
+\l__sort_min_int=\count138
+\l__sort_top_int=\count139
+\l__sort_max_int=\count140
+\l__sort_true_max_int=\count141
+\l__sort_block_int=\count142
+\l__sort_begin_int=\count143
+\l__sort_end_int=\count144
+\l__sort_A_int=\count145
+\l__sort_B_int=\count146
+\l__sort_C_int=\count147
+\l__str_internal_int=\count148
+\l__tl_analysis_normal_int=\count149
+\l__tl_analysis_index_int=\count150
+\l__tl_analysis_nesting_int=\count151
+\l__tl_analysis_type_int=\count152
+\l__regex_internal_a_int=\count153
+\l__regex_internal_b_int=\count154
+\l__regex_internal_c_int=\count155
+\l__regex_balance_int=\count156
+\l__regex_group_level_int=\count157
+\l__regex_mode_int=\count158
+\c__regex_cs_in_class_mode_int=\count159
+\c__regex_cs_mode_int=\count160
+\l__regex_catcodes_int=\count161
+\l__regex_default_catcodes_int=\count162
+\c__regex_catcode_L_int=\count163
+\c__regex_catcode_O_int=\count164
+\c__regex_catcode_A_int=\count165
+\c__regex_all_catcodes_int=\count166
+\l__regex_show_lines_int=\count167
+\l__regex_min_state_int=\count168
+\l__regex_max_state_int=\count169
+\l__regex_left_state_int=\count170
+\l__regex_right_state_int=\count171
+\l__regex_capturing_group_int=\count172
+\l__regex_min_pos_int=\count173
+\l__regex_max_pos_int=\count174
+\l__regex_curr_pos_int=\count175
+\l__regex_start_pos_int=\count176
+\l__regex_success_pos_int=\count177
+\l__regex_curr_char_int=\count178
+\l__regex_curr_catcode_int=\count179
+\l__regex_last_char_int=\count180
+\l__regex_case_changed_char_int=\count181
+\l__regex_curr_state_int=\count182
+\l__regex_step_int=\count183
+\l__regex_min_active_int=\count184
+\l__regex_max_active_int=\count185
+\l__regex_replacement_csnames_int=\count186
+\l__regex_match_count_int=\count187
+\l__regex_min_submatch_int=\count188
+\l__regex_submatch_int=\count189
+\l__regex_zeroth_submatch_int=\count190
+\g__regex_trace_regex_int=\count191
+\c_empty_box=\box36
+\l_tmpa_box=\box37
+\l_tmpb_box=\box38
+\g_tmpa_box=\box39
+\g_tmpb_box=\box40
+\l__box_top_dim=\dimen128
+\l__box_bottom_dim=\dimen129
+\l__box_left_dim=\dimen130
+\l__box_right_dim=\dimen131
+\l__box_top_new_dim=\dimen132
+\l__box_bottom_new_dim=\dimen133
+\l__box_left_new_dim=\dimen134
+\l__box_right_new_dim=\dimen135
+\l__box_internal_box=\box41
+\l__coffin_internal_box=\box42
+\l__coffin_internal_dim=\dimen136
+\l__coffin_offset_x_dim=\dimen137
+\l__coffin_offset_y_dim=\dimen138
+\l__coffin_x_dim=\dimen139
+\l__coffin_y_dim=\dimen140
+\l__coffin_x_prime_dim=\dimen141
+\l__coffin_y_prime_dim=\dimen142
+\c_empty_coffin=\box43
+\l__coffin_aligned_coffin=\box44
+\l__coffin_aligned_internal_coffin=\box45
+\l_tmpa_coffin=\box46
+\l_tmpb_coffin=\box47
+\g_tmpa_coffin=\box48
+\g_tmpb_coffin=\box49
+\l__coffin_bounding_shift_dim=\dimen143
+\l__coffin_left_corner_dim=\dimen144
+\l__coffin_right_corner_dim=\dimen145
+\l__coffin_bottom_corner_dim=\dimen146
+\l__coffin_top_corner_dim=\dimen147
+\l__coffin_scaled_total_height_dim=\dimen148
+\l__coffin_scaled_width_dim=\dimen149
+\c__coffin_empty_coffin=\box50
+\l__coffin_display_coffin=\box51
+\l__coffin_display_coord_coffin=\box52
+\l__coffin_display_pole_coffin=\box53
+\l__coffin_display_offset_dim=\dimen150
+\l__coffin_display_x_dim=\dimen151
+\l__coffin_display_y_dim=\dimen152
 \g__file_internal_ior=\read1
-\l__seq_internal_a_int=\count182
-\l__seq_internal_b_int=\count183
+\l__seq_internal_a_int=\count192
+\l__seq_internal_b_int=\count193
 )
 ("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backe
 nd-xdvipdfmx.def"
 File: l3backend-xdvipdfmx.def 2019-04-06 v L3 Experimental backend support: xdv
 ipdfmx
-\g__graphics_track_int=\count184
-\l__pdf_internal_box=\box48
-\g__pdf_backend_object_int=\count185
-\g__pdf_backend_annotation_int=\count186
+\g__graphics_track_int=\count194
+\l__pdf_internal_box=\box54
+\g__pdf_backend_object_int=\count195
+\g__pdf_backend_annotation_int=\count196
 ))
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xparse
-\xparse.sty"
 Package: xparse 2019-05-28 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count187
-\g__xparse_grabber_int=\count188
-\l__xparse_m_args_int=\count189
-\l__xparse_v_nesting_int=\count190
+\l__xparse_current_arg_int=\count197
+\g__xparse_grabber_int=\count198
+\l__xparse_m_args_int=\count266
+\l__xparse_v_nesting_int=\count267
 )
-Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
-
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lipsum\lipsum.ltd
-.tex"
-File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
-))
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/paracol\paracol.s
-ty"
-Package: paracol 2018/12/31 v1.35 
-\pcol@currcol=\count191
-\pcol@nextcol=\count192
-\pcol@ncol=\count193
-\pcol@ncolleft=\count194
-\pcol@page=\count195
-\pcol@basepage=\count196
-\pcol@toppage=\count197
-\pcol@footnotebase=\count198
-\pcol@nfootnotes=\count199
-\pcol@mcid=\count266
-\pcol@prevdepth=\dimen148
-\pcol@colht=\dimen149
-\pcol@textfloatsep=\dimen150
-\pcol@lrmargin=\dimen151
-\pagerim=\dimen152
-\pcol@topskip=\skip78
-\belowfootnoteskip=\skip79
-\pcol@topfnotes=\box49
-\pcol@prespan=\box50
-\pcol@rightpage=\box51
-\pcol@colorstack@saved=\box52
-\pcol@tempboxa=\box53
-\pcol@tempboxb=\box54
-\pcol@colorins=\insert252
-\pcol@everyvbox=\toks17
-)
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontspec\fontspec
-.sty"
 Package: fontspec 2019/03/15 v2.7c Font selection for XeLaTeX and LuaLaTeX
 
 ("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontspec\fontspec
 -xetex.sty"
 Package: fontspec-xetex 2019/03/15 v2.7c Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count267
-\l__fontspec_language_int=\count268
-\l__fontspec_strnum_int=\count269
-\l__fontspec_tmp_int=\count270
-\l__fontspec_tmpa_int=\count271
-\l__fontspec_tmpb_int=\count272
-\l__fontspec_tmpc_int=\count273
-\l__fontspec_em_int=\count274
-\l__fontspec_emdef_int=\count275
-\l__fontspec_strong_int=\count276
-\l__fontspec_strongdef_int=\count277
+\l__fontspec_script_int=\count268
+\l__fontspec_language_int=\count269
+\l__fontspec_strnum_int=\count270
+\l__fontspec_tmp_int=\count271
+\l__fontspec_tmpa_int=\count272
+\l__fontspec_tmpb_int=\count273
+\l__fontspec_tmpc_int=\count274
+\l__fontspec_em_int=\count275
+\l__fontspec_emdef_int=\count276
+\l__fontspec_strong_int=\count277
+\l__fontspec_strongdef_int=\count278
 \l__fontspec_tmpa_dim=\dimen153
 \l__fontspec_tmpb_dim=\dimen154
 \l__fontspec_tmpc_dim=\dimen155
@@ -500,7 +492,6 @@ LaTeX Info: Redefining \upshape on input line 4066.
 LaTeX Info: Redefining \em on input line 4096.
 LaTeX Info: Redefining \emph on input line 4121.
 ))
-\height=\dimen156
 
 Package fontspec Info: Font family 'IMFeFCrm29C.otf(0)' created for font
 (fontspec)             'IMFeFCrm29C.otf' with options
@@ -611,20 +602,20 @@ Package fontspec Info: Font family 'IMFeFlow2.otf(0)' created for font
  (paracol_test.aux)
 \openout1 = `paracol_test.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -661,187 +652,188 @@ LaTeX Font Info:    ... okay on input line 43.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 43.
+LaTeX Info: Redefining \selectfont on input line 29.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 43.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 43.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 43.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 43.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 43.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 43.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 43.
-LaTeX Font Info:    Redeclaring math accent \check on input line 43.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 43.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 43.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 43.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 43.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 29.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 29.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 29.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 29.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 29.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 29.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 29.
+LaTeX Font Info:    Redeclaring math accent \check on input line 29.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 29.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 29.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 29.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 43.
+(Font)              `operators' in the math version `normal' on input line 29.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 43.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 29.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 43.
+(Font)              `operators' in the math version `bold' on input line 29.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 43.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 29.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 43.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 43.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 43.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 43.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 43.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 29.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 43.
+(Font)                  TU/lmr/m/n --> TU/lmr/bx/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 43.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/bx/it on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 43.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 43.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 46.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 29.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 35.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 46.
+(Font)              size <5> substituted on input line 35.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 46.
+(Font)              size <5> substituted on input line 35.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <11> on input line 46.
+(Font)              <11> on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7.69997> on input line 46.
+(Font)              <7.69997> on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.5> on input line 46.
+(Font)              <5.5> on input line 35.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 46.
+(Font)              size <5> substituted on input line 35.
 
 
 Package paracol Warning: \margninnote is emulated by \marginpar. on input line 
-57.
+46.
 
 
-Underfull \hbox (badness 3168) in paragraph at lines 57--58
+Underfull \hbox (badness 3168) in paragraph at lines 46--47
 \TU/IMFeFCrm29C.otf(0)/m/n/11 we end up citing verses, as
  []
 
 
-Underfull \hbox (badness 3601) in paragraph at lines 57--58
+Underfull \hbox (badness 3601) in paragraph at lines 46--47
 \TU/IMFeFCrm29C.otf(0)/m/n/11 nulla, malesuada vitae dolor
  []
 
 
-Underfull \hbox (badness 2334) in paragraph at lines 61--62
+Underfull \hbox (badness 2334) in paragraph at lines 50--51
 \TU/IMFeENrm29P.ttf(0)/m/n/13 of text. It is a slightly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 \TU/IMFeENrm29P.ttf(0)/m/n/13 bigger font, and con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 \TU/IMFeENrm29P.ttf(0)/m/n/13 Occasionally, sentences
  []
 
 
-Underfull \hbox (badness 2951) in paragraph at lines 61--62
+Underfull \hbox (badness 2951) in paragraph at lines 50--51
 \TU/IMFeENrm29P.ttf(0)/m/n/13 Hebrew characters direct
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 61--62
+Underfull \hbox (badness 1215) in paragraph at lines 50--51
 \TU/IMFeENrm29P.ttf(0)/m/n/13 a L or R to the citation
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 \TU/Mekorot-Rashi.ttf(0)/m/n/10.95 ב[] \TU/IMFeENrm29P.ttf(0)/m/n/13 This colum
 n has the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 \TU/IMFeENrm29P.ttf(0)/m/n/13 rendered in smallcaps.
  []
 
 
-Underfull \hbox (badness 2181) in paragraph at lines 65--66
+Underfull \hbox (badness 2181) in paragraph at lines 54--55
 \TU/AveriaLibre-Light.ttf(0)/m/n/11 in the rabbinical discourse.
  []
 
 
-Underfull \hbox (badness 3792) in paragraph at lines 65--66
+Underfull \hbox (badness 3792) in paragraph at lines 54--55
 \TU/AveriaLibre-Light.ttf(0)/m/n/11 Or perhaps you’re actually
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 65--66
+Underfull \hbox (badness 1400) in paragraph at lines 54--55
 \TU/AveriaLibre-Light.ttf(0)/m/n/11 narrative “branches”. Only
  []
 
 
-Underfull \hbox (badness 3396) in paragraph at lines 65--66
+Underfull \hbox (badness 3396) in paragraph at lines 54--55
 \TU/AveriaLibre-Light.ttf(0)/m/n/11 implications of your previ-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 []\TU/IMFeFCrm29C.otf(0)/m/n/11 consectetur purus nulla non leo. Ut volutpat, n
 unc eu viverra dictum, sapien
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 \TU/IMFeFCrm29C.otf(0)/m/n/11 quam porta tellus, vel viverra diam erat at mi. M
 aecenas pellentesque mattis nibh
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 \TU/IMFeFCrm29C.otf(0)/m/n/11 in consequat. Donec mollis, ex a ullamcorper cons
 ectetur, diam leo aliquet leo,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
 \TU/IMFeFCrm29C.otf(0)/m/n/11 eu interdum tortor velit in magna.” Does that cla
 rify anything for you? \TU/IMFeFlow2.otf(0)/m/n/11 1 \TU/IMFeFCrm29C.otf(0)/m/i
 t/11 In-
  []
 
 
-Underfull \hbox (badness 7203) in paragraph at lines 81--82
+Underfull \hbox (badness 7203) in paragraph at lines 70--71
 \TU/IMFeFCrm29C.otf(0)/m/it/11 scribe: \TU/IMFeFCrm29C.otf(0)/bx/n/11 R. Seth h
 elped me understand. \TU/IMFeFCrm29C.otf(0)/m/it/11 or \TU/IMFeFCrm29C.otf(0)/b
 x/n/11 That last proof-text was gibberish.
  []
 
 [1
+
 
 ] (paracol_test.aux)
 
@@ -850,12 +842,12 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 17008 strings out of 427669
- 365983 string characters out of 3144750
- 669197 words of memory out of 3000000
- 20973 multiletter control sequences out of 15000+200000
- 534494 words of font info for 71 fonts, out of 3000000 for 9000
+ 16857 strings out of 427669
+ 362083 string characters out of 3144750
+ 575769 words of memory out of 3000000
+ 20823 multiletter control sequences out of 15000+200000
+ 534518 words of font info for 74 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 42i,8n,78p,9223b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 47i,7n,78p,9223b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on paracol_test.pdf (1 page).
