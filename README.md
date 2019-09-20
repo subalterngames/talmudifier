@@ -58,7 +58,7 @@ You can calculate these values yourself by running `row_length_calculator.py`.
 ```json
   "character_counts":
   {
-    "LR":
+    "half":
     {
       "left":
       {
@@ -70,7 +70,7 @@ You can calculate these values yourself by running `row_length_calculator.py`.
 
 | Key      | Description                                                  |
 | -------- | ------------------------------------------------------------ |
-| `"LR"`   | The columns in this table. Can be `"LCR"`, `"LR"`, etc.      |
+| `"half"` | The expected width of the column. Can be `"half"`, `"one_third"`, or `"two_thirds"`. |
 | `"left"` | The target column within the table. Can be `"left"`, `"center"`, or `"right"`. |
 | `"1"`    | The target number of rows. Must be an integer.<br>Value=The average number of characters across many trials. |
 

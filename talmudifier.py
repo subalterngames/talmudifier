@@ -14,7 +14,18 @@ from paracol import Paracol
 
 
 class Talmudifier:
+    """
+    Generate Talmud-esque page layouts, given markdown plaintext and a recipe JSON file.
+    """
+
     def __init__(self, text_left: str, text_center: str, text_right: str, recipe_filename="default.json"):
+        """
+        :param text_left: The markdown text of the left column.
+        :param text_center: The markdown text of the center column.
+        :param text_right: The markdown text of the right column.
+        :param recipe_filename: The filename of the recipe, located in recipes/
+        """
+
         # Read the recipe.
         recipe_path = Path(f"recipes/{recipe_filename}")
         if not recipe_path.exists():
@@ -235,7 +246,7 @@ class Talmudifier:
 
         # Build 4 rows of the left and right columns.
         rowmaker = RowMaker(True, False, True, column_name, self.writer)
-        return rowmaker.get_text_of_length(column, 4, self._get_expected_length(column_name, "one_third", 4))
+        return rowmaker.get_text_of_length(column, 4, self._get_expected_length(column_name, "half", 4))
 
     def _get_one_row_left_right(self, column: Column, column_name: str) -> (str, Column):
         # Build 1 row of the left and right columns.
@@ -326,6 +337,14 @@ class Talmudifier:
         return min_col, min_column_name, min_lines, True
 
     def get_tex(self) -> str:
+        """
+        Generate the body of text.
+
+        1. Create 4 rows on the left and right (width = one half).
+        2. Create 1 row on the left and right (width = one third).
+        3. Until the columns are all done: Find the shortest column and add it. Add other columns up to that length.
+        """
+        
         tex = ""
 
         # Get four row on the left and on the right.
@@ -433,3 +452,23 @@ class Talmudifier:
             chapter += "*"
         chapter += "{" + self.recipe["chapter"]["command"] + "{" + title + "}}"
         return chapter
+
+    def create_pdf(self, output_filename="output", print_tex=False) -> str:
+        """
+        Create a PDF. Generate the chapter and the body, and append them to the preamble. Returns the LaTeX string.
+
+        :param output_filename: The name of the output file.
+        :param print_tex: If true, print the LaTeX string to the console.
+        """
+
+        # Create the title.
+        tex = self.get_chapter("The Hammer of Lilith") + "\n"
+        # Append the body.
+        tex += self.get_tex()
+
+        # Create the PDF.
+        # Get the full LaTeX string, including the preamble.
+        tex = self.writer.write(tex, output_filename)
+        if print_tex:
+            print(tex)
+        return str
