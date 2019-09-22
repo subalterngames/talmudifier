@@ -1,3 +1,24 @@
+# Requirements
+
+- Windows, OS X, or Linux
+- Python 3.6 or 3.7
+  - pdfminer.six
+  - tqdm
+  - pyhyphen
+- XeLaTeX
+  - marginnote
+  - sectsty
+  - ragged2e
+  - lineno
+  - xcolor
+  - paracol
+  - fontspec
+  - scrbook
+
+# API
+
+- [`talmudifier.py`](talmudifier.md)
+
 # Recipes
 
 A recipe is a JSON file that defines the fonts and other styling rules for your page. It is functionally the same as just writing your own TeX preamble, but probably a lot more user-friendly.
