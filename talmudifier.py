@@ -453,16 +453,17 @@ class Talmudifier:
         chapter += "{" + self.recipe["chapter"]["command"] + "{" + title + "}}"
         return chapter
 
-    def create_pdf(self, output_filename="output", print_tex=False) -> str:
+    def create_pdf(self, chapter="", output_filename="output", print_tex=False) -> str:
         """
         Create a PDF. Generate the chapter and the body, and append them to the preamble. Returns the LaTeX string.
 
+        :param chapter: If not empty, create the header here.
         :param output_filename: The name of the output file.
         :param print_tex: If true, print the LaTeX string to the console.
         """
 
         # Create the title.
-        tex = self.get_chapter("The Hammer of Lilith") + "\n"
+        tex = self.get_chapter("The Hammer of Lilith") + "\n" if chapter != "" else ""
         # Append the body.
         tex += self.get_tex()
 
@@ -471,4 +472,4 @@ class Talmudifier:
         tex = self.writer.write(tex, output_filename)
         if print_tex:
             print(tex)
-        return str
+        return tex
