@@ -31,8 +31,8 @@
       "regular_font": "IMFeENrm29P.ttf",
       "italic_font": "IMFeENit29P.ttf",
       "bold_font": "IMFeENsc29P.ttf",
-      "size": 13,
-      "skip": 15,
+      "size": 12,
+      "skip": 14,
       "substitutions":
       {
         "`L(.*)`": "\\\\leftcitationfont{\\\\leftcitation \\1} \\\\centerfont ",

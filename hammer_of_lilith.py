@@ -43,4 +43,4 @@ if __name__ == "__main__":
     tex = Talmudifier(left, center, right).create_pdf(output_filename=f"hol_{args.line}")
 
     # Output the text.
-    Path(f"Output/hol_{args.line}.tex").write_text(tex)
+    Path(f"Output/hol_{args.line}.tex").write_text(tex, encoding='utf-8')

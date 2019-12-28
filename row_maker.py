@@ -30,7 +30,7 @@ class RowMaker:
         filled = False if expected_length > 0 else True
         next_word_index = 0
         while not filled:
-            if next_word_index > len(column.words):
+            if next_word_index >= len(column.words):
                 filled = True
                 continue
             # Get the next word.
