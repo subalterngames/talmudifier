@@ -28,6 +28,8 @@ This is the center column of text. It is a slightly bigger font, and contains th
 
 </details>
 
+**Please help me improve this README.** I wrote this README initially just so that _I_ could remember how the program works. There's probably a lot missing, and a lot that is very misleading... So, please email me with suggestions for improving the documentation (or, better yet, create a GitHub Issue if you know how).
+
 # Requirements
 
 - Windows, OS X, or Linux
