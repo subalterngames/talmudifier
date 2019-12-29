@@ -62,8 +62,7 @@ class RowMaker:
                     raise Exception("Empty column? I got nothin'.")
 
                 # Remove the last word.
-                last_word = col_temp.words[-1]
-                col_temp.words.pop()
+                last_word = col_temp.words.pop()
 
                 num_rows = self.get_num_rows(col_temp.get_tex(True))
 
@@ -72,12 +71,13 @@ class RowMaker:
                     for pair in last_word.pairs:
                         # Create a temporary column that includes the first half of the pair.
                         words = col_temp.words[:]
+
                         words.append(pair[0])
                         col_temp_temp = Column(words, column.font, column.font_size, column.font_skip)
 
                         # The hyphenated fragment fits! Add it and return the truncated column.
                         if self.get_num_rows(col_temp_temp.get_tex(True)) == target_num_rows:
-                            words = column.words[len(col_temp.words):]
+                            words = column.words[len(col_temp.words) + 1:]
 
                             # Insert the second half of the word pair to the words list and add it to a new column.
                             words.insert(0, pair[1])

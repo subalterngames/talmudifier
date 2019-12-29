@@ -51,7 +51,7 @@
       "skip": 13,
       "substitutions":
       {
-        "\\|": "\\\\big\\\\|"
+        "\\|": "§"
       },
       "citation":
       {
