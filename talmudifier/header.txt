@@ -15,4 +15,5 @@
 \setlength{\columnsep}{1.25em}
 \setlength{\parfillskip}{0pt}
 \setlength{\tabcolsep}{1em}
+\raggedbottom
 
