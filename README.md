@@ -1,10 +1,37 @@
+# talmudifier.py
+
+Given three sections of markdown-formatted text, generate a pdf that arranges the text in columns formatted like a page of the Talmud. You can apply different styles and options to each column with a _recipe_ .json file (a default .json file is included in this repo).
+
+**This script will take a while to run.** The size and positions of each column are calculated by repeatedly generating a test .PDF file. Expect the entire process to require approximately 5 minutes per page.
+
+The end result:
+
+<img src="images/sample_page.png" style="zoom:75%;" />
+
+That .PDF was generated from this input file:
+
+<details>
+
+```
+# Left
+
+`Lא` What is the left column? <u>R. Seth:</u> This is the redaction of the words of the rabbis and sages, who interpret the center text. <u>R. Alter:</u> The rabbis never agree on anything. I think that the left column is the "oral tradition", given to us in parallel with the primary text. So there! When you see the following special symbol, it's time to make a decision. -> _Inscribe:_ **The center column is primary.** _or_ **The left column is the oral center column.** `Lב` <u>R. Alter:</u>  And another thing! Sometimes we have a lot to argue about, and we end up citing verses, as it is written: "Blah blah blah thus saith Asherah our queen."`=Lorem&1:23` <u>R. Seth:</u> I'm just going to fill up a lot of space now by citing another text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus enim semper tincidunt varius. Nam et mi lacus. Sed commodo leo consectetur, imperdiet neque eget, aliquet felis. Etiam elit nulla, malesuada vitae dolor eget, tincidunt pharetra tellus a. Nunc eget convallis nunc, in faucibus ante. Sed dictum varius neque commodo hendrerit. Sed maximus ligula nunc, et tristique sapien faucibus et. Donec dictum turpis ac odio rhoncus consequat. Pellentesque metus nisi, sodales ut vestibulum vitae, convallis eget purus. Nulla lectus lacus, dapibus at molestie mattis, placerat non purus. Sed ac pharetra neque. Sed accumsan libero non sollicitudin faucibus. Integer a urna tortor. Proin quis volutpat turpis. Cras consectetur quam mauris, vitae feugiat ipsum sollicitudin at. Duis non imperdiet diam. Suspendisse laoreet venenatis metus sed porta. Nullam vel leo turpis. Vivamus id lacinia turpis, lacinia mattis libero. Proin fermentum, quam a rhoncus ornare, leo turpis facilisis leo, sit amet consectetur purus nulla non leo. Ut volutpat, nunc eu viverra dictum, sapien quam porta tellus, vel viverra diam erat at mi. Maecenas pellentesque mattis nibh in consequat. Donec mollis, ex a ullamcorper consectetur, diam leo aliquet leo, eu interdum tortor velit in magna."`=Ipsum&69:420` Does that clarify anything for you? -> _Inscribe:_ **R. Seth helped me understand.** _or_ **That last proof-text was gibberish.**
+
+# Center
+
+This is the center column of text. It is a slightly bigger font, and contains the "primary story". Occasionally, sentences end with citation notes. `Lא` Citations that are block Hebrew letters direct the reader to the left column. `Lב` Citations that are Rashi Hebrew characters direct the reader to the right column. `Rא`In the markdown, this is handled by adding a L or R to the citation character, e.g. R-aleph. `Rב` This column has the largest font. Some words, such as **Asherah** are always rendered in smallcaps.
+
+# Right
+
+`Rא` If **The center column is primary:**  This column is an interpretation of the center column based on previous interpretations you made having read the left column of rabbinical commentary. In this manner, you can participate in the rabbinical discourse. Or perhaps you're actually providing a third layer, rather than adding to the second? Either way, this is where the narrative "branches". Only it doesn't really branch because, of course,  you aren't affecting the center column at all. Rather, this column tends to answer questions of "why something happened" or "in what manner did something happen", and those answers are branched. | If **The left column is the oral center column:** You're not really _any_ steps  removed from the center column, because without a reader, the center column is just ink on a page. The implications of your previous thoughts are inextricably linked to how you have, are, and will read the center text. And so on and so forth. `Rב` If **R. Seth helped me understand:** Typically, the right column won't offer answers based on inscriptions you make on the same page. Rather, the bolded conditionals tend to be things you wrote down on _previous_ pages, such that previous readings inspire later readings. But since this is the only page in this test, that is of course impossible! So instead we'll work with what we got. | If **That last proof-text was gibberish:** Sure, but in order to test the layout, I need more words, so here's a few more: Praesent vitae mi mi. Sed viverra nibh turpis, non vulputate tellus tincidunt nec.
+```
+
+</details>
+
 # Requirements
 
 - Windows, OS X, or Linux
 - Python 3.6 or 3.7
-  - pdfminer.six
-  - tqdm
-  - pyhyphen
 - XeLaTeX
   - marginnote
   - sectsty
@@ -14,6 +41,36 @@
   - paracol
   - fontspec
   - scrbook
+
+If you're not sure how to install anything and Google isn't being helpful, you can email me.
+
+ # Setup
+
+ 1.
+
+ ```bash
+ cd <where this folder is>/talmudifier
+ ```
+
+ Example: If your user name is Bob and you put this file in Downloads, type
+
+ `cd C:/Users/Bob/Downloads/talmudifier`
+
+2.
+
+```bash
+pip3 setup.py -e .
+```
+
+Don't forget the `.` at the end!
+
+3.
+
+```bash
+python3 test_input_reader.py
+```
+
+You don't _need_ to do step 3, but if this test script works, then everything is set up OK.
 
 # API
 
