@@ -1,5 +1,5 @@
 import io
-from talmudifier import Talmudifier
+from talmudifier.talmudifier import Talmudifier
 
 
 with io.open("test/test_input.md", "rt", encoding="utf-8") as f:

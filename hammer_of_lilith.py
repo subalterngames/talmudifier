@@ -1,4 +1,4 @@
-from talmudifier import Talmudifier
+from talmudifier.talmudifier import Talmudifier
 from argparse import ArgumentParser
 from pathlib import Path
 

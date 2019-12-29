@@ -1,7 +1,7 @@
-from column import Column
-from paracol import Paracol
-from pdf_reader import PDFReader
-from pdf_writer import PDFWriter
+from talmudifier.column import Column
+from talmudifier.paracol import Paracol
+from talmudifier.pdf_reader import PDFReader
+from talmudifier.pdf_writer import PDFWriter
 from pathlib import Path
 
 

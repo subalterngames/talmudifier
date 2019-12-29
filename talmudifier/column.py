@@ -1,6 +1,6 @@
-from word import Word
+from talmudifier.word import Word
 from typing import List
-from style import Style
+from talmudifier.style import Style
 
 
 class Column:

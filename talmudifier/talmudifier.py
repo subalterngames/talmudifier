@@ -1,16 +1,17 @@
 from pathlib import Path
 from typing import List
 from json import load
-from column import Column
-from util import to_camelcase
+from talmudifier.column import Column
+from talmudifier.util import to_camelcase
 import io
 from typing import Optional
-from pdf_writer import PDFWriter
-from citation import Citation
-from word import Word
-from style import Style
-from row_maker import RowMaker
-from paracol import Paracol
+from talmudifier.pdf_writer import PDFWriter
+from talmudifier.citation import Citation
+from talmudifier.word import Word
+from talmudifier.style import Style
+from talmudifier.row_maker import RowMaker
+from talmudifier.paracol import Paracol
+import pkg_resources
 
 
 class Talmudifier:
@@ -33,9 +34,11 @@ class Talmudifier:
         with io.open(str(recipe_path.resolve()), "rt", encoding="utf-8") as f:
             self.recipe = load(f)
 
+        header_file = pkg_resources.resource_filename(__name__, "header.txt")
+
         # Read the preamble.
-        assert Path("header.txt").exists()
-        with io.open("header.txt", "rt", encoding="utf-8") as f:
+        assert Path(header_file).exists()
+        with io.open(header_file, "rt", encoding="utf-8") as f:
             preamble = f.read()
 
         # Append font declarations.

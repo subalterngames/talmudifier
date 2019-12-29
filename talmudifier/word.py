@@ -1,7 +1,7 @@
 from hyphen import Hyphenator
 from typing import Dict, Optional
-from style import Style
-from citation import Citation
+from talmudifier.style import Style
+from talmudifier.citation import Citation
 import re
 
 

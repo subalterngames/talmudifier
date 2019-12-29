@@ -38,13 +38,14 @@ Returns the chapter command.
 
 ***
 
-### `create_pdf(self, output_filename="output", print_tex=False) -> str`
+### `create_pdf(self, chapter="", output_filename="output", print_tex=False) -> str`
 
 Create a PDF. Generate the chapter and the body, and append them to the preamble. Returns the LaTeX string.
 
 
 | Parameter | Description |
 | --- | --- |
+| chapter |  If not empty, create the header here.|
 | output_filename |  The name of the output file.|
 | print_tex |  If true, print the LaTeX string to the console.|
 
