@@ -466,7 +466,7 @@ class Talmudifier:
         """
 
         # Create the title.
-        tex = self.get_chapter("The Hammer of Lilith") + "\n" if chapter != "" else ""
+        tex = self.get_chapter(chapter) + "\n" if chapter != "" else ""
         # Append the body.
         tex += self.get_tex()
 
