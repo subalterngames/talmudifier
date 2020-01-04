@@ -4,7 +4,7 @@ class Paracol:
     """
 
     TWO_THIRDS = "0.675"
-    ONE_THIRD = str(1.0 / 3)
+    ONE_THIRD = "0.32"
     END = "\n\n\\end{paracol}"
 
     @staticmethod
