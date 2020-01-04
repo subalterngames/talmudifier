@@ -39,34 +39,34 @@ class Talmudifier:
         # Read the preamble.
         assert Path(header_file).exists()
         with io.open(header_file, "rt", encoding="utf-8") as f:
-            preamble = f.read()
+            self.preamble = f.read()
 
         # Append font declarations.
         for col_name in ["left", "center", "right"]:
-            preamble += "\n" + self._get_font_declaration(col_name)
+            self.preamble += "\n" + self._get_font_declaration(col_name)
 
             # Append a citation font declaration, if any.
             citation_declaration = self._get_citation_font_declaration(col_name)
             if citation_declaration is not None:
-                preamble += "\n" + citation_declaration
+                self.preamble += "\n" + citation_declaration
 
         # Append color declarations.
         if "colors" in self.recipe:
             for color in self.recipe["colors"]:
-                preamble += "\n\\definecolor{" + color + "}{HTML}{" + self.recipe["colors"][color] + "}"
+                self.preamble += "\n\\definecolor{" + color + "}{HTML}{" + self.recipe["colors"][color] + "}"
 
         # Append the chapter command.
         assert "chapter" in self.recipe, "Chapter not found in recipe."
         assert "definition" in self.recipe["chapter"], "Chapter definition not found."
-        preamble += "\n" + self.recipe["chapter"]["definition"]
+        self.preamble += "\n" + self.recipe["chapter"]["definition"]
 
         # Append additional definitions.
         if "misc_definitions" in self.recipe:
             for d in self.recipe["misc_definitions"]:
-                preamble += "\n" + d
+                self.preamble += "\n" + d
 
         # Create the PDF writer.
-        self.writer = PDFWriter(preamble)
+        self.writer = PDFWriter(self.preamble)
 
         self.left = self._get_column(text_left, "left")
         self.center = self._get_column(text_center, "center")
