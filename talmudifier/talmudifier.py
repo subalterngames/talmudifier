@@ -401,6 +401,11 @@ class Talmudifier:
                 # Set the target number of lines based on the font size relative to the left column.
                 target_num_lines = int((self.left.font_size / cols[i].font_size) * num_lines + 1)
 
+                # Maybe add one more line if the font size is bigger than the left column's.
+                # This is a hack!
+                if cols[i].font_size > self.left.font_size and target_num_lines % 2 > 0:
+                    target_num_lines += 1
+
                 col_tex, col = rm.get_text_of_length(cols[i],
                                                      target_num_lines,
                                                      self._get_expected_length(col_name,
