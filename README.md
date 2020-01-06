@@ -1,10 +1,8 @@
-# talmudifier.py
+# talmudifier
 
-Given three sections of markdown-formatted text, generate a pdf that arranges the text in columns formatted like a page of the Talmud. You can apply different styles and options to each column with a _recipe_ .json file (a default .json file is included in this repo).
+**Please help me improve this README.** I wrote this README initially just so that _I_ could remember how the program works. There's probably a lot missing, and a lot that is very misleading... So, please email me with suggestions for improving the documentation (or, better yet, create a GitHub Issue if you know how).
 
-**This script will take a while to run.** The size and positions of each column are calculated by repeatedly generating a test .PDF file. Expect the entire process to require approximately 5 minutes per page.
-
-The end result:
+**What this project does:** Given three sections of markdown-formatted text, generate a pdf that arranges the text in columns formatted like a page of the Talmud. 
 
 <img src="images/sample_page.png" style="zoom:75%;" />
 
@@ -28,9 +26,11 @@ This is the center column of text. It is a slightly bigger font, and contains th
 
 </details>
 
-**Please help me improve this README.** I wrote this README initially just so that _I_ could remember how the program works. There's probably a lot missing, and a lot that is very misleading... So, please email me with suggestions for improving the documentation (or, better yet, create a GitHub Issue if you know how).
+You can apply different styles and options to each column with a _recipe_ file (a default file is included in this repo).
 
-# Requirements
+**This script will take a while to run.** The size and positions of each column are calculated by repeatedly generating a test .PDF file. Expect the entire process to require approximately 5 minutes per page.
+
+## Requirements
 
 - Windows, OS X, or Linux
 - Python 3.6 or 3.7
@@ -46,7 +46,7 @@ This is the center column of text. It is a slightly bigger font, and contains th
 
 If you're not sure how to install anything and Google isn't being helpful, you can email me.
 
- # Setup
+ ## Setup
 
  1.
 
@@ -74,11 +74,114 @@ python3 test_input_reader.py
 
 You don't _need_ to do step 3, but if this test script works, then everything is set up OK.
 
-# API
+## Usage
 
-- [`talmudifier.py`](talmudifier.md)
+Talmudifier requires three sources of markdown text. It doesn't care where the sources come from (as long as they are imported correctly.
 
-# Recipes
+```python
+left = "This is one source of text."
+center = "This is another source of text."
+right = "To be honest, you'll need a lot more words per column for this to work right."
+```
+
+Or just pull the text from three files, e.g.:
+
+```python
+import io
+
+with io.open("left.txt", encoding="utf-8", "rt") as f:
+    left = f.read()
+```
+
+Then import Talmudifier and generate a .pdf:
+
+```
+from talmudifier.talmudifier import Talmudifier
+
+t = Talmudifier(left, center, right)
+t.create_pdf()
+```
+
+## API
+
+#### `Talmudifier`
+
+Generate Talmud-esque page layouts, given markdown plaintext and a recipe JSON file.
+
+```python
+from talmudifier.talmudifier import Talmudifier
+
+t = Talmudifier(left, center, right)
+```
+
+##### `__init__(self, text_left: str, text_center: str, text_right: str, recipe_filename="default.json")`
+
+| Parameter | Description |
+| --- | --- |
+| text_left |  The markdown text of the left column.|
+| text_center |  The markdown text of the center column.|
+| text_right |  The markdown text of the right column.|
+| recipe_filename |  The filename of the recipe, located in recipes/|
+
+***
+
+##### `get_tex(self) -> str`
+
+Generate the body of text.
+1. Create 4 rows on the left and right (width = one half).
+2. Create 1 row on the left and right (width = one third).
+3. Until the columns are all done: Find the shortest column and add it. Add other columns up to that length.
+
+***
+
+##### `get_chapter(self, title: str) -> str`
+
+Returns the chapter command.
+
+| Parameter | Description |
+| --- | --- |
+| title |  The title of the chapter.|
+
+***
+
+##### `create_pdf(self, chapter="", output_filename="output", print_tex=False) -> str`
+
+Create a PDF. Generate the chapter and the body, and append them to the preamble. Returns the LaTeX string.
+
+| Parameter | Description |
+| --- | --- |
+| chapter |  If not empty, create the header here.|
+| output_filename |  The name of the output file.|
+| print_tex |  If true, print the LaTeX string to the console.|
+
+#### `PDFWriter`
+
+Given LaTeX text, write a PDF. A `Talmudifier` object has its own writer, but it might be useful for you to create .pdfs manually (especially if you want to stitch a lot of .tex files together).
+
+```python
+from talmudifier.pdf_writer import PDFWriter
+
+writer = PDFWriter(preamble)
+```
+
+##### `__init__(self, preamble: str)`
+
+| Parameter | Description |
+| --- | --- |
+| preamble |  The preamble text.|
+
+***
+
+##### `write(self, text: str, filename: str) -> str`
+
+Create a PDF from LaTeX text. Returns the LaTeX text, including the preamble and the end command(s).
+
+| Parameter | Description |
+| --- | --- |
+| text |  The LaTeX text.|
+| filename | The filename of the PDF. |
+
+## Recipes
 
 A recipe is a JSON file that defines the fonts and other styling rules for your page. It is functionally the same as just writing your own TeX preamble, but probably a lot more user-friendly.
 
@@ -86,7 +189,7 @@ By default, `talmudifier.py` uses: `recipes/default.json`.
 
 All custom recipes should be saved to the `recipes/` directly as `.json` files.
 
-## `fonts`
+### `fonts`
 
 Definitions for the font per column.
 
@@ -127,7 +230,7 @@ Citations are letters or words that direct the reader from column to column.
 | `font_command` | string            | The command used to name the font family. You probably don't want to change this from `default.json`'s values. | ✔         |
 | `pattern`      | string<br>(regex) | `talmudifier.py` will replace anything in the input string with this regex pattern with a properly-formatted citation letter. | ✔         |
 
-## `character_counts`
+### `character_counts`
 
 These are the average number of characters in a column across many trials, given different column configurations (e.g. left and right only), a target column (e.g. left), and a target number of rows (e.g. 1).
 
@@ -166,7 +269,7 @@ Use this script to calculate the average number of characters per row given a re
 | `--trials`  | integer | The number of trials to run and then average.                | `100`          |
 | `--recipe`  | string  | Filename of the recipe file in the `recipes/` directory.     | `default.json` |
 
-## `chapter`
+### `chapter`
 
 Define the chapter header style.
 
@@ -176,11 +279,11 @@ Define the chapter header style.
 | `command`    | string  | The command used when creating a chapter.                    | ✔         |
 | `numbering`  | boolean | If true, chapter headers will start with numbers.            | ✔         |
 
-## `colors`
+### `colors`
 
 Define colors for the preamble. The key is the name of the color, and the value is the HTML hex code. This can be left empty if you don't need any extra colors.
 
-## `misc_definitions`
+### `misc_definitions`
 
 Anything else you'd like to include in the preamble. `default.json` includes the following:
 
