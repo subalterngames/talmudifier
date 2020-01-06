@@ -1,8 +1,8 @@
 # talmudifier
 
-**Please help me improve this README.** I wrote this README initially just so that _I_ could remember how the program works. There's probably a lot missing, and a lot that is very misleading... So, please email me with suggestions for improving the documentation (or, better yet, create a GitHub Issue if you know how).
-
 **What this project does:** Given three sections of markdown-formatted text, generate a pdf that arranges the text in columns formatted like a page of the Talmud. 
+
+**Please help me improve this README.** I wrote this README initially just so that _I_ could remember how the program works. There's probably a lot missing, and a lot that is very misleading... So, please email me with suggestions for improving the documentation (or, better yet, create a GitHub Issue if you know how).
 
 <img src="images/sample_page.png" style="zoom:75%;" />
 
@@ -56,7 +56,9 @@ If you're not sure how to install anything and Google isn't being helpful, you c
 
  Example: If your user name is Bob and you put this file in Downloads, type
 
- `cd C:/Users/Bob/Downloads/talmudifier`
+  ```bash
+ cd C:/Users/Bob/Downloads/talmudifier
+  ```
 
 2.
 
