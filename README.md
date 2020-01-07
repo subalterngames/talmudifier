@@ -86,7 +86,13 @@ If you're not sure how to install anything and Google isn't being helpful, you c
 pip3 setup.py -e .
 ```
 
-Don't forget the `.` at the end!
+Don't forget the `.` at the end! This will install Talmudifier as a Python module like any other:
+
+```python
+import json
+import io
+import talmudifier.talmudifier
+```
 
 3.
 
