@@ -1,8 +1,6 @@
 # talmudifier
 
-**What this project does:** Given three sections of markdown-formatted text, generate a pdf that arranges the text in columns formatted like a page of the Talmud. 
-
-**Please help me improve this README.** I wrote this README initially just so that _I_ could remember how the program works. There's probably a lot missing, and a lot that is very misleading... So, please email me with suggestions for improving the documentation (or, better yet, create a GitHub Issue if you know how).
+**What this project does:** Given three sections of markdown-formatted text, generate a pdf that arranges the text in columns formatted like a page of the Talmud:
 
 <img src="images/sample_page.png" style="zoom:75%;" />
 
@@ -26,9 +24,31 @@ This is the center column of text. It is a slightly bigger font, and contains th
 
 </details>
 
+**Please help me improve this README.** I wrote this README initially just so that _I_ could remember how the program works. There's probably a lot missing, and a lot that is very misleading... So, please email me with suggestions for improving the documentation (or, better yet, create a GitHub Issue if you know how).
+
+## How it works
+
+#### Style
+
+Talmudifier converts markdown text into LaTeX text and then outputs a PDF:
+
+| Markdown                                  | LaTeX                                                 | Output                                  |
+| ----------------------------------------- | ----------------------------------------------------- | --------------------------------------- |
+| `_**Rabbi Yonatan said to Rabbi Rivka**_` | `\textit{\textbf{Rabbi Yonatan said to Rabbi Rivka}}` | _**Rabbi Yonatan said to Rabbi Rivka**_ |
+
 You can apply different styles and options to each column with a _recipe_ file (a default file is included in this repo).
 
-**This script will take a while to run.** The size and positions of each column are calculated by repeatedly generating a test .PDF file. Expect the entire process to require approximately 5 minutes per page.
+#### Layout
+
+Columns are generated using the following process:
+
+1. Create four rows of the left and right columns of half width in a `paracol` environment.
+2. Create an additional row on the left and right of one-third width.
+3. Find the shortest column. For each column that still has text, add it to the `paracol` environment up to that number of rows.
+
+How do we know how many rows a column will be? _By repeatedly generating test pdfs._ Talmudifier outputs a column pdf with line numbers (using the `lineno` package), and then extracts plaintext from the pdf. This is ponderous and very hacky. If you know a better way, let me know. Right now, I think the most obvious improvement would be to catch the bytestream of the pdf before it is written to disk and extract the plaintext from that, but as far as I know that's not possible either.
+
+**This script will take a while to run.** Expect the entire process to require approximately 5 minutes per page.
 
 ## Requirements
 
@@ -291,3 +311,35 @@ Anything else you'd like to include in the preamble. `default.json` includes the
 
 - Definitions for left and right citation font commands; note how they include a color found in `colors`.
 - Definition for `\flowerfont`, referred to in `recipe["fonts"]["left"]["substitutions"]`.
+
+## Typesetting notes
+
+Talmudifier is meant to generate Talmud-esque pages rather than Talmud pages. The actual traditional page layouts of the Talmud are far more varied and complicated. However, the algorithm is inspired by the actual layout "rules" and typesetting techniques. Because it took me a year to track down enough errant URLs and rare books to write this Python script, I'll summarize my notes for you here. Most of this information can be found in <u>Printing the Talmud : a history of the earliest printed editions of the Talmud</u> by Martin Heller.
+
+- The left and right columns of a Talmud page always encapsulate the center column at the top. They are always (when possible) four rows, followed by one "gap" row to give the center column some breating space:
+
+![](images/four_rows.jpg)
+
+- After this, the columns extend downward for a length equal to the _shortest_ column. Whenever a column terminates, the remaining columns go on for another "gap" row.
+
+![](images/center.jpg)
+
+- Columns expand or contract to fill the page width depending on which columns still have text. The following options are possible:
+
+1. `████████ ████████`
+2. `█████ █████ █████`
+3. `█████ ███████████`
+4. `███████████ █████`
+5. `█████████████████`
+
+(The Talmud will sometimes vary this formula. And, the columns don't have such uniforms widths; see the above image.)
+
+- Additional marginalia is always in-line with the text it comments on.
+
+![](images/shas.jpg)
+
+- The Talmud uses different typefaces to indicate the author, most famously Rashi (for this reason, I decided that XeLaTeX is a better tool than LaTeX for this project).
+
+![](images/rashi.jpg)
+
+I found very little information on how typesetters knew how long any given column would be (information that Talmudifier requires) other than that it was hard to do. From this, I deduced that an experienced typesetter would simply have an eye for how to fit blocks of text on a page. I simulated this learned knowledge by adding expected row sizes to the recipe file derived from hundreds of simulated columns.
