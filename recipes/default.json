@@ -32,7 +32,7 @@
       "italic_font": "IMFeENit29P.ttf",
       "bold_font": "IMFeENsc29P.ttf",
       "size": 12,
-      "skip": 14,
+      "skip": 14.15,
       "substitutions":
       {
         "`L(.*)`": "\\\\leftcitationfont{\\\\leftcitation \\1} \\\\centerfont ",

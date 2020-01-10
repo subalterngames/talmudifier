@@ -20,20 +20,21 @@ class Paracol:
         if left:
             if center:
                 if right:
-                    return r"\begin{paracol}{3}"
+                    return r"\columnratio{" + f"{Paracol.ONE_THIRD},{Paracol.ONE_THIRD},{Paracol.ONE_THIRD}" + \
+                           "}\n\\begin{paracol}{3}"
                 else:
                     return r"\columnratio{" + Paracol.ONE_THIRD + "}\n" + r"\begin{paracol}{2}"
             elif right:
-                return r"\begin{paracol}{2}"
+                return r"\columnratio{0.5,0.5}" + "\n" + r"\begin{paracol}{2}"
             else:
-                return r"\begin{paracol}{1}"
+                return r"\columnratio{1}\begin{paracol}{1}"
         elif right:
             if center:
                 return r"\columnratio{" + Paracol.TWO_THIRDS + "}\n" + r"\begin{paracol}{2}"
             else:
-                return r"\begin{paracol}{1}"
+                return r"\columnratio{1}" + "\n" + r"\begin{paracol}{1}"
         elif center:
-            return r"\begin{paracol}{1}"
+            return r"\columnratio{1}" + "\n" + r"\begin{paracol}{1}"
         else:
             raise Exception("Tried defining a paracol environment for 0 columns.")
 
