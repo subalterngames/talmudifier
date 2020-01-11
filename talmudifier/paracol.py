@@ -23,7 +23,7 @@ class Paracol:
                     return r"\columnratio{" + f"{Paracol.ONE_THIRD},{Paracol.ONE_THIRD},{Paracol.ONE_THIRD}" + \
                            "}\n\\begin{paracol}{3}"
                 else:
-                    return r"\columnratio{" + Paracol.ONE_THIRD + "}\n" + r"\begin{paracol}{2}"
+                    return r"\columnratio{0.31}" +"\n" + r"\begin{paracol}{2}"
             elif right:
                 return r"\columnratio{0.5,0.5}" + "\n" + r"\begin{paracol}{2}"
             else:
