@@ -355,14 +355,15 @@ class Talmudifier:
         right_tex, self.right = self._get_four_rows_left_right(self.right, "right")
 
         # Add the paracol environment.
-        tex += "\n\\begin{paracol}{2}\n\n" + left_tex + "\\switchcolumn" + right_tex + "\n\n\\end{paracol}\n\n"
+        tex += "\n\\columnratio{0.5,0.5}\\begin{paracol}{2}\n\n" + left_tex + "\\switchcolumn" + right_tex + "\n\n\\end{paracol}\n\n"
 
         # Get four row on the left and on the right.
         left_tex, self.left = self._get_one_row_left_right(self.left, "left")
         right_tex, self.right = self._get_one_row_left_right(self.right, "right")
 
         # Add the paracol environment.
-        tex += "\n\\begin{paracol}{3}\n\n" + left_tex + "\\switchcolumn[2]" + right_tex + "\n\n\\end{paracol}\n\n"
+        three_col_begin = r"\columnratio{" + f"{Paracol.ONE_THIRD},{Paracol.ONE_THIRD},{Paracol.ONE_THIRD}" + "}" + r"\begin{paracol}{3}"
+        tex += "\n" + three_col_begin + "\n\n" + left_tex + "\\switchcolumn[2]" + right_tex + "\n\n\\end{paracol}\n\n"
         
         done = False
         while not done:
@@ -373,7 +374,7 @@ class Talmudifier:
 
             # Just fill the page with the last column's words.
             if num_lines == -1:
-                tex += "\n\n\\begin{paracol}{1}\n\n" + shortest_col.get_tex(True) + "\n\n\\end{paracol}\n\n"
+                tex += "\n\n\\columnratio{1}\\begin{paracol}{1}\n\n" + shortest_col.get_tex(True) + "\n\n\\end{paracol}\n\n"
                 done = True
                 continue
 
@@ -400,11 +401,6 @@ class Talmudifier:
 
                 # Set the target number of lines based on the font size relative to the left column.
                 target_num_lines = int((self.left.font_size / cols[i].font_size) * num_lines + 1)
-
-                # Maybe add one more line if the font size is bigger than the left column's.
-                # This is a hack!
-                if cols[i].font_size > self.left.font_size and target_num_lines % 2 > 0:
-                    target_num_lines += 1
 
                 col_tex, col = rm.get_text_of_length(cols[i],
                                                      target_num_lines,
