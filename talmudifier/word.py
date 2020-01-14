@@ -46,7 +46,7 @@ class Word:
         # Do the substitutions.
         if substitutions is not None:
             for key in substitutions:
-                self.word = re.sub(key, substitutions[key], self.word).replace("&", " ")
+                self.word = re.sub(key, substitutions[key], self.word)
 
         if word.startswith('"'):
             self.word = "``" + word[1:]

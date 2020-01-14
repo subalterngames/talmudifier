@@ -12,7 +12,7 @@
       "skip": 13,
       "substitutions":
       {
-        "`=(.*)`": "\\\\marginnote{\\\\noindent\\\\justifying \\\\tiny \\1}",
+        "`=(.*?[^\\\\])`": "\\\\marginnote{\\\\noindent\\\\justifying \\\\tiny \\1}",
         "->": "\\\\flowerfont 1 \\\\leftfont"
       },
       "citation":
