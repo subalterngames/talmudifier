@@ -1,6 +1,8 @@
-# talmudifier
+# Talmudifier
 
-**What this project does:** Given three sections of markdown-formatted text, generate a pdf that arranges the text in columns formatted like a page of the Talmud:
+## 1. Overview
+
+`talmudifier.py` is a Python script that will procedurally generate page layouts similar to the [Talmud](https://en.wikipedia.org/wiki/Talmud#/media/File:First_page_of_the_first_tractate_of_the_Talmud_(Daf_Beis_of_Maseches_Brachos).jpg). All it needs is three "sections" of text in [markdown format](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). This is an  Given three "sections" of markdown-formatted text, generate a pdf that arranges the text in columns formatted like a page of the Talmud:
 
 <img src="images/sample_page.png" style="zoom:75%;" />
 
@@ -24,33 +26,17 @@ This is the center column of text. It is a slightly bigger font, and contains th
 
 </details>
 
+### Who is this for?
+
+This is primarily for people familiar with [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), [Python](https://www.python.org/), [LaTeX](https://www.overleaf.com/learn/latex/XeLaTeX), and medieval typesetting. There might not be many of these people. You should at minimum:
+
+1. Have some experience with opening files and parsing strings in Python.
+2. Feel comfortable installing LaTeX packages. (You won't use LaTeX directly, so you don't need to learn any of its syntax.)
+3. Have at least a cursory understanding of why the Talmud is typeset the way it is.
+
 **Please help me improve this README.** I wrote this README initially just so that _I_ could remember how the program works. There's probably a lot missing, and a lot that is very misleading... So, please email me with suggestions for improving the documentation (or, better yet, create a GitHub Issue if you know how).
 
-## How it works
-
-#### Style
-
-Talmudifier converts markdown text into LaTeX text and then outputs a PDF:
-
-| Markdown                                  | LaTeX                                                 | Output                                  |
-| ----------------------------------------- | ----------------------------------------------------- | --------------------------------------- |
-| `_**Rabbi Yonatan said to Rabbi Rivka**_` | `\textit{\textbf{Rabbi Yonatan said to Rabbi Rivka}}` | _**Rabbi Yonatan said to Rabbi Rivka**_ |
-
-You can apply different styles and options to each column with a _recipe_ file (a default file is included in this repo).
-
-#### Layout
-
-Columns are generated using the following process:
-
-1. Create four rows of the left and right columns of half width in a `paracol` environment.
-2. Create an additional row on the left and right of one-third width.
-3. Find the shortest column. For each column that still has text, add it to the `paracol` environment up to that number of rows.
-
-How do we know how many rows a column will be? _By repeatedly generating test pdfs._ Talmudifier outputs a column pdf with line numbers (using the `lineno` package), and then extracts plaintext from the pdf. This is ponderous and very hacky. If you know a better way, let me know. Right now, I think the most obvious improvement would be to catch the bytestream of the pdf before it is written to disk and extract the plaintext from that, but as far as I know that's not possible either.
-
-**This script will take a while to run.** Expect the entire process to require approximately 5 minutes per page.
-
-## Requirements
+## 2. Requirements
 
 - Windows, OS X, or Linux
 - Python 3.6 or 3.7
@@ -66,7 +52,7 @@ How do we know how many rows a column will be? _By repeatedly generating test pd
 
 If you're not sure how to install anything and Google isn't being helpful, you can email me.
 
- ## Setup
+ ## 3. Setup
 
  1.
 
@@ -102,9 +88,9 @@ python3 test_input_reader.py
 
 You don't _need_ to do step 3, but if this test script works, then everything is set up OK.
 
-## Usage
+## 4. Usage
 
-Talmudifier requires three sources of markdown text. It doesn't care where the sources come from (as long as they are imported correctly.
+Talmudifier requires three sources of markdown text. It doesn't care where the sources come from as long as they are imported correctly. (In other words,  you're on your own providing the text and slotting it into this program.)
 
 ```python
 left = "This is one source of text."
@@ -130,7 +116,7 @@ t = Talmudifier(left, center, right)
 t.create_pdf()
 ```
 
-## API
+## 5. API
 
 #### `Talmudifier`
 
@@ -209,7 +195,7 @@ Create a PDF from LaTeX text. Returns the LaTeX text, including the preamble and
 | text |  The LaTeX text.|
 | filename | The filename of the PDF. |
 
-## Recipes
+## 6. Recipes
 
 A recipe is a JSON file that defines the fonts and other styling rules for your page. It is functionally the same as just writing your own TeX preamble, but probably a lot more user-friendly.
 
@@ -318,7 +304,31 @@ Anything else you'd like to include in the preamble. `default.json` includes the
 - Definitions for left and right citation font commands; note how they include a color found in `colors`.
 - Definition for `\flowerfont`, referred to in `recipe["fonts"]["left"]["substitutions"]`.
 
-## Typesetting notes
+## 7. How it works
+
+#### Style
+
+Talmudifier converts markdown text into LaTeX text and then outputs a PDF:
+
+| Markdown                                  | LaTeX                                                 | Output                                  |
+| ----------------------------------------- | ----------------------------------------------------- | --------------------------------------- |
+| `_**Rabbi Yonatan said to Rabbi Rivka**_` | `\textit{\textbf{Rabbi Yonatan said to Rabbi Rivka}}` | _**Rabbi Yonatan said to Rabbi Rivka**_ |
+
+You can apply different styles and options to each column with a _recipe_ file (a default file is included in this repo).
+
+#### Layout
+
+Columns are generated using the following process:
+
+1. Create four rows of the left and right columns of half width in a `paracol` environment.
+2. Create an additional row on the left and right of one-third width.
+3. Find the shortest column. For each column that still has text, add it to the `paracol` environment up to that number of rows.
+
+How do we know how many rows a column will be? _By repeatedly generating test pdfs._ Talmudifier outputs a column pdf with line numbers (using the `lineno` package), and then extracts plaintext from the pdf. This is ponderous and very hacky. If you know a better way, let me know. Right now, I think the most obvious improvement would be to catch the bytestream of the pdf before it is written to disk and extract the plaintext from that, but as far as I know that's not possible either.
+
+**This script will take a while to run.** Expect the entire process to require approximately 5 minutes per page.
+
+## 8. Typesetting notes
 
 Talmudifier is meant to generate Talmud-esque pages rather than Talmud pages. The actual traditional page layouts of the Talmud are far more varied and complicated. However, the algorithm is inspired by the actual layout "rules" and typesetting techniques. Because it took me a year to track down enough errant URLs and rare books to write this Python script, I'll summarize my notes for you here. Most of this information can be found in <u>Printing the Talmud : a history of the earliest printed editions of the Talmud</u> by Martin Heller.
 
@@ -349,3 +359,8 @@ Talmudifier is meant to generate Talmud-esque pages rather than Talmud pages. Th
 ![](images/rashi.jpg)
 
 I found very little information on how typesetters knew how long any given column would be (information that Talmudifier requires) other than that it was hard to do. From this, I deduced that an experienced typesetter would simply have an eye for how to fit blocks of text on a page. I simulated this learned knowledge by adding expected row sizes to the recipe file derived from hundreds of simulated columns.
+
+## 9. Known Limitations
+
+- The algorithm really struggles with different font sizes. I'm not sure how to handle this, other than requiring all columns to be the same font size. If you have a suggestion, please [email me](subalterngames@gmail.com).
+- The regex used is probably sub-optimal. Style markers _must_ be at the start and end of a word. Talmudifier is `ok with _this._` But `_not this_.`
