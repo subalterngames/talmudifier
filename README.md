@@ -1,14 +1,12 @@
 # Talmudifier
 
-## 1. Overview
-
 `talmudifier.py` is a Python script that will procedurally generate page layouts similar to the [Talmud](https://en.wikipedia.org/wiki/Talmud#/media/File:First_page_of_the_first_tractate_of_the_Talmud_(Daf_Beis_of_Maseches_Brachos).jpg). All it needs is three "sections" of text in [markdown format](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). This is an  Given three "sections" of markdown-formatted text, generate a pdf that arranges the text in columns formatted like a page of the Talmud:
 
 <img src="images/sample_page.png" style="zoom:75%;" />
 
 That .PDF was generated from [this input file](test/test_input.md).
 
-### Who is this for?
+## 1. Who is this for?
 
 This is primarily for people familiar with [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), [Python](https://www.python.org/), [LaTeX](https://www.overleaf.com/learn/latex/XeLaTeX), and medieval typesetting. There might not be many of these people. You should at minimum:
 
