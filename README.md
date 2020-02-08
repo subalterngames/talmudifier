@@ -64,11 +64,19 @@ import talmudifier.talmudifier
 
 3.
 
+OS X and Linux:
+
 ```bash
 python3 test_input_reader.py
 ```
 
-You don't _need_ to do step 3, but if this test script works, then everything is set up OK. The script will generate:
+Windows:
+
+```bash
+py -3 test_input_reader.py
+```
+
+If this test script works, then everything is set up OK. The script will generate:
 
 - The test page PDF: `talmudifier/Output/test_page.pdf` 
 - The .tex file used to create the PDF: `talmudifier/Output/test_page.tex`
@@ -318,7 +326,7 @@ How do we know how many rows a column will be? _By repeatedly generating test pd
 
 Talmudifier is meant to generate Talmud-esque pages rather than Talmud pages. The actual traditional page layouts of the Talmud are far more varied and complicated. However, the algorithm is inspired by the actual layout "rules" and typesetting techniques. Because it took me a year to track down enough errant URLs and rare books to write this Python script, I'll summarize my notes for you here. Most of this information can be found in <u>Printing the Talmud : a history of the earliest printed editions of the Talmud</u> by Martin Heller.
 
-- The left and right columns of a Talmud page always encapsulate the center column at the top. They are always (when possible) four rows, followed by one "gap" row to give the center column some breating space:
+- The left and right columns of a Talmud page always encapsulate the center column at the top. They are always (when possible) four rows, followed by one "gap" row to give the center column some breathing space:
 
 ![](images/four_rows.jpg)
 
@@ -340,7 +348,7 @@ Talmudifier is meant to generate Talmud-esque pages rather than Talmud pages. Th
 
 ![](images/shas.jpg)
 
-- The Talmud uses different typefaces to indicate the author, most famously Rashi (for this reason, I decided that XeLaTeX is a better tool than LaTeX for this project).
+- The Talmud uses different typefaces to indicate the author, most famously Rashi (for this reason, I decided that [XeLaTeX](https://www.overleaf.com/learn/latex/XeLaTeX) is a better tool than LaTeX for this project).
 
 ![](images/rashi.jpg)
 
