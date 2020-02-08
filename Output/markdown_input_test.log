@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2020.1.7)  7 FEB 2020 16:24
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7140 64-bit) (preloaded format=xelatex 2019.9.4)  8 FEB 2020 09:49
 entering extended mode
 **\documentclass[11pt,letterpaper,openany]{scrbook} \usepackage[letterpaper, bi
 ndingoffset=0.2in, left=1in,right=1in,top=.5in,bottom=.5in,footskip=.25in,margi
@@ -6,121 +6,120 @@ nparwidth=5em]{geometry}  \usepackage{marginnote} \usepackage{sectsty} \usepack
 age{ragged2e} \usepackage{lineno} \usepackage{xcolor} \usepackage{paracol} \use
 package{fontspec}  \allsectionsfont{\centering}  \setlength\parindent{0pt} \set
 length{\columnsep}{1.25em} \setlength{\parfillskip}{0pt} \setlength{\tabcolsep}
-{1em} \raggedbottom   \newfontfamily\leftfont[Path=fell_french_canon/, Ligature
-s=TeX, ItalicFont=IMFeFCit29C.otf, BoldFont=AveriaLibre-Bold.ttf]{IMFeFCrm29C.o
-tf} \newfontfamily\leftcitationfont[Path=frankruehl/]{FrankRuehlCLM-Medium.ttf}
- \newfontfamily\centerfont[Path=fell/, Ligatures=TeX, ItalicFont=IMFeENit29P.tt
-f, BoldFont=IMFeENsc29P.ttf]{IMFeENrm29P.ttf} \newfontfamily\rightfont[Path=ave
-ria/, Ligatures=TeX, ItalicFont=AveriaLibre-RegularItalic.ttf, BoldFont=AveriaL
-ibre-Bold.ttf, BoldItalicFont=AveriaLibre-BoldItalic.ttf]{AveriaLibre-Light.ttf
-} \newfontfamily\rightcitationfont[Path=rashi/]{Mekorot-Rashi.ttf} \definecolor
-{hcolor}{HTML}{D3230C} \newcommand{\chfont}[1]{\centerfont{\huge\textcolor{hcol
-or}{#1}}} \newcommand{\leftcitation}[1]{\leftcitationfont{\Large\textcolor{hcol
-or}{#1}}} \newcommand{\rightcitation}[1]{\rightcitationfont{\normalsize\textcol
-or{hcolor}{#1}}} \newfontfamily\flowerfont[Path=fell_flowers/]{IMFeFlow2.otf}\b
-egin{document}\begin{sloppypar}  \chapter*{\chfont{The Hammer of Lilith}}  \col
-umnratio{0.5,0.5}\begin{paracol}{2}  \fontsize{11}{13}\leftfont \leftcitation{א
-} \leftfont What is the left column? \underline{R. Seth:} This is the redaction
- of the words of the rabbis and sages, who interpret the center text. \underlin
-e{R. Alter:} The rabbis never agree on anything. I think that the left\switchco
-lumn\fontsize{11}{13}\rightfont \rightcitation{א} \rightfont If \textbf{The cen
-ter column is primary:}  This column is an interpretation of the center column 
-based on previous interpretations you made having read the left column of rabbi
-nical com-  \end{paracol}   \columnratio{0.32,0.32,0.32}\begin{paracol}{3}  \fo
-ntsize{11}{13}\leftfont column is the ``oral tradition",\switchcolumn[2]\fontsi
-ze{11}{13}\rightfont mentary. In this manner, you  \end{paracol}  \columnratio{
-0.32,0.32,0.32} \begin{paracol}{3}\fontsize{11}{13}\leftfont given to us in par
-allel with the primary text. So there! When you see the following special symbo
-l, it's time to make a decision. \flowerfont 1 \leftfont \textit{Inscribe:} \te
-xtbf{The center column is primary.} \textit{or} \textbf{The left column is the 
-oral center column.} \leftcitation{ב} \leftfont \underline{R. Alter:}  And anot
-her thing! Sometimes we have a lot to argue about, and we end up citing verses,
- as it is written: ``Blah blah blah thus saith Asherah our queen."\marginnote{\
-noindent\justifying \tiny Lorem 1:23} \underline{R. Seth:} I'm just going to fi
-ll up a lot of space now by citing another text: ``Lorem ipsum dolor sit amet, 
-consectetur adipiscing elit. Fusce faucibus enim semper tincidunt varius. Nam e
-t mi lacus. Sed commodo leo  \switchcolumn  \fontsize{12}{14.15}\centerfont Thi
-s is the center column of text. It is a slightly bigger font, and contains the 
-``primary story". Occasionally, sentences end with citation notes. \leftcitatio
-nfont{\leftcitation א} \centerfont  Citations that are block Hebrew letters dir
-ect the reader to the left column. \leftcitationfont{\leftcitation ב} \centerfo
-nt  Citations that are Rashi Hebrew characters direct the reader to the right c
-olumn. \rightcitationfont{\rightcitation א} \centerfont In the markdown, this i
-s handled by adding a L or R to the citation character, e.g. R-aleph. \rightcit
-ationfont{\rightcitation ב} \centerfont  This column has the largest font. Some
- words, such as \textbf{Asherah} are always rendered in smallcaps.  \switchcolu
-mn  \fontsize{11}{13}\rightfont can participate in the rabbinical discourse. Or
- perhaps you're actually providing a third layer, rather than adding to the sec
-ond? Either way, this is where the narrative ``branches". Only it doesn't reall
-y branch because, of course,  you aren't affecting the center column at all. Ra
-ther, this column tends to answer questions of ``why something happened" or ``i
-n what manner did something happen", and those answers are branched. § If \text
-bf{The left column is the oral center column:} You're not really \textit{any} s
-teps  removed from the center column, because without a reader, the center colu
-mn is just ink on a page. The implications of your previous thoughts are  \end{
-paracol}  \columnratio{0.5,0.5} \begin{paracol}{2}\fontsize{11}{13}\leftfont co
-nsectetur, imperdiet neque eget, aliquet felis. Etiam elit nulla, malesuada vit
-ae dolor eget, tincidunt pharetra tellus a. Nunc eget convallis nunc, in faucib
-us ante. Sed dictum varius neque commodo hendrerit. Sed maximus ligula nunc, et
- tristique sapien faucibus et. Donec dictum turpis ac odio rhoncus consequat. P
-ellentesque metus nisi, sodales ut vestibulum vitae, convallis eget purus. Null
-a lectus lacus, dapibus at molestie mattis, placerat non purus. Sed ac pharetra
- neque. Sed accumsan libero non sollicitudin faucibus. Integer a urna tortor. P
-roin quis volutpat turpis. Cras consectetur quam mauris, vitae feugiat ipsum so
-llicitudin at. Duis non imperdiet diam. Suspendisse laoreet venenatis metus sed
- porta. Nullam vel leo turpis. Vivamus id lacinia turpis, lacinia mattis libero
-. Proin fer-  \switchcolumn  \fontsize{11}{13}\rightfont inextricably linked to
- how you have, are, and will read the center text. And so on and so forth. \rig
-htcitation{ב} \rightfont If \textbf{R. Seth helped me understand:} Typically, t
-he right column won't offer answers based on inscriptions you make on the same 
-page. Rather, the bolded conditionals tend to be things you wrote down on \text
-it{previous} pages, such that previous readings inspire later readings. But sin
-ce this is the only page in this test, that is of course impossible! So instead
- we'll work with what we got. § If \textbf{That last proof-text was gibberish:}
- Sure, but in order to test the layout, I need more words, so here's a few more
-: Praesent vitae mi mi. Sed viverra nibh turpis, non vulputate tellus tincidunt
- nec.  \end{paracol}    \columnratio{1}\begin{paracol}{1}  \fontsize{11}{13}\le
-ftfont mentum, quam a rhoncus ornare, leo turpis facilisis leo, sit amet consec
-tetur purus nulla non leo. Ut volutpat, nunc eu viverra dictum, sapien quam por
-ta tellus, vel viverra diam erat at mi. Maecenas pellentesque mattis nibh in co
-nsequat. Donec mollis, ex a ullamcorper consectetur, diam leo aliquet leo, eu i
-nterdum tortor velit in magna."\marginnote{\noindent\justifying \tiny Ipsum 69:
-420} Does that clarify anything for you? \flowerfont 1 \leftfont \textit{Inscri
-be:} \textbf{R. Seth helped me understand.} \textit{or} \textbf{That last proof
--text was gibberish.}  \end{paracol}  \end{sloppypar}\end{document}
+{1em} \raggedbottom   \newfontfamily\leftfont[Path=fonts/fell_french_canon/, Li
+gatures=TeX, ItalicFont=IMFeFCit29C.otf, BoldFont=AveriaLibre-Bold.ttf]{IMFeFCr
+m29C.otf} \newfontfamily\leftcitationfont[Path=fonts/frankruehl/]{FrankRuehlCLM
+-Medium.ttf} \newfontfamily\centerfont[Path=fonts/garamond/, Ligatures=TeX, Ita
+licFont=EBGaramond-SemiBoldItalic.ttf]{EBGaramond-SemiBold.ttf} \newfontfamily\
+rightfont[Path=fonts/averia/, Ligatures=TeX, ItalicFont=AveriaLibre-RegularItal
+ic.ttf, BoldFont=AveriaLibre-Bold.ttf, BoldItalicFont=AveriaLibre-BoldItalic.tt
+f]{AveriaLibre-Light.ttf} \newfontfamily\rightcitationfont[Path=fonts/rashi/]{M
+ekorot-Rashi.ttf} \definecolor{hcolor}{HTML}{D3230C} \definecolor{rcolor}{HTML}
+{D36F0C} \newcommand{\chfont}[1]{\centerfont{\huge\textcolor{hcolor}{#1}}} \new
+command{\leftcitation}[1]{\leftcitationfont{\Large\textcolor{hcolor}{#1}}} \new
+command{\rightcitation}[1]{\rightcitationfont{\normalsize\textcolor{rcolor}{#1}
+}} \newfontfamily\flowerfont[Path=fonts/fell_flowers/]{IMFeFlow2.otf}\begin{doc
+ument}\begin{sloppypar}  \chapter*{\chfont{Talmudifier Test Page}}  \columnrati
+o{0.5,0.5}\begin{paracol}{2}  \fontsize{11}{13}\leftfont Lorem ipsum dolor sit 
+amet, consectetur adipiscing elit. Duis vehicula ligula at est bibendum, in ele
+ifend erat dictum. Etiam sit amet tellus id ex ullamcorper faucibus. Suspendiss
+e sed elit\switchcolumn\fontsize{11}{13}\rightfont Aenean sed dolor suscipit, d
+ignissim nisl at, blandit eros. Pellentesque scelerisque viverra ligula, vel co
+ngue lorem semper non. Nulla nec convallis neque. Donec ut leo velit. Donec fel
+is  \end{paracol}   \columnratio{0.32,0.32,0.32}\begin{paracol}{3}  \fontsize{1
+1}{13}\leftfont vel neque convallis iaculis id\switchcolumn[2]\fontsize{11}{13}
+\rightfont odio, tincidunt non vestibulum  \end{paracol}  \columnratio{0.32,0.3
+2,0.32} \begin{paracol}{3}\fontsize{11}{13}\leftfont in urna. Sed tincidunt var
+ius ipsum at scelerisque. Phasellus lacus lectus, sodales sit amet orci in, rut
+rum malesuada diam. Cras pulvinar elit sit amet lacus fringilla, in elementum m
+auris maximus. Phasellus euismod dolor sed pretium elementum. Nulla sagittis, e
+lit eget semper porttitor, erat nunc commodo turpis, et bibendum ex lorem laore
+et ipsum. Morbi auctor dignissim velit eget consequat. \underline{R. Seth:} Bla
+h blah blah blah. As it is written:  ``Aecenas lacinia nisi diam, vel pulvinar 
+metus aliquet ut. Sed non lorem quis dui ultrices volutpat quis at diam."\margi
+nnote{\noindent\justifying \tiny Lorem 1:23} Quisque at nisi magna. Duis nec la
+cus arcu. Morbi vel fermentum leo. Pellentesque  \switchcolumn  \fontsize{11}{1
+3}\centerfont Quisque at nisi magna. Duis nec lacus arcu. Morbi vel fermentum l
+eo. Pellentesque hendrerit sagittis vulputate. Fusce laoreet malesuada odio, si
+t amet fringilla lectus ultrices porta. Aliquam feugiat finibus turpis id males
+uada. \leftcitationfont{\leftcitation א} \centerfont  Suspendisse hendrerit ero
+s sit amet tempor pulvinar. Duis velit mauris, facilisis ut tincidunt sed, phar
+etra eu libero. Aenean lobortis tincidunt nisi. \leftcitationfont{\leftcitation
+ ב} \centerfont  Praesent metus lacus, tristique sed porta non, tempus id quam.
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubil
+ia Curae; \rightcitationfont{\rightcitation א} \centerfont  In eu porta velit, 
+quis pellentesque elit. \rightcitationfont{\rightcitation ב} \centerfont  Quisq
+ue vehicula massa sit amet justo rhoncus auctor.  \switchcolumn  \fontsize{11}{
+13}\rightfont ut, consectetur eget lectus. Donec varius finibus scelerisque. Al
+iquam nisl odio, sollicitudin eget sem non, tincidunt tempor felis. Curabitur e
+t ullamcorper lacus. Cras eu ante quis arcu dictum ultrices. Proin vel ante qui
+s elit sollicitudin auctor. Nullam ultricies tempor neque, varius scelerisque n
+eque. Nam et arcu ut odio maximus tempor et sit amet elit. \rightcitation{א} \r
+ightfont Morbi fermentum dapibus elementum. Proin id metus ipsum. Aenean posuer
+e nunc quis lacus varius, eget molestie mauris accumsan. § Fusce sapien ipsum, 
+cursus a tincidunt vel, dignissim eu mi. Morbi id velit ac turpis ullamcorper l
+acinia. § Cras bibendum tellus vitae eros rutrum scelerisque. Vivamus sed pelle
+ntesque elit,  \end{paracol}  \columnratio{0.5,0.5} \begin{paracol}{2}\fontsize
+{11}{13}\leftfont hendrerit sagittis vulputate. Fusce laoreet malesuada odio, s
+it amet fringilla lectus ultrices porta. Aliquam feugiat finibus turpis id male
+suada. Suspendisse hendrerit eros sit amet tempor pulvinar. Duis velit mauris, 
+facilisis ut tincidunt sed, pharetra eu libero. Aenean lobortis tincidunt nisi.
+ Praesent metus lacus, tristique sed porta non, tempus id quam.  \leftcitation{
+א} \leftfont I use these red Hebrew letters in my own WIP project along with va
+rious other font changes... \textbf{You might find this funcitonality useful.} 
+\underline{R. Alter:} I strongly disgree with you, and future readers of this w
+ill have to comb through pages upon pages of what might as well be lorem ipsum 
+to figure out why we're dunking on each other so much.  \switchcolumn  \fontsiz
+e{11}{13}\rightfont non imperdiet massa. Curabitur dictum nisi sollicitudin luc
+tus malesuada. Vestibulum id pulvinar risus, sit amet ornare libero. Etiam a nu
+nc dolor. \rightcitation{ב} \rightfont In ac velit maximus, elementum ex et, bl
+andit massa. Aliquam vehicula at neque sit amet ultrices. Integer id justo est.
+ Quisque luctus erat eget aliquam faucibus. Etiam eu mi ac odio pretium dictum.
+ Vestibulum viverra congue risus, ac egestas est dapibus eget. Aenean ut orci l
+eo. Nulla dignissim erat pulvinar elit facilisis, ac venenatis leo tincidunt. Q
+uisque eu lorem tortor. Quisque nec porttitor elit. Ut finibus ullamcorper odio
+, in porttitor lorem suscipit ut.  \end{paracol}    \columnratio{1}\begin{parac
+ol}{1}  \fontsize{11}{13}\leftfont As it is written: ``Sed ut eros id arcu tinc
+idunt accumsan. Vestibulum vitae nisl blandit, commodo odio vitae, dictum nunc.
+ Suspendisse pharetra lorem vitae ex tincidunt ornare. Maecenas efficitur trist
+ique libero, eget commodo urna. Pellentesque libero sem, interdum ut nibh inter
+dum, consequat elementum magna."\marginnote{\noindent\justifying \tiny Ipsum 69
+:420}  \leftcitation{ב} \leftfont Aliquam facilisis vel turpis eu semper. Donec
+ eget purus lectus. \flowerfont 1 \leftfont Check out how nice that little hand
+ looks. Nice.  \end{paracol}  \end{sloppypar}\end{document}
 
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrbo
-ok.cls"
-Document Class: scrbook 2019/12/23 v3.28 KOMA-Script document class (book)
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\s
+crbook.cls"
+Document Class: scrbook 2019/02/01 v3.26b KOMA-Script document class (book)
 
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrkb
-ase.sty"
-Package: scrkbase 2019/12/23 v3.28 KOMA-Script package (KOMA-Script-dependent b
-asics and keyval usage)
-
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrba
-se.sty"
-Package: scrbase 2019/12/23 v3.28 KOMA-Script package (KOMA-Script-independent 
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\s
+crkbase.sty"
+Package: scrkbase 2019/02/01 v3.26b KOMA-Script package (KOMA-Script-dependent 
 basics and keyval usage)
 
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.s
-ty"
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\s
+crbase.sty"
+Package: scrbase 2019/02/01 v3.26b KOMA-Script package (KOMA-Script-independent
+ basics and keyval usage)
+
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyv
+al.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrlf
-ile.sty"
-Package: scrlfile 2019/12/23 v3.28 KOMA-Script package (loading files)
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\s
+crlfile.sty"
+Package: scrlfile 2019/02/01 v3.26b KOMA-Script package (loading files)
 )))
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\tocba
-sic.sty"
-Package: tocbasic 2019/12/23 v3.28 KOMA-Script package (handling toc-files)
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\t
+ocbasic.sty"
+Package: tocbasic 2019/02/01 v3.26b KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip41
 \scr@dte@tocline@numbox=\box27
 )
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `toc' on input line 137.
+(tocbasic)             for `toc' on input line 136.
 Package scrbook Info: You've used standard option `11pt'.
 (scrbook)             This is correct!
 (scrbook)             Internally I'm using `fontsize=11pt'.
@@ -134,16 +133,16 @@ Class scrbook Info: You've used standard option `openany'.
 (scrbook)           you'd have to use `open=any' there
 (scrbook)           instead of `openany', too.
 Class scrbook Info: File `scrsize11pt.clo' used to setup font sizes on input li
-ne 2423.
+ne 2376.
 
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\scrsi
-ze11pt.clo"
-File: scrsize11pt.clo 2019/12/23 v3.28 KOMA-Script font size class option (11pt
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\s
+crsize11pt.clo"
+File: scrsize11pt.clo 2019/02/01 v3.26b KOMA-Script font size class option (11p
+t)
 )
-)
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\typea
-rea.sty"
-Package: typearea 2019/12/23 v3.28 KOMA-Script package (type area)
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/koma-script\t
+ypearea.sty"
+Package: typearea 2019/02/01 v3.26b KOMA-Script package (type area)
 \ta@bcor=\skip42
 \ta@div=\count80
 Package typearea Info: You've used standard option `letterpaper'.
@@ -177,7 +176,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 1718.
+(typearea)              on input line 1715.
 )
 \c@part=\count81
 \c@chapter=\count82
@@ -188,63 +187,68 @@ Package typearea Info: These are the values describing the layout:
 \c@subparagraph=\count87
 \scr@dte@chapter@maxnumwidth=\skip47
 Class scrbook Info: using compatibility default `afterindent=bysign'
-(scrbook)           for `\chapter on input line 5544.
+(scrbook)           for `\chapter on input line 5303.
 \scr@dte@section@maxnumwidth=\skip48
 Class scrbook Info: using compatibility default `runin=bysign'
-(scrbook)           for `\section on input line 5554.
+(scrbook)           for `\section on input line 5313.
 Class scrbook Info: using compatibility default `afterindent=bysign'
-(scrbook)           for `\section on input line 5554.
+(scrbook)           for `\section on input line 5313.
 \scr@dte@part@maxnumwidth=\skip49
 Class scrbook Info: using compatibility default `afterindent=true'
-(scrbook)           for `\part on input line 5563.
+(scrbook)           for `\part on input line 5322.
 \scr@dte@subsection@maxnumwidth=\skip50
 Class scrbook Info: using compatibility default `runin=bysign'
-(scrbook)           for `\subsection on input line 5573.
+(scrbook)           for `\subsection on input line 5332.
 Class scrbook Info: using compatibility default `afterindent=bysign'
-(scrbook)           for `\subsection on input line 5573.
+(scrbook)           for `\subsection on input line 5332.
 \scr@dte@subsubsection@maxnumwidth=\skip51
 Class scrbook Info: using compatibility default `runin=bysign'
-(scrbook)           for `\subsubsection on input line 5583.
+(scrbook)           for `\subsubsection on input line 5342.
 Class scrbook Info: using compatibility default `afterindent=bysign'
-(scrbook)           for `\subsubsection on input line 5583.
+(scrbook)           for `\subsubsection on input line 5342.
 \scr@dte@paragraph@maxnumwidth=\skip52
 Class scrbook Info: using compatibility default `runin=bysign'
-(scrbook)           for `\paragraph on input line 5593.
+(scrbook)           for `\paragraph on input line 5352.
 Class scrbook Info: using compatibility default `afterindent=bysign'
-(scrbook)           for `\paragraph on input line 5593.
+(scrbook)           for `\paragraph on input line 5352.
 \scr@dte@subparagraph@maxnumwidth=\skip53
 Class scrbook Info: using compatibility default `runin=bysign'
-(scrbook)           for `\subparagraph on input line 5603.
+(scrbook)           for `\subparagraph on input line 5362.
 Class scrbook Info: using compatibility default `afterindent=bysign'
-(scrbook)           for `\subparagraph on input line 5603.
+(scrbook)           for `\subparagraph on input line 5362.
 \abovecaptionskip=\skip54
 \belowcaptionskip=\skip55
 \c@pti@nb@sid@b@x=\box28
 Package tocbasic Info: omitting babel extension for `lof'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lof' on input line 6845.
+(tocbasic)             for `lof' on input line 6617.
 \scr@dte@figure@maxnumwidth=\skip56
 \c@figure=\count88
 Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lot' on input line 6866.
+(tocbasic)             for `lot' on input line 6638.
 \scr@dte@table@maxnumwidth=\skip57
 \c@table=\count89
-Class scrbook Info: Redefining `\numberline' on input line 7039.
+Class scrbook Info: Redefining `\numberline' on input line 6811.
 \bibindent=\dimen102
 )
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry
-.sty"
-Package: geometry 2020/01/02 v5.9 Page Geometry
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geom
+etry.sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
 
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\ifvtex.st
-y"
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/generic/iftex\iftex.sty
-"
-Package: iftex 2019/11/07 v1.0c TeX engine tests
-))
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\if
+pdf.sty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\if
+vtex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifx
+etex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
 \Gm@cnth=\count90
 \Gm@cntv=\count91
 \c@Gm@tempcnt=\count92
@@ -258,46 +262,24 @@ Package: iftex 2019/11/07 v1.0c TeX engine tests
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
 
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/xelatex/xetexconfig\geo
-metry.cfg"))
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/marginnote\margin
-note.sty"
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/xelatex/xetexconfig
+\geometry.cfg"))
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/marginnote\ma
+rginnote.sty"
 Package: marginnote 2018/08/09 v1.4b non floating margin notes for LaTeX
 \c@mn@abspage=\count93
 )
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/sectsty\sectsty.s
-ty"
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/sectsty\sects
+ty.sty"
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
-
-
-LaTeX Warning: Command \underbar  has changed.
-               Check if current package is valid.
-
-
-LaTeX Warning: Command \underline  has changed.
-               Check if current package is valid.
-
 )
-
-Class scrbook Warning: Incompatible package `sectsty' loaded!
-(scrbook)              Package `sectsty' up to version 2.0.2 is incompatible
-(scrbook)              with KOMA-Script from version 2.8e released in 2001.
-(scrbook)              You should avoid that package and configure the
-(scrbook)              section titles of your document using the KOMA-Script
-(scrbook)              user interface, e.g., \chapterlinesformat,
-(scrbook)              \RedeclareSectionCommand etc. or you should ask
-(scrbook)              the `sectsty' maintainer for a more compatible release.
-(scrbook)              Ignoring this warning could result in several error
-(scrbook)              messages and formatting issues after loading package
-(scrbook)              `sectsty' on input line 0.
-
-
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ragged2e\ragged2e
-.sty"
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ragged2e\ragg
+ed2e.sty"
 Package: ragged2e 2019/07/28 v2.2 ragged2e Package (MS)
 
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ms\everysel.sty"
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ms\everysel.s
+ty"
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
 \CenteringLeftskip=\skip58
@@ -315,8 +297,8 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 \RaggedRightParindent=\skip70
 \JustifyingParindent=\skip71
 )
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lineno\lineno.sty
-"
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lineno\lineno
+.sty"
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
 \linenopenalty=\count94
@@ -335,18 +317,18 @@ Invalid UTF-8 byte or sequence at line 296 replaced by U+FFFD.
 \bframebox=\box29
 LaTeX Info: Redefining \\ on input line 3056.
 )
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty
-"
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor
+.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\colo
-r.cfg"
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\
+color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: xetex.def on input line 225.
 
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\xete
-x.def"
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\
+xetex.def"
 File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
@@ -358,8 +340,8 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/paracol\paracol.s
-ty"
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/paracol\parac
+ol.sty"
 Package: paracol 2018/12/31 v1.35 
 \pcol@currcol=\count101
 \pcol@nextcol=\count102
@@ -387,31 +369,29 @@ Package: paracol 2018/12/31 v1.35
 \pcol@colorins=\insert199
 \pcol@everyvbox=\toks17
 )
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontspec\fontspec
-.sty"
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xparse
-\xparse.sty"
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3.st
-y"
-Package: expl3 2019-11-07 L3 programming layer (loader) 
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontspec\font
+spec.sty"
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packages/xp
+arse\xparse.sty"
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl
+3.sty"
+Package: expl3 2019-08-25 L3 programming layer (loader) 
 
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl3-co
-de.tex"
-Package: expl3 2019-11-07 L3 programming layer (code)
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\expl
+3-code.tex"
+Package: expl3 2019-08-25 L3 programming layer (code)
 \c_max_int=\count111
 \l_tmpa_int=\count112
 \l_tmpb_int=\count113
 \g_tmpa_int=\count114
 \g_tmpb_int=\count115
-\l__seq_internal_a_int=\count116
-\l__seq_internal_b_int=\count117
-\g__kernel_prg_map_int=\count118
-\c__ior_term_noprompt_ior=\count119
-\c_log_iow=\count120
-\l_iow_line_count_int=\count121
-\l__iow_line_target_int=\count122
-\l__iow_one_indent_int=\count123
-\l__iow_indent_int=\count124
+\g__kernel_prg_map_int=\count116
+\c__ior_term_noprompt_ior=\count117
+\c_log_iow=\count118
+\l_iow_line_count_int=\count119
+\l__iow_line_target_int=\count120
+\l__iow_one_indent_int=\count121
+\l__iow_indent_int=\count122
 \c_zero_dim=\dimen121
 \c_max_dim=\dimen122
 \l_tmpa_dim=\dimen123
@@ -430,76 +410,76 @@ Package: expl3 2019-11-07 L3 programming layer (code)
 \l_tmpb_muskip=\muskip13
 \g_tmpa_muskip=\muskip14
 \g_tmpb_muskip=\muskip15
-\l_keys_choice_int=\count125
-\l__intarray_loop_int=\count126
+\l_keys_choice_int=\count123
+\l__intarray_loop_int=\count124
 \c__intarray_sp_dim=\dimen127
-\g__intarray_font_int=\count127
-\c__fp_leading_shift_int=\count128
-\c__fp_middle_shift_int=\count129
-\c__fp_trailing_shift_int=\count130
-\c__fp_big_leading_shift_int=\count131
-\c__fp_big_middle_shift_int=\count132
-\c__fp_big_trailing_shift_int=\count133
-\c__fp_Bigg_leading_shift_int=\count134
-\c__fp_Bigg_middle_shift_int=\count135
-\c__fp_Bigg_trailing_shift_int=\count136
-\g__fp_array_int=\count137
-\l__fp_array_loop_int=\count138
-\l__sort_length_int=\count139
-\l__sort_min_int=\count140
-\l__sort_top_int=\count141
-\l__sort_max_int=\count142
-\l__sort_true_max_int=\count143
-\l__sort_block_int=\count144
-\l__sort_begin_int=\count145
-\l__sort_end_int=\count146
-\l__sort_A_int=\count147
-\l__sort_B_int=\count148
-\l__sort_C_int=\count149
-\l__str_internal_int=\count150
-\l__tl_analysis_normal_int=\count151
-\l__tl_analysis_index_int=\count152
-\l__tl_analysis_nesting_int=\count153
-\l__tl_analysis_type_int=\count154
-\l__regex_internal_a_int=\count155
-\l__regex_internal_b_int=\count156
-\l__regex_internal_c_int=\count157
-\l__regex_balance_int=\count158
-\l__regex_group_level_int=\count159
-\l__regex_mode_int=\count160
-\c__regex_cs_in_class_mode_int=\count161
-\c__regex_cs_mode_int=\count162
-\l__regex_catcodes_int=\count163
-\l__regex_default_catcodes_int=\count164
-\c__regex_catcode_L_int=\count165
-\c__regex_catcode_O_int=\count166
-\c__regex_catcode_A_int=\count167
-\c__regex_all_catcodes_int=\count168
-\l__regex_show_lines_int=\count169
-\l__regex_min_state_int=\count170
-\l__regex_max_state_int=\count171
-\l__regex_left_state_int=\count172
-\l__regex_right_state_int=\count173
-\l__regex_capturing_group_int=\count174
-\l__regex_min_pos_int=\count175
-\l__regex_max_pos_int=\count176
-\l__regex_curr_pos_int=\count177
-\l__regex_start_pos_int=\count178
-\l__regex_success_pos_int=\count179
-\l__regex_curr_char_int=\count180
-\l__regex_curr_catcode_int=\count181
-\l__regex_last_char_int=\count182
-\l__regex_case_changed_char_int=\count183
-\l__regex_curr_state_int=\count184
-\l__regex_step_int=\count185
-\l__regex_min_active_int=\count186
-\l__regex_max_active_int=\count187
-\l__regex_replacement_csnames_int=\count188
-\l__regex_match_count_int=\count189
-\l__regex_min_submatch_int=\count190
-\l__regex_submatch_int=\count191
-\l__regex_zeroth_submatch_int=\count192
-\g__regex_trace_regex_int=\count193
+\g__intarray_font_int=\count125
+\c__fp_leading_shift_int=\count126
+\c__fp_middle_shift_int=\count127
+\c__fp_trailing_shift_int=\count128
+\c__fp_big_leading_shift_int=\count129
+\c__fp_big_middle_shift_int=\count130
+\c__fp_big_trailing_shift_int=\count131
+\c__fp_Bigg_leading_shift_int=\count132
+\c__fp_Bigg_middle_shift_int=\count133
+\c__fp_Bigg_trailing_shift_int=\count134
+\g__fp_array_int=\count135
+\l__fp_array_loop_int=\count136
+\l__sort_length_int=\count137
+\l__sort_min_int=\count138
+\l__sort_top_int=\count139
+\l__sort_max_int=\count140
+\l__sort_true_max_int=\count141
+\l__sort_block_int=\count142
+\l__sort_begin_int=\count143
+\l__sort_end_int=\count144
+\l__sort_A_int=\count145
+\l__sort_B_int=\count146
+\l__sort_C_int=\count147
+\l__str_internal_int=\count148
+\l__tl_analysis_normal_int=\count149
+\l__tl_analysis_index_int=\count150
+\l__tl_analysis_nesting_int=\count151
+\l__tl_analysis_type_int=\count152
+\l__regex_internal_a_int=\count153
+\l__regex_internal_b_int=\count154
+\l__regex_internal_c_int=\count155
+\l__regex_balance_int=\count156
+\l__regex_group_level_int=\count157
+\l__regex_mode_int=\count158
+\c__regex_cs_in_class_mode_int=\count159
+\c__regex_cs_mode_int=\count160
+\l__regex_catcodes_int=\count161
+\l__regex_default_catcodes_int=\count162
+\c__regex_catcode_L_int=\count163
+\c__regex_catcode_O_int=\count164
+\c__regex_catcode_A_int=\count165
+\c__regex_all_catcodes_int=\count166
+\l__regex_show_lines_int=\count167
+\l__regex_min_state_int=\count168
+\l__regex_max_state_int=\count169
+\l__regex_left_state_int=\count170
+\l__regex_right_state_int=\count171
+\l__regex_capturing_group_int=\count172
+\l__regex_min_pos_int=\count173
+\l__regex_max_pos_int=\count174
+\l__regex_curr_pos_int=\count175
+\l__regex_start_pos_int=\count176
+\l__regex_success_pos_int=\count177
+\l__regex_curr_char_int=\count178
+\l__regex_curr_catcode_int=\count179
+\l__regex_last_char_int=\count180
+\l__regex_case_changed_char_int=\count181
+\l__regex_curr_state_int=\count182
+\l__regex_step_int=\count183
+\l__regex_min_active_int=\count184
+\l__regex_max_active_int=\count185
+\l__regex_replacement_csnames_int=\count186
+\l__regex_match_count_int=\count187
+\l__regex_min_submatch_int=\count188
+\l__regex_submatch_int=\count189
+\l__regex_zeroth_submatch_int=\count190
+\g__regex_trace_regex_int=\count191
 \c_empty_box=\box36
 \l_tmpa_box=\box37
 \l_tmpb_box=\box38
@@ -543,31 +523,30 @@ Package: expl3 2019-11-07 L3 programming layer (code)
 \l__coffin_display_offset_dim=\dimen150
 \l__coffin_display_x_dim=\dimen151
 \l__coffin_display_y_dim=\dimen152
-\g__char_data_ior=\read1
-
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel\l3deprec
-ation.def"
-File: l3deprecation.def 2019-04-06 v L3 Deprecated functions
-))
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3backe
-nd-xdvipdfmx.def"
-File: l3backend-xdvipdfmx.def 2019-04-06 L3 backend support: xdvipdfmx
+\g__file_internal_ior=\read1
+\l__seq_internal_a_int=\count192
+\l__seq_internal_b_int=\count193
+)
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backend\l3b
+ackend-xdvipdfmx.def"
+File: l3backend-xdvipdfmx.def 2019-04-06 v L3 Experimental backend support: xdv
+ipdfmx
 \g__graphics_track_int=\count194
 \l__pdf_internal_box=\box54
 \g__pdf_backend_object_int=\count195
 \g__pdf_backend_annotation_int=\count196
 ))
-Package: xparse 2019-10-11 L3 Experimental document command parser
+Package: xparse 2019-05-28 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count197
 \g__xparse_grabber_int=\count198
 \l__xparse_m_args_int=\count266
 \l__xparse_v_nesting_int=\count267
 )
-Package: fontspec 2019/10/19 v2.7d Font selection for XeLaTeX and LuaLaTeX
+Package: fontspec 2019/03/15 v2.7c Font selection for XeLaTeX and LuaLaTeX
 
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontspec\fontspec
--xetex.sty"
-Package: fontspec-xetex 2019/10/19 v2.7d Font selection for XeLaTeX and LuaLaTe
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontspec\font
+spec-xetex.sty"
+Package: fontspec-xetex 2019/03/15 v2.7c Font selection for XeLaTeX and LuaLaTe
 X
 \l__fontspec_script_int=\count268
 \l__fontspec_language_int=\count269
@@ -584,129 +563,134 @@ X
 \l__fontspec_tmpb_dim=\dimen154
 \l__fontspec_tmpc_dim=\dimen155
 
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.sty"
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.
+sty"
 Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\tuenc.def"
+
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\tuenc.de
+f"
 File: tuenc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
 ))
-("C:\Users\alters\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontspec\fontspec
-.cfg")
-LaTeX Info: Redefining \itshape on input line 4047.
-LaTeX Info: Redefining \slshape on input line 4052.
-LaTeX Info: Redefining \scshape on input line 4057.
-LaTeX Info: Redefining \upshape on input line 4062.
-LaTeX Info: Redefining \em on input line 4092.
-LaTeX Info: Redefining \emph on input line 4117.
+("C:\Users\seth.alter\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontspec\font
+spec.cfg")
+LaTeX Info: Redefining \itshape on input line 4051.
+LaTeX Info: Redefining \slshape on input line 4056.
+LaTeX Info: Redefining \scshape on input line 4061.
+LaTeX Info: Redefining \upshape on input line 4066.
+LaTeX Info: Redefining \em on input line 4096.
+LaTeX Info: Redefining \emph on input line 4121.
 ))
 
 Package fontspec Info: Font family 'IMFeFCrm29C.otf(0)' created for font
 (fontspec)             'IMFeFCrm29C.otf' with options
-(fontspec)             [Path=fell_french_canon/,Ligatures=TeX,ItalicFont=IMFeFC
-it29C.otf,BoldFont=AveriaLibre-Bold.ttf].
+(fontspec)             [Path=fonts/fell_french_canon/,Ligatures=TeX,ItalicFont=
+IMFeFCit29C.otf,BoldFont=AveriaLibre-Bold.ttf].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[fell_french_canon/IMFeFCrm29C.otf]/OT:script=latn;l
-anguage=DFLT;mapping=tex-text;"
+(fontspec)             <->"[fonts/fell_french_canon/IMFeFCrm29C.otf]/OT:script=
+latn;language=DFLT;mapping=tex-text;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
-(fontspec)             <->"[fell_french_canon/IMFeFCrm29C.otf]/OT:script=latn;l
-anguage=DFLT;+smcp;mapping=tex-text;"
+(fontspec)             <->"[fonts/fell_french_canon/IMFeFCrm29C.otf]/OT:script=
+latn;language=DFLT;+smcp;mapping=tex-text;"
 (fontspec)             - 'bold' (bx/n) with NFSS spec.:
-(fontspec)             <->"[fell_french_canon/AveriaLibre-Bold.ttf]/OT:script=l
-atn;language=DFLT;mapping=tex-text;"
+(fontspec)             <->"[fonts/fell_french_canon/AveriaLibre-Bold.ttf]/OT:sc
+ript=latn;language=DFLT;mapping=tex-text;"
 (fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
 (fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->"[fell_french_canon/IMFeFCit29C.otf]/OT:script=latn;l
-anguage=DFLT;mapping=tex-text;"
+(fontspec)             <->"[fonts/fell_french_canon/IMFeFCit29C.otf]/OT:script=
+latn;language=DFLT;mapping=tex-text;"
 (fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.: 
 
 
 Package fontspec Info: Font family 'FrankRuehlCLM-Medium.ttf(0)' created for
 (fontspec)             font 'FrankRuehlCLM-Medium.ttf' with options
-(fontspec)             [Path=frankruehl/].
+(fontspec)             [Path=fonts/frankruehl/].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[frankruehl/FrankRuehlCLM-Medium.ttf]/OT:script=latn
-;language=DFLT;"
+(fontspec)             <->"[fonts/frankruehl/FrankRuehlCLM-Medium.ttf]/OT:scrip
+t=latn;language=DFLT;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 
-Package fontspec Info: Font family 'IMFeENrm29P.ttf(0)' created for font
-(fontspec)             'IMFeENrm29P.ttf' with options
-(fontspec)             [Path=fell/,Ligatures=TeX,ItalicFont=IMFeENit29P.ttf,Bol
-dFont=IMFeENsc29P.ttf].
+Package fontspec Info: Font family 'EBGaramond-SemiBold.ttf(0)' created for
+(fontspec)             font 'EBGaramond-SemiBold.ttf' with options
+(fontspec)             [Path=fonts/garamond/,Ligatures=TeX,ItalicFont=EBGaramon
+d-SemiBoldItalic.ttf].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[fell/IMFeENrm29P.ttf]/OT:script=latn;language=DFLT;
-mapping=tex-text;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'bold' (bx/n) with NFSS spec.:
-(fontspec)             <->"[fell/IMFeENsc29P.ttf]/OT:script=latn;language=DFLT;
-mapping=tex-text;"
-(fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
+(fontspec)             <->"[fonts/garamond/EBGaramond-SemiBold.ttf]/OT:script=l
+atn;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"[fonts/garamond/EBGaramond-SemiBold.ttf]/OT:script=l
+atn;language=DFLT;+smcp;mapping=tex-text;"
 (fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->"[fell/IMFeENit29P.ttf]/OT:script=latn;language=DFLT;
-mapping=tex-text;"
-(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.: 
+(fontspec)             <->"[fonts/garamond/EBGaramond-SemiBoldItalic.ttf]/OT:sc
+ript=latn;language=DFLT;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.:
+(fontspec)             <->"[fonts/garamond/EBGaramond-SemiBoldItalic.ttf]/OT:sc
+ript=latn;language=DFLT;+smcp;mapping=tex-text;"
 
 
 Package fontspec Info: Font family 'AveriaLibre-Light.ttf(0)' created for font
 (fontspec)             'AveriaLibre-Light.ttf' with options
-(fontspec)             [Path=averia/,Ligatures=TeX,ItalicFont=AveriaLibre-Regul
-arItalic.ttf,BoldFont=AveriaLibre-Bold.ttf,BoldItalicFont=AveriaLibre-BoldItali
-c.ttf].
+(fontspec)             [Path=fonts/averia/,Ligatures=TeX,ItalicFont=AveriaLibre
+-RegularItalic.ttf,BoldFont=AveriaLibre-Bold.ttf,BoldItalicFont=AveriaLibre-Bol
+dItalic.ttf].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[averia/AveriaLibre-Light.ttf]/OT:mapping=tex-text;"
-
+(fontspec)             <->"[fonts/averia/AveriaLibre-Light.ttf]/OT:mapping=tex-
+text;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (bx/n) with NFSS spec.:
-(fontspec)             <->"[averia/AveriaLibre-Bold.ttf]/OT:mapping=tex-text;"
+(fontspec)             <->"[fonts/averia/AveriaLibre-Bold.ttf]/OT:mapping=tex-t
+ext;"
 (fontspec)             - 'bold small caps'  (bx/sc) with NFSS spec.: 
 (fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->"[averia/AveriaLibre-RegularItalic.ttf]/OT:mapping=te
-x-text;"
+(fontspec)             <->"[fonts/averia/AveriaLibre-RegularItalic.ttf]/OT:mapp
+ing=tex-text;"
 (fontspec)             - 'italic small caps'  (m/itsc) with NFSS spec.: 
 (fontspec)             - 'bold italic' (bx/it) with NFSS spec.:
-(fontspec)             <->"[averia/AveriaLibre-BoldItalic.ttf]/OT:mapping=tex-t
-ext;"
+(fontspec)             <->"[fonts/averia/AveriaLibre-BoldItalic.ttf]/OT:mapping
+=tex-text;"
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
 
 Package fontspec Info: Font family 'Mekorot-Rashi.ttf(0)' created for font
-(fontspec)             'Mekorot-Rashi.ttf' with options [Path=rashi/].
+(fontspec)             'Mekorot-Rashi.ttf' with options [Path=fonts/rashi/].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[rashi/Mekorot-Rashi.ttf]/OT"
+(fontspec)             <->"[fonts/rashi/Mekorot-Rashi.ttf]/OT"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 
 Package fontspec Info: Font family 'IMFeFlow2.otf(0)' created for font
-(fontspec)             'IMFeFlow2.otf' with options [Path=fell_flowers/].
+(fontspec)             'IMFeFlow2.otf' with options
+(fontspec)             [Path=fonts/fell_flowers/].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[fell_flowers/IMFeFlow2.otf]/OT"
+(fontspec)             <->"[fonts/fell_flowers/IMFeFlow2.otf]/OT"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
- (C:\Users\alters\talmudifier\Output\markdown_input_test.aux)
+ (C:\Users\seth.alter\talmudifier\Output\markdown_input_test.aux)
 \openout1 = `markdown_input_test.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 0.
@@ -723,9 +707,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 0.
 LaTeX Font Info:    ... okay on input line 0.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 0.
 LaTeX Font Info:    ... okay on input line 0.
-Package scrbase Info: activating english \contentsname on input line 0.
-Package scrbase Info: activating english \listfigurename on input line 0.
-Package scrbase Info: activating english \listtablename on input line 0.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -820,8 +801,13 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 0.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 0.
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 0.
 
+
+LaTeX Font Warning: Font shape `TU/EBGaramond-SemiBold.ttf(0)/bx/n' undefined
+(Font)              using `TU/EBGaramond-SemiBold.ttf(0)/m/n' instead on input 
+line 0.
+
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 0.
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.5> not available
 (Font)              size <5> substituted on input line 0.
@@ -845,89 +831,192 @@ Package paracol Warning: \margninnote is emulated by \marginpar. on input line
 0.
 
 
-Underfull \hbox (badness 1033) detected at line 0
-[]\TU/IMFeFCrm29C.otf(0)/m/n/11 given to us in parallel with
+Underfull \hbox (badness 3826) detected at line 0
+\TU/IMFeFCrm29C.otf(0)/m/n/11 lus lacus lectus, sodales sit
+ []
+
+
+Underfull \hbox (badness 1910) detected at line 0
+\TU/IMFeFCrm29C.otf(0)/m/n/11 amet orci in, rutrum male-
+ []
+
+
+Underfull \hbox (badness 1960) detected at line 0
+\TU/IMFeFCrm29C.otf(0)/m/n/11 suada diam. Cras pulvinar
+ []
+
+
+Underfull \hbox (badness 2229) detected at line 0
+\TU/IMFeFCrm29C.otf(0)/m/n/11 elit sit amet lacus fringilla,
  []
 
 
 Underfull \hbox (badness 3049) detected at line 0
-\TU/IMFeFCrm29C.otf(0)/m/n/11 special symbol, it’s time to
+\TU/IMFeFCrm29C.otf(0)/m/n/11 in elementum mauris max-
  []
 
 
-Underfull \hbox (badness 3375) detected at line 0
-\TU/IMFeFCrm29C.otf(0)/m/n/11 citing verses, as it is writ-
+Underfull \hbox (badness 4819) detected at line 0
+\TU/IMFeFCrm29C.otf(0)/m/n/11 auctor dignissim velit eget
  []
 
 
-Underfull \hbox (badness 4531) detected at line 0
-\TU/IMFeENrm29P.ttf(0)/m/n/12 notes. [] \TU/FrankRuehlCLM-Medium.ttf(0)/m/n/14.
-4 א[] \TU/IMFeENrm29P.ttf(0)/m/n/12 Citations that
+Underfull \hbox (badness 1087) detected at line 0
+\TU/IMFeFCrm29C.otf(0)/m/n/11 blah blah. As it is written:
  []
 
 
-Underfull \hbox (badness 6063) detected at line 0
-\TU/IMFeENrm29P.ttf(0)/m/n/12 are block Hebrew letters
+Underfull \hbox (badness 6364) detected at line 0
+\TU/IMFeFCrm29C.otf(0)/m/n/11 “Aecenas lacinia nisi diam,
  []
 
 
-Underfull \hbox (badness 1292) detected at line 0
-\TU/IMFeENrm29P.ttf(0)/m/n/12 column. [] \TU/FrankRuehlCLM-Medium.ttf(0)/m/n/14
-.4 ב[] \TU/IMFeENrm29P.ttf(0)/m/n/12 Citations that
+Underfull \hbox (badness 1769) detected at line 0
+\TU/IMFeFCrm29C.otf(0)/m/n/11 Sed non lorem quis dui ul-
+ []
+
+
+Underfull \hbox (badness 2662) detected at line 0
+\TU/IMFeFCrm29C.otf(0)/m/n/11 nec lacus arcu. Morbi vel
+ []
+
+
+Underfull \hbox (badness 4328) detected at line 0
+\TU/EBGaramond-SemiBold.ttf(0)/m/n/11 nec lacus arcu. Morbi vel
  []
 
 
 Underfull \hbox (badness 10000) detected at line 0
-\TU/IMFeENrm29P.ttf(0)/m/n/12 are Rashi Hebrew char-
+\TU/EBGaramond-SemiBold.ttf(0)/m/n/11 hendrerit sagittis vulputate.
+ []
+
+
+Underfull \hbox (badness 2865) detected at line 0
+\TU/EBGaramond-SemiBold.ttf(0)/m/n/11 ces porta. Aliquam feugiat
  []
 
 
 Underfull \hbox (badness 10000) detected at line 0
-\TU/IMFeENrm29P.ttf(0)/m/n/12 rendered in smallcaps.
+\TU/EBGaramond-SemiBold.ttf(0)/m/n/11 sit amet tempor pulvinar.
  []
 
 
-Underfull \hbox (badness 2573) detected at line 0
-\TU/AveriaLibre-Light.ttf(0)/m/n/11 this column tends to answer
+Underfull \hbox (badness 10000) detected at line 0
+\TU/EBGaramond-SemiBold.ttf(0)/m/n/11 tincidunt sed, pharetra eu
  []
 
 
-Underfull \hbox (badness 3138) detected at line 0
-\TU/AveriaLibre-Light.ttf(0)/m/n/11 questions of “why something
+Underfull \hbox (badness 1609) detected at line 0
+\TU/EBGaramond-SemiBold.ttf(0)/m/n/11 libero. Aenean lobortis tin-
  []
 
 
-Underfull \hbox (badness 2680) detected at line 0
-\TU/AveriaLibre-Light.ttf(0)/m/n/11 happened” or “in what man-
+Underfull \hbox (badness 1337) detected at line 0
+\TU/Mekorot-Rashi.ttf(0)/m/n/10.95 ב[] \TU/EBGaramond-SemiBold.ttf(0)/m/n/11 Qu
+isque vehicula massa sit
  []
 
 
-Underfull \hbox (badness 1642) detected at line 0
-\TU/AveriaLibre-Light.ttf(0)/m/n/11 out, I need more words, so here’s a few
+Underfull \hbox (badness 10000) detected at line 0
+\TU/EBGaramond-SemiBold.ttf(0)/m/n/11 amet justo rhoncus auctor.
  []
 
 
-Underfull \hbox (badness 1043) detected at line 0
-\TU/AveriaLibre-Light.ttf(0)/m/n/11 more: Praesent vitae mi mi. Sed viverra
+Underfull \hbox (badness 10000) detected at line 0
+[]\TU/AveriaLibre-Light.ttf(0)/m/n/11 ut, consectetur eget lec-
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 0
+\TU/AveriaLibre-Light.ttf(0)/m/n/11 tus. Donec varius finibus
+ []
+
+
+Underfull \hbox (badness 4416) detected at line 0
+\TU/AveriaLibre-Light.ttf(0)/m/n/11 ante quis arcu dictum ultri-
+ []
+
+
+Underfull \hbox (badness 1082) detected at line 0
+\TU/AveriaLibre-Light.ttf(0)/m/n/11 ces. Proin vel ante quis elit
+ []
+
+
+Underfull \hbox (badness 7814) detected at line 0
+\TU/AveriaLibre-Light.ttf(0)/m/n/11 sollicitudin auctor. Nullam
+ []
+
+
+Underfull \hbox (badness 1616) detected at line 0
+\TU/AveriaLibre-Light.ttf(0)/m/n/11 vel, dignissim eu mi. Morbi
+ []
+
+
+Underfull \hbox (badness 1448) detected at line 0
+\TU/AveriaLibre-Light.ttf(0)/m/n/11 id velit ac turpis ullamcorper
+ []
+
+
+Underfull \hbox (badness 1194) detected at line 0
+\TU/AveriaLibre-Light.ttf(0)/m/n/11 vitae eros rutrum scelerisque.
+ []
+
+
+Underfull \hbox (badness 2582) detected at line 0
+\TU/IMFeFCrm29C.otf(0)/m/n/11 suada odio, sit amet fringilla lectus ultrices
+ []
+
+
+Underfull \hbox (badness 1655) detected at line 0
+\TU/IMFeFCrm29C.otf(0)/bx/n/11 find this funcitonality useful. $[]$ \TU/IMFeFCr
+m29C.otf(0)/m/n/11 I
+ []
+
+
+Underfull \hbox (badness 2080) detected at line 0
+[]\TU/IMFeFCrm29C.otf(0)/m/n/11 As it is written: “Sed ut eros id arcu tincidun
+t accumsan. Vestibulum vitae nisl blandit,
+ []
+
+
+Underfull \hbox (badness 1796) detected at line 0
+\TU/IMFeFCrm29C.otf(0)/m/n/11 commodo odio vitae, dictum nunc. Suspendisse phar
+etra lorem vitae ex tincidunt ornare.
+ []
+
+
+Underfull \hbox (badness 3919) detected at line 0
+\TU/IMFeFCrm29C.otf(0)/m/n/11 Maecenas efficitur tristique libero, eget commodo
+ urna. Pellentesque libero sem, inter-
+ []
+
+
+Underfull \hbox (badness 4181) detected at line 0
+\TU/IMFeFCrm29C.otf(0)/m/n/11 per. Donec eget purus lectus. \TU/IMFeFlow2.otf(0
+)/m/n/11 1 \TU/IMFeFCrm29C.otf(0)/m/n/11 Check out how nice that little hand lo
+oks. Nice.
  []
 
 [1
 
 
-] (C:\Users\alters\talmudifier\Output\markdown_input_test.aux)
+] (C:\Users\seth.alter\talmudifier\Output\markdown_input_test.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
  
 Here is how much of TeX's memory you used:
- 17428 strings out of 427233
- 378522 string characters out of 3141139
- 605704 words of memory out of 3000000
- 21848 multiletter control sequences out of 15000+200000
- 534518 words of font info for 74 fonts, out of 3000000 for 9000
+ 16854 strings out of 427669
+ 362736 string characters out of 3143938
+ 575153 words of memory out of 3000000
+ 20831 multiletter control sequences out of 15000+200000
+ 534462 words of font info for 67 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 47i,7n,78p,17028b,429s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,7n,78p,15925b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on C:\Users\alters\talmudifier\Output\markdown_input_test.pdf (1
- page).
+Output written on C:\Users\seth.alter\talmudifier\Output\markdown_input_test.pd
+f (1 page).

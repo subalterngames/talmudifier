@@ -3,7 +3,7 @@
   {
     "left":
     {
-      "path": "fell_french_canon",
+      "path": "fonts/fell_french_canon",
       "ligatures": "TeX",
       "regular_font": "IMFeFCrm29C.otf",
       "italic_font": "IMFeFCit29C.otf",
@@ -12,12 +12,12 @@
       "skip": 13,
       "substitutions":
       {
-        "`=(.*?[^\\\\])`": "\\\\marginnote{\\\\noindent\\\\justifying \\\\tiny \\1}",
+        "`=(.*)`": "\\\\marginnote{\\\\noindent\\\\justifying \\\\tiny \\1}",
         "->": "\\\\flowerfont 1 \\\\leftfont"
       },
       "citation":
       {
-        "path": "frankruehl",
+        "path": "fonts/frankruehl",
         "font": "FrankRuehlCLM-Medium.ttf",
         "command": "\\leftcitation",
         "font_command":  "\\leftcitationfont",
@@ -26,13 +26,12 @@
     },
     "center":
     {
-      "path": "fell",
+      "path": "fonts/garamond",
       "ligatures": "TeX",
-      "regular_font": "IMFeENrm29P.ttf",
-      "italic_font": "IMFeENit29P.ttf",
-      "bold_font": "IMFeENsc29P.ttf",
-      "size": 12,
-      "skip": 14.15,
+      "regular_font": "EBGaramond-SemiBold.ttf",
+      "italic_font": "EBGaramond-SemiBoldItalic.ttf",
+      "size": 11,
+      "skip": 13,
       "substitutions":
       {
         "`L(.*)`": "\\\\leftcitationfont{\\\\leftcitation \\1} \\\\centerfont ",
@@ -41,7 +40,7 @@
     },
     "right":
     {
-      "path": "averia",
+      "path": "fonts/averia",
       "ligatures": "TeX",
       "regular_font": "AveriaLibre-Light.ttf",
       "italic_font": "AveriaLibre-RegularItalic.ttf",
@@ -55,7 +54,7 @@
       },
       "citation":
       {
-        "path": "rashi/",
+        "path": "fonts/rashi/",
         "font": "Mekorot-Rashi.ttf",
         "command": "\\rightcitation",
         "font_command":  "\\rightcitationfont",
@@ -113,12 +112,13 @@
   },
   "colors":
   {
-    "hcolor": "D3230C"
+    "hcolor": "D3230C",
+    "rcolor": "D36F0C"
   },
   "misc_definitions":
   [
     "\\newcommand{\\leftcitation}[1]{\\leftcitationfont{\\Large\\textcolor{hcolor}{#1}}}",
-    "\\newcommand{\\rightcitation}[1]{\\rightcitationfont{\\normalsize\\textcolor{hcolor}{#1}}}",
-    "\\newfontfamily\\flowerfont[Path=fell_flowers/]{IMFeFlow2.otf}"
+    "\\newcommand{\\rightcitation}[1]{\\rightcitationfont{\\normalsize\\textcolor{rcolor}{#1}}}",
+    "\\newfontfamily\\flowerfont[Path=fonts/fell_flowers/]{IMFeFlow2.otf}"
   ]
 }
