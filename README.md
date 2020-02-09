@@ -1,3 +1,5 @@
+
+
 # Talmudifier
 
 `talmudifier.py` is a Python script that will procedurally generate page layouts similar to the [Talmud](https://en.wikipedia.org/wiki/Talmud#/media/File:First_page_of_the_first_tractate_of_the_Talmud_(Daf_Beis_of_Maseches_Brachos).jpg). All it needs is three "sections" of text in [markdown format](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). This is an  Given three "sections" of markdown-formatted text, generate a pdf that arranges the text in columns formatted like a page of the Talmud:
@@ -34,51 +36,45 @@ If you're not sure how to install anything and Google isn't being helpful, you c
 
  ## 3. Setup
 
- 1.
+1. Open the terminal.
+
+| Windows                                            | OS X                                         | Linux                                                        |
+| -------------------------------------------------- | -------------------------------------------- | ------------------------------------------------------------ |
+| Search for "powershell" in the start menu. Run it. | In Spotlight, search for "Terminal". Run it. | Depends; if  you're not sure how to do this, [email me](subalterngames@gmail.com). |
+
+2. In the terminal, type:
 
  ```bash
- cd <where this folder is>/talmudifier
+cd ~/<where this folder is>/talmudifier
  ```
 
- Example: If your user name is Bob and you put this file in Downloads, type
+ For example, if this folder is in `Downloads/RandomStuff`:
 
-  ```bash
- cd C:/Users/Bob/Downloads/talmudifier
-  ```
+```bash
+cd ~/Downloads/RandomStuff/talmudifier
+```
 
-2.
+3. In the terminal, type:
 
 ```bash
 pip3 setup.py -e .
 ```
 
-Don't forget the `.` at the end! This will install Talmudifier as a Python module like any other:
+Don't forget the `.` at the end! This will install the Talmudifier Python module.
 
-```python
-import json
-import io
-import talmudifier.talmudifier
-```
+4. In the terminal, try creating a test page.
 
-3.
-
-OS X and Linux:
-
-```bash
-python3 test_input_reader.py
-```
-
-Windows:
-
-```bash
-py -3 test_input_reader.py
-```
+| Windows                      | OS X                           | Linux                          |
+| ---------------------------- | ------------------------------ | ------------------------------ |
+| `py -3 test_input_reader.py` | `python3 test_input_reader.py` | `python3 test_input_reader.py` |
 
 If this test script works, then everything is set up OK. The script will generate:
 
 - The test page PDF: `talmudifier/Output/test_page.pdf` 
 - The .tex file used to create the PDF: `talmudifier/Output/test_page.tex`
 - A few other files in `Output/` that you can ignore.
+
+**If you want to play with Talmudifier but you don't want to write any code, you can safely edit the input file for the test script.** The file is: `talmudifier/test/test_input.md`
 
 ## 4. Usage
 
