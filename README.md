@@ -16,6 +16,8 @@ This is primarily for people familiar with [Markdown](https://github.com/adam-p/
 2. Feel comfortable installing LaTeX packages. (You won't use LaTeX directly, so you don't need to learn any of its syntax.)
 3. Have at least a cursory understanding of why the Talmud is typeset the way it is.
 
+If you don't want to code, that's OK! See "Non-Coders" **4. Usage**.
+
 **Please help me improve this README.** I wrote this README initially just so that _I_ could remember how the program works. There's probably a lot missing, and a lot that is very misleading... So, please email me with suggestions for improving the documentation (or, better yet, create a GitHub Issue if you know how).
 
 ## 2. Requirements
@@ -74,9 +76,9 @@ If this test script works, then everything is set up OK. The script will generat
 - The .tex file used to create the PDF: `talmudifier/Output/test_page.tex`
 - A few other files in `Output/` that you can ignore.
 
-**If you want to play with Talmudifier but you don't want to write any code, you can safely edit the input file for the test script.** The file is: `talmudifier/test/test_input.md`
-
 ## 4. Usage
+
+### Coders:
 
 Talmudifier requires three sources of markdown text. It doesn't care where the sources come from as long as they are imported correctly. (In other words,  you're on your own providing the text and slotting it into this program.)
 
@@ -103,6 +105,11 @@ from talmudifier.talmudifier import Talmudifier
 t = Talmudifier(left, center, right)
 t.create_pdf()
 ```
+
+### Non-coders:
+
+1. Edit the test input file `talmudifier/test/test_input.md`
+2. Run `test_input_reader.py` (see **3. Setup**)
 
 ## 5. API
 
