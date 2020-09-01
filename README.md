@@ -93,7 +93,7 @@ Or just pull the text from three files, e.g.:
 ```python
 import io
 
-with io.open("left.txt", encoding="utf-8", "rt") as f:
+with io.open("left.txt", "rt", encoding="utf-8") as f:
     left = f.read()
 ```
 
@@ -359,3 +359,9 @@ I found very little information on how typesetters knew how long any given colum
 
 - The algorithm really struggles with different font sizes. I'm not sure how to handle this, other than requiring all columns to be the same font size. If you have a suggestion, please [email me](subalterngames@gmail.com).
 - The regex used is probably sub-optimal. Style markers _must_ be at the start and end of a word. Talmudifier is `ok with _this._` But `_not this_.`
+
+## 10. Changelog
+
+### v1.1.0
+
+- Fixed an error in the example code in this README.
