@@ -1,6 +1,6 @@
 from subprocess import call
 from pathlib import Path
-from sys import platform
+from platform import system
 from os import devnull
 from talmudifier.util import output_directory
 
@@ -40,20 +40,23 @@ class PDFWriter:
         num_end = len([c for c in doc if c == "}"])
         assert num_start == num_end, f"Unbalanced curly braces!\n\n{doc_raw}"
 
+        p = system()
         # Generate the PDF.
-        if platform == "linux":
+        if p == "Linux" or p == "Darwin":
             call(
                 ["xelatex",
                  "-output-directory", str(Path(output_directory).resolve()),
                  "-jobname", filename, doc],
                 stdout=open(devnull, "wb"))
-        else:
+        elif p == "Windows":
             call(['xelatex.exe',
                   '-output-directory',
                   str(Path(output_directory).resolve()),
                   '-job-name=' + filename,
                   doc],
                  stdout=open(devnull, "wb"))
+        else:
+            raise Exception(f"Platform not supported: {p}")
 
         assert Path(output_directory).joinpath(filename + ".pdf").exists(), f"Failed to create: {filename}"
 
