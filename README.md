@@ -364,4 +364,6 @@ I found very little information on how typesetters knew how long any given colum
 
 ### v1.1.0
 
-- Fixed an error in the example code in this README.
+- Replaced `sys.platform` with `platform.system()` in `PDFWriter` (the return value is more predictable).
+- Fixed: PDFWriter doesn't work on OS X.
+- Fixed: The example code in this README has an error.
